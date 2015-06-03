@@ -1,0 +1,41 @@
+.morquee-content{
+				position:absolute;width:80%;margin:0 auto;bottom:20px;left:20%;
+				}
+small {
+		font-size: 14px;
+	}
+	.marquee, .marquee-with-options {
+					width: 80%;
+					overflow: hidden;
+					border:1px solid #4585F2;
+		}
+
+div.marquee-with-options span{
+								top:20px;
+								height:50px;
+								border-right:1px solid #fff;
+								padding-left:10px;
+								padding-top:-3px;
+								background-position:0px 4px;
+								height:40%;
+								cursor:pointer;
+							}
+
+	div.marquee-with-options span.symbol{
+									z-index:9999999;
+									background:url(http://forexray.com/plugins/raju/img/down.gif) no-repeat;
+									background-position: 0.4em;
+									padding-left: 15px;
+								}
+div.marquee-with-options span.bid{
+									z-index:9999999;
+									background:url(http://forexray.com/plugins/raju/img/up.gif) no-repeat;
+									background-position: 0.4em;
+									padding-left: 15px;
+									}
+div.marquee-with-options span.ask{
+									z-index:9999999;
+									background:url(http://forexray.com/plugins/raju/img/down.gif) no-repeat;
+									background-position: 0.4em;
+									padding-left: 15px;
+									}

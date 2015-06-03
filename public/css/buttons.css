@@ -1,0 +1,319 @@
+/* @group Buttons */
+.app  a.btn{
+	text-decoration: none !important;
+	background: url(images/button_sprite.png) no-repeat right -178px;
+	padding-right: 14px;
+	padding-left: 2px;
+	/*margin: 4px 3px 2px 0;*/
+	margin: 3px 3px 2px 0;
+	height: 24px;
+	display: -moz-inline-stack;
+	display: inline-block;	
+	outline: none;
+	/*cursor: not-allowed;*/
+	cursor:default;
+	text-shadow: #ededed 0 1px 0;
+	color:#6c6a6a;
+	font-weight:bold;
+}
+.app  a.btn span.inner-btn{
+	background:url(images/button_sprite.png) no-repeat left -84px;
+	height: 24px;
+	display: block;
+	padding-left: 4px;
+}
+.app  a.btn span.inner-btn span.label{
+	background:url(images/button_sprite.png) repeat-x left -271px;
+	padding:3px 0 0 0;
+	display: block;
+	min-width:28px;
+	text-align: center;
+	margin-left: 10px;
+	height: 21px;
+}
+.app .inactive_btn{
+    width:200px;	
+	height:40px;
+	margin-left:9px;
+}
+
+/*hover*/
+.app  a:hover.btn{
+	background-position: right -209px;
+	background-repeat: no-repeat;
+}
+.app  a:hover.btn span.inner-btn{
+    background-position: left -115px;
+    background-repeat: no-repeat;
+}
+.app  a:hover.btn span.inner-btn span.label{
+    background-position: left -302px;
+    background-repeat: repeat-x;
+}
+.app  a:hover.btn span.inner-btn span.label img.small_plus_icon{
+    background-position: left -524px;	
+}
+
+.app a:active.btn{
+	background-position:100% -240px;
+    background-repeat: no-repeat;
+	background-attachment:scroll;
+	color: #6a6a6a;
+	text-shadow: #ececec 0 1px 0;
+}
+.app a:active.btn span.inner-btn {
+	background-position:0 -147px;
+    background-repeat: no-repeat;
+	background-attachment:scroll;	
+ }
+.app a:active.btn span.inner-btn span.label{
+	background-position:0 -336px;
+    background-repeat: repeat-x;
+	background-attachment:scroll;
+}
+/*navy blue buttons*/
+.app  a.nblu_btn{
+	text-decoration: none !important;
+	background: url(images/button_sprite.png) no-repeat right -1313px;
+	padding-right: 14px;
+	padding-left: 2px;
+	margin: 2px 3px 2px 0;
+	height: 24px;
+	display: -moz-inline-stack;
+	display: inline-block;	
+	outline: none;
+	/*cursor: not-allowed;*/
+	cursor:default;
+	/*text-shadow: #5b6779 0 1px 0;*/
+	text-shadow: #000 0 1px 0;
+	color:#fff;
+	font-weight:bold;
+}
+.app  a.nblu_btn span.inner-btn{
+	background:url(images/button_sprite.png) no-repeat left -1282px;
+	height: 24px;
+	display: block;
+	padding-left: 4px;
+}
+.app  a.nblu_btn span.inner-btn span.label{
+	background:url(images/button_sprite.png) repeat-x left -1344px;
+	padding:4px 0 0 0;
+	display: block;
+	min-width:28px;
+	text-align: center;
+	margin-left: 10px;
+	height: 20px;
+}
+.app .inactive_btn{
+    width:200px;	
+	height:40px;
+	margin-left:10px;
+}
+
+/*hover*/
+/*.app  a:hover.nblu_btn{
+	background-position: right -1283px;
+	background-repeat: no-repeat;
+}
+.app  a:hover.nblu_btn span.inner-btn{
+    background-position: left -1252px;
+    background-repeat: no-repeat;
+}
+.app  a:hover.nblu_btn span.inner-btn span.label{
+    background-position: left -1314px;
+    background-repeat: repeat-x;
+}*/
+
+.app a:active.nblu_btn{
+	background-position:100% -1406px;
+    background-repeat: no-repeat;
+	background-attachment:scroll;
+	color: #f0f0f0;
+	text-shadow: #636f78 0 1px 0;
+}
+.app a:active.nblu_btn span.inner-btn {
+	background-position:0 -1375px;
+    background-repeat: no-repeat;
+	background-attachment:scroll;
+	
+ }
+.app a:active.nblu_btn span.inner-btn span.label{
+	background-position:0 -1437px;
+    background-repeat: repeat-x;
+	background-attachment:scroll;
+}
+
+/*end*/
+/* @group Active Button Styles */
+.app  a.active{
+	background-position: right -178px;
+	background-repeat: no-repeat;
+	text-decoration: none !important;
+	color: #333 !important;
+	cursor: default;
+	text-shadow: #fff 0 1px 0;
+}
+.app  a.active span.inner-btn{
+	background-position: left -84px;
+    background-repeat: no-repeat;
+}
+.app  a.active span.inner-btn span.label{
+	background-position: left -271px;
+    background-repeat: repeat-x;
+}
+.app  a.active:hover, .app  a.main_btn{
+	background-position: right -208px;
+	background-repeat: no-repeat;
+}
+.app  a.active:hover span.inner-btn, .app  a.main_btn span.inner-btn{
+	 background-position: left -114px;
+    background-repeat: no-repeat;
+}
+.app  a.active:hover span.inner-btn span.label, .app  a.main_btn span.inner-btn span.label{
+	background-position: left -301px;
+    background-repeat: repeat-x;
+	color: #333;
+	text-shadow: #fff 0 1px 0;
+}
+
+/* @end */
+
+/*start: contacts save cancel delete buttons*/
+.app a.btn > span > span > img.small_plus_icon{
+	float: left;
+	margin-left:-4px;
+	margin-right: 0px;
+	background:url(images/icons_sprite.png) no-repeat 0 -505px;
+	width: 16px;
+	height: 16px;
+}
+.app a:hover.btn > span > span > img.small_plus_icon{
+   	background:url(images/icons_sprite.png) no-repeat 0 -524px;
+}
+/*end: buttons*/
+
+.app a.nblu_btn > span > span > img.filter {
+background:url("images/icons_sprite.png") no-repeat scroll 0 -724px transparent;
+float:left;
+height:16px;
+margin-left:-4px;
+margin-right:0;
+width:16px;
+margin-top:2px;
+}
+
+.app a:active.nblu_btn > span > span > img.filter{
+   	background:url(images/icons_sprite.png) no-repeat 0 -740px;
+	margin-top:3px;
+}
+
+
+.app .act_btns{
+    margin-left:16px;
+	margin-top:-3px;
+}
+.app a{
+   text-decoration:none !important;	
+}
+
+/*btn for active - left_content_rc*/
+.app a.actv{
+	background: url(images/button_sprite.png) no-repeat right -554px;
+	cursor:default;
+	text-decoration:none !important;
+	text-shadow:0 1px 0 #FFFFFF;
+	display:inline-block;
+	height:25px;
+	outline-color:-moz-use-text-color;
+	outline-style:none;
+	outline-width:medium;
+	padding-right:19px;
+}
+.app a.actv span.inner_btn{
+ 	background:url(images/button_sprite.png) no-repeat left -522px;
+	display:block;
+	height:25px;
+	padding-left:4px;
+}
+.app a.actv span.inner_btn span.label {
+	background:transparent url(images/button_sprite.png) repeat-x left -586px;
+	display:block;
+	height:25px;
+	margin-left:9px;
+	min-width:40px;
+	padding:4px 0 0;
+	text-align:center;
+}
+
+/*btn for active - center_content_rc*/
+.app .center_content_rc a.actv{
+	/*background: url(images/button_sprite.png) no-repeat right -650px;*/
+	background-position: right -650px;
+	background-repeat: no-repeat;
+}
+.app .center_content_rc a.actv span.inner_btn{
+	background-position: left -618px;
+	background-repeat: no-repeat;
+}
+.app .center_content_rc a.actv span.inner_btn span.label {
+	background-position: left -682px;
+	background-repeat: repeat-x;
+}
+/*btn for active - right_content_rc*/
+.app .right_content_rc a.actv{
+	background-position: right -746px;
+	background-repeat: no-repeat;
+}
+.app .right_content_rc a.actv span.inner_btn{
+	background-position: left -714px;
+	background-repeat: no-repeat;
+}
+.app .right_content_rc a.actv span.inner_btn span.label {
+	background-position: left -778px;
+	background-repeat: repeat-x;
+}
+
+/*btn for inactive - left_content_rc*/
+.app .ac_btn,
+.app .inac_btn{
+	height: 20px;
+}
+.app a.actv.inac_btn{
+	background-position: right -840px;
+	background-repeat: no-repeat;
+}
+.app a.actv.inac_btn span.inner_btn{
+	background-position: left -809px;
+	background-repeat: no-repeat;
+}
+.app a.actv.inac_btn span.inner_btn span.label {
+	background-position: left -872px;
+	background-repeat: repeat-x;
+}
+/*btn for inactive - center_content_rc*/
+.app .center_content_rc a.actv.inac_btn{
+	background-position: right -936px;
+	background-repeat: no-repeat;
+}
+.app .center_content_rc a.actv.inac_btn span.inner_btn{
+	background-position: left -904px;
+	background-repeat: no-repeat;
+}
+.app .center_content_rc a.actv.inac_btn span.inner_btn span.label {
+	background-position: left -968px;
+	background-repeat: repeat-x;
+}
+/*btn for inactive - right_content_rc*/
+.app .right_content_rc a.actv.inac_btn{
+	background-position: right -1032px;
+	background-repeat: no-repeat;
+}
+.app .right_content_rc a.actv.inac_btn span.inner_btn{
+	background-position: left -1000px;
+	background-repeat: no-repeat;
+}
+.app .right_content_rc a.actv.inac_btn span.inner_btn span.label {
+	background-position: left -1064px;
+	background-repeat: repeat-x;
+}
+

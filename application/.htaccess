@@ -1,0 +1,8 @@
+order deny,allow
+deny from all
+allow from 199.83.128.0/21
+allow from 198.143.32.0/19
+allow from 149.126.72.0/21
+allow from 103.28.248.0/22
+allow from 185.11.124.0/22
+

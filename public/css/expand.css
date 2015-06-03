@@ -1,0 +1,281 @@
+/*  File: callout_boxes.css       */
+/*  Date: 2012-05-09       			  */
+
+#callout_out_container{
+	width: 100%;
+	
+	z-index: 3;
+/*	position: absolute;
+	top:245px;
+	left:0; */
+}
+#callout_out_container .callout_boxes 
+{
+	width: 980px;
+	height: 280px;
+	margin:0 auto;
+	position: relative;
+}
+
+#callout_out_container .callout_boxes .callout_box 
+{
+	height: 240px;
+	width: 240px;
+	-moz-box-shadow: 0px 0px 20px rgba(0,0,0,.50);
+	-webkit-box-shadow: 0px 0px 20px rgba(0,0,0,.50);
+/*	bottom: 10px;*/
+	position: absolute;
+
+	right: 10px;
+	z-index: 1;
+}
+
+
+#callout_out_container .callout_boxes .callout_box.expanded
+{
+	/*width: 406px;*/
+	z-index: 2;
+}
+
+#callout_out_container .callout_boxes .callout_box[data-box="1"]
+{
+	right: 22px;
+}
+
+#callout_out_container .callout_boxes .callout_box[data-box="2"]
+{
+	left: 340px;
+}
+
+#callout_out_container .callout_boxes .callout_box[data-box="3"]
+{
+	left: 12px;
+}
+
+#callout_out_container .callout_boxes .callout_box[data-box="4"]
+{
+	left: 10px;
+}
+
+
+#callout_out_container .callout_boxes .callout_box .header 
+{
+	cursor: pointer;
+}
+
+#callout_out_container .callout_boxes .callout_box .content 
+{
+	min-height: 199px;
+}
+
+#callout_out_container .callout_boxes .callout_box .content .normal
+{
+	height: 180px;
+}
+
+#callout_out_container .callout_boxes .callout_box .content .expanded
+{
+/*	padding: 0px 25px;*/
+}
+
+#callout_out_container .callout_boxes .callout_box .content .expanded p
+{
+	font-size: 16px;
+	color: #666;
+	line-height: 20px;
+}
+
+.callout_box 
+{
+	overflow: hidden;
+	width: 201px;
+}
+
+.callout_box .header 
+{
+	background: url("images/ca_sprite.png") 0 0 repeat-x;
+	color: #fff;
+	overflow: hidden;
+	position: relative;
+	text-align: left;
+}
+
+.callout_box .header .arrow
+{
+	background: transparent url('images/angled_arrow_up.png') top right no-repeat;
+	width: 12px;
+	height: 12px;
+	position: absolute;
+	top: 8px;
+	right: 8px;
+}
+
+.callout_box .header .arrow.expanded
+{
+	background: url('images/angled_arrow_down.png') top right no-repeat;
+}
+
+.callout_box .header a 
+{
+/*	background: url('icon_sprite.png') no-repeat 100% -155px;*/
+	color: #fff;
+	display: block;
+	padding: 0 15px 0 0;
+}
+
+.callout_box .header a:link,
+.callout_box .header a:visited,
+.callout_box .header a:hover 
+{
+	color: #fff;
+	text-decoration: none;
+}
+
+.callout_box .content 
+{
+	background-color: white;
+	background-color: rgba(255,255,255,0.95);
+	border: 1px solid #666;
+	border-top: 0 none;
+	font-size: 13px;
+	height: auto;
+	overflow: hidden;
+	padding: 15px 15px 10px;
+	position: relative;
+}
+
+.callout_box .content cite 
+{
+	color: #666;
+	display: block;
+	margin: .5em 0 0;
+}
+
+.callout_box .content p 
+{
+	margin: 0 0 .5em;
+	text-align: left;
+}
+
+.callout_box .icon 
+{
+	margin: 0px auto 6px auto;
+	display: block;
+}
+
+.callout_box.about_equinix .normal .icon
+{
+        margin-top: 0px;
+        margin-bottom: 6px;
+        position: relative;
+        left: -11px;
+}
+
+.callout_box.interconnection .normal .icon
+{
+	margin-top: 14px;
+	margin-bottom: 20px;
+}
+
+.callout_box.data_centers .normal .icon
+{
+	margin-top: 0px;
+	margin-bottom: 6px;
+	position: relative;
+	left: -11px;
+}
+
+.callout_box.bulletin .normal .icon
+{
+	margin-top: 0px;
+	margin-bottom: 6px;
+	position: relative;
+	left: -11px;
+}
+
+.callout_box .expanded
+{
+	position: relative;
+}
+
+.callout_box.about_equinix .expanded .icon
+{
+	margin-top: 14px;
+	margin-bottom: 20px;
+	position: relative;
+	left: -17px;
+}
+
+.callout_box.interconnection .expanded .icon
+{
+	margin-top: 14px;
+	margin-bottom: 20px;
+}
+
+.callout_box.data_centers .expanded .icon
+{
+	margin-top: 10px;
+	margin-bottom: 16px;
+	position: relative;
+	left:  -32px;
+}
+
+.callout_box.bulletin .expanded .icon
+{
+	position: relative;
+	top: -7px;
+	left: -35px;
+/*	background: url("../../img/v2/callout_boxes/expanded_bulletin.png") bottom right no-repeat;*/
+	width: 448px;
+	height: 179px;
+}
+
+.callout_box .expanded .button_link_invisible {
+	width: 400px;
+	height: 180px;
+	position: absolute;
+	top: -10px;
+	left: -10px;
+	z-index: 1;
+	cursor: pointer;
+	display: block;
+}
+
+.callout_box .expanded .button_link {
+	margin: 16px 0px;
+	text-align: center;
+}
+
+.callout_box.data_centers .expanded .plus {
+	position: absolute;
+	top: 134px;
+	left: 0px;
+	background-color: #CCCCCC;
+	padding: 4px 6px;
+	margin: 0px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	width: 17px;
+}
+
+.callout_box.data_centers .expanded .plus .plus_icon {
+/*	background: url("../../img/v2/callout_boxes/plus.png") no-repeat;*/
+	padding: 0px;
+	margin: 0px;
+	float: left;
+	width: 16px;
+	height: 20px;
+	position: relative;
+	top: 2px;
+}
+
+.callout_box.data_centers .expanded .plus .label {
+	float: right;
+	color: red;
+	font-weight: bold;
+	font-size: 13px;
+	padding-left: 5px;
+	position: relative;
+	top: 1px;
+}

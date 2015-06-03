@@ -1,0 +1,243 @@
+/*Start@@ New design css*/
+
+.app.newDesign .thin_ybg{
+	background: #cc600c;
+	height: 2px;
+}
+
+.app.newDesign .ca .header .hdr_links{ }
+.app.newDesign .livechat{ 
+	/*position: absolute; */
+	margin: -10px 0 0 4px; 
+	right: 0;
+	display: inline-block;
+	background: #cc600c;
+	padding: 6px 10px;
+	width: 120px;
+	-moz-border-radius: 0 0 4px 4px;
+	-webkit-border-radius: 0 0 4px 4px;
+	border-radius: 0 0 4px 4px;
+	font-size: 15px;
+	text-transform: uppercase;
+	cursor: default;
+
+}
+.app.newDesign .ca .header, .app.newDesign .ca .header .sub_hdr{ height: 84px}
+.app.newDesign .wmn_ico{ 
+	background: url(images/women.png) no-repeat;
+	width: 20px;
+	height: 25px;
+	float: right;
+	margin-top: -4px;
+}
+.app.newDesign .upd_hdr_src{ margin-top: 10px}
+.app.newDesign .search_fld .search{ background: #013c78; border: 1px solid #194e85 !important; padding-left: 10px; margin-left: 0}
+.app.newDesign .bncr{ 
+	width: 15px; 
+	height: 14px; 
+	background: url(images/src_new.png) no-repeat; 
+	position: absolute; 
+	right: 8px;
+	top: 8px;
+	padding-left: 10px;
+}
+.app .ovr_hdn{ overflow: hidden;}
+.app.newDesign .org_btn{ 
+	background: url(images/or_btn.png) repeat-x;
+	height: 35px;
+	padding:0 10px;
+	margin-right: 10px;
+	cursor: default;
+	font-size: 14px;
+	display: inline-block;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+}
+.app .userkey{ 
+	background: url(images/userkey.png) no-repeat; 
+	width: 24px;  
+	height: 24px; 
+	display: inline-block;
+	position: relative;
+	top: 5px;
+	margin-right: 6px
+}
+.app.newDesign .search_fld { margin-top: 3px}
+.app.newDesign .nav {
+	border-top: 1px solid #437db8;
+	border-bottom: 2px solid #013C78;
+}
+.app.newDesign .left_ca .box_update .box{
+	padding:0;
+	margin-top: 8px;
+	margin-left: 7px;
+	box-shadow: none;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+}
+.app .rad_four{
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+}
+.app.newDesign .left_ca .box_update .box.one{ border: 1px solid #f37619; margin-left: 0 }
+.app.newDesign .left_ca .box_update .box.three{ border: 1px solid #72a022;  }
+.app.newDesign .left_ca .box_update .box.two{ border: 1px solid #223fa0; }
+.app.newDesign .left_ca .box_update .box .row_hdr,.app.newDesign .stock_hdr{ 
+	text-align: left; 
+	padding: 0; 
+	padding-left: 10px; 
+	height: 33px;
+ 	line-height: 32px;
+ 	-moz-border-radius: 4px 4px 0 0;
+ 	-webkit-border-radius: 4px 4px 0 0;
+ 	border-radius: 4px 4px 0 0;
+ }
+.app.newDesign .left_ca .box_update .row_hdr{ border-top: 1px solid #fefefe; border-bottom: 0}
+.app.newDesign .left_ca .box_update .box.one .row_hdr{ background: url(images/org_bg.png) repeat-x}
+.app.newDesign .left_ca .box_update .box.two .row_hdr{ background: url(images/bl.png) repeat-x}
+.app.newDesign .left_ca .box_update .box.three .row_hdr{ background: url(images/grn.png) repeat-x}
+.app.newDesign .left_ca .box_update .box .row_hdr.economica_bold, .app.newDesign .stock_hdr{ font-family: inherit; font-size: 14px; font-weight: bold}
+.app.newDesign .left_ca .sliders.mt10.ml5{ margin-left: 0}
+.app.newDesign .slider-wrapper #slider img{ height: 242px !important}
+.app.newDesign .theme-default .nivoSlider{ margin-bottom: 0}
+.app.newDesign .theme-default .nivo-controlNav{ background: url(images/blackop.png) repeat;}
+.app.newDesign .theme-default .nivo-controlNav a{ background: url(images/bullets_new.png) no-repeat 0 4px;}
+.app.newDesign .theme-default .nivo-controlNav a.active{ background-position:  0 -22px}
+.app.newDesign .theme-default .nivo-caption a{ border-bottom: 0}
+.app.newDesign .left_ca .box ul{ background: 0}
+.app.newDesign .left_ca .box_update .box li { padding: 0; padding-left: 10px}
+.app.newDesign .left_ca .box li a.fl, .app.newDesign .left_ca .box li a.fr, .app.newDesign .left_ca .box li a{ 
+	float: none !important; 
+	display: block;
+	width: auto !important;
+	margin: 4px 0 8px;
+	padding-left: 16px;
+	font-family: inherit;
+	font-size: 13px;
+	color: #323232
+}
+.app.newDesign .left_ca .box li a{ 
+	background: url(images/or_rd.png) no-repeat;
+	background-position: 0 2px;
+	color: #323232
+}
+.app.newDesign .left_ca .box.three li a{ background: url(images/gr_rd.png) no-repeat 0 2px;}
+.app.newDesign .left_ca .box.two li a{ background: url(images/bl_rd.png) no-repeat 0 2px;}
+.app.newDesign .stocks_list_nwwrap{ 
+	border: 1px solid #628624;
+	width: 246px
+}
+.app.newDesign .stock_hdr{background: url(images/dg_gr.png) repeat-x; color: #fff; padding-left: 6px}
+.app.newDesign .eurodollar{ 
+	background: url(images/eurodollar.png) no-repeat; 
+	width: 35px;
+	height: 23px; 
+	display: inline-block; 
+	position: relative;
+	top: 6px; 
+	margin-right: 10px
+}
+.app.newDesign .new_table_stock{ }
+.app.newDesign .new_table_stock td, .app.newDesign .new_table_stock th{ 
+	padding: 12px 8px; 
+	color: #323232;
+	border-bottom: 1px solid #eef0ec; 
+	border-right: 1px solid #eef0ec 
+}
+.app.newDesign .new_table_stock thead th{ background: #fbfbfb; color: #747474; padding: 8px; }
+.app.newDesign .new_table_stock tr.alt td{ background: #fffcf2}
+.app.newDesign .new_table_stock .last{ border-right: 0}
+.app.newDesign .boxWrap{ width: 230px; margin-left: 10px}
+.app.newDesign .boxWrap.lft_one{ margin-left: 0} 
+.app.newDesign .new_lyt_news{ margin-left: 0 !important; padding-top: 10px}
+.app.newDesign .new_lyt_news_hdrwht{ background: url(images/wtgy.png) repeat-x; height: 17px; border-top: 1px solid #fff }
+.app.newDesign .new_lyt_news_hdr .inner{ 
+	width: 150px; 
+	height: 28px;
+	line-height: 28px;
+	border-bottom: 1px solid #fff;
+	color: #fff;
+	font-size: 14px;
+	padding-left: 10px;
+	border-radius: 4px 4px 0 0;
+}
+.app.newDesign .new_lyt_news_hdr.green_home .new_lyt_news_hdrwht{ border-top: 1px solid #608c15;  }
+.app.newDesign .new_lyt_news_hdr.green_home .inner{background: #608c15;}
+.app.newDesign .new_lyt_news_hdr.orange_home .new_lyt_news_hdrwht{ border-top: 1px solid #cd5414;  }
+.app.newDesign .new_lyt_news_hdr.orange_home .inner{background: #e67703;}
+.app.newDesign .new_lyt_news_hdr.blue_home .new_lyt_news_hdrwht{ border-top: 1px solid #2643a2;  }
+.app.newDesign .new_lyt_news_hdr.blue_home .inner{background: #2643a2;}
+.app.newDesign .boxWrap .pl10{ padding-left: 0; color: #323232; font-size: 13px; margin-bottom: 10px; display: block}
+.app.newDesign .boxWrap .tdu.news_content{ margin-bottom: 10px; text-decoration: none !important;}
+.app.newDesign .boxWrap .tdu.news_content a{ color: #091e63; font-size: 14px; line-height: 20px; text-decoration: none !important;}
+.app.newDesign .boxWrap .usr_txt {color:#777}
+.app.newDesign .news_wrp{ border-bottom: 1px solid #5c8b0d}
+.app.newDesign .prom_wrp{ border-bottom: 1px solid #2643a2}
+.app.newDesign .whatforextext{ border-bottom: 1px solid #e67703}
+
+.app.newDesign .new_view_all, .app.newDesign .prm_view_all,.app.newDesign .new_read_more{ 
+	margin: 4px 0 0 2px; 
+	padding-left: 16px;
+	background: url(images/gr_rd.png) no-repeat 0 2px;
+}
+.app.newDesign .prm_view_all{background: url(images/bl_rd.png) no-repeat 0 2px; }
+.app.newDesign .new_read_more{background: url(images/or_rd.png) no-repeat 0 2px; }
+.app.newDesign .new_view_all a{color: #87aa4e}
+.app.newDesign .prm_view_all a{color: #3450a8}
+.app.newDesign .new_read_more a{color: #c7661a}
+
+
+
+.app.newDesign div.marquee-with-options span.symbol img{position: relative;top: -2px;}
+.app.newDesign .marquee-with-options{ padding: 16px 10px; border: 1px solid #E4E4E4; margin-top: 20px;color: blue;
+font-weight: bold;
+box-shadow: 0 1px 11px #E9E9E9;}
+.app.newDesign .trade_img.type2{ 
+	box-shadow: none !important;
+	border: 0;
+	background: 0 none
+}
+
+.app.newDesign .ad_1{ margin:10px 0 10px 10px;}
+.app.newDesign .ad_2{ margin: 0 0 10px 10px}
+.app.newDesign .whatforextext{ color: #323232; font-size: 14px; line-height: 20px; height: 329px}
+
+.app.newDesign .news_wrp, .app.newDesign .prom_wrp{height: 329px}
+
+
+.app .box_central{ border: 1px solid #628624; margin-left: 10px; width: 246px; font-size: 13px}
+.app .box_central_header{ 
+	padding: 0 11px;
+	line-height: 26px;
+	height: 30px;
+	background: url(images/dg_gr.png) repeat;
+	font-family:"arial",helevetica,sans-serif;
+	font-size:14px;
+	color:white;
+	font-weight: bold
+}
+.app .box_central_content{
+	padding: 6px 0;
+	height:150px;
+	overflow:auto;
+}
+.app .box_central th,.app .box_central td{ padding: 6px 2px}
+.app .box_central th{ 
+	font-weight: bold; 
+	border-bottom: 1px solid #111; 
+	text-align: center;
+	border-bottom: 2px solid #BABABA;
+	font-weight: bold;
+	color: #333;
+}
+.app .box_central td.last{ text-align: right;}
+.app .box_central  td{border-bottom: 1px solid #DADADA;}
+.app .box_central tr:hover td{background-color: #EDF4FA;
+border-top: 1px solid #DADADA;
+border-bottom: 1px solid #DADADA;}
+.app .box_central tr.trlast td{ border-bottom: 0}
+
+/*End@@ New design css* / 

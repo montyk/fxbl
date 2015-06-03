@@ -1,0 +1,12 @@
+.widgets_area{
+	padding: 15px;
+}
+#widget_menu.top{
+	position: absolute;
+}
+.back_widgets{
+	cursor: pointer;
+}
+.back_widgets i{
+	padding-right: 3px;
+}

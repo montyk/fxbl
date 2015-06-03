@@ -1,0 +1,107 @@
+.coverd {
+border:3px double #F3F3F3;
+font-family:Arial,Helvetica,sans-serif;
+font-size:12px;
+font-size-adjust:none;
+font-stretch:normal;
+font-style:normal;
+font-variant:normal;
+font-weight:normal;
+line-height:normal;
+margin-top:10px;
+width:600px;
+}
+.coverd11 {
+border:3px double #F3F3F3;
+font-family:Arial,Helvetica,sans-serif;
+font-size:12px;
+font-size-adjust:none;
+font-stretch:normal;
+font-style:normal;
+font-variant:normal;
+font-weight:normal;
+line-height:normal;
+margin-top:10px;
+}
+.add_headings{
+	         font-family:Arial, Helvetica, sans-serif;
+			 font-size:20px;
+			 font-style:normal;
+			 font-weight:normal;
+			 font-size-adjust:none;
+			font-variant:normal;
+			line-height:normal;			
+			color:#333333;
+			 }
+.welcometoadmin{
+                font-family:Georgia;
+				font-size:30px;
+				font-style:normal;
+				font-weight:normal;
+				color:#0066CC;
+				}
+.lastlogin{
+           font-family:Georgia;
+		   font-size:15px;
+		   color:#333333;
+		   font-weight:normal;
+		   text-decoration:none;
+		   padding-left:180px;
+		   }
+/*left side vertical navigation menu*/
+
+.arrowgreen{
+	width: 260px; /*width of menu*/
+	margin-right:10px;
+	border:1px solid #d3d1d4;
+	border-bottom:0
+	/*border-style: solid solid none solid;
+	border-color: #94AA74;
+	border-size: 1px;
+	border-width: 1px;*/
+}
+
+.arrowgreen ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+	
+.arrowgreen li a{
+	font: bold 12px Verdana, Arial, Helvetica, sans-serif;
+	display: block;
+	background: transparent url(../images/admin_images/arrowblue.gif) 100% 0;
+  height: 24px; /*Set to height of bg image- padding within link (ie: 32px - 4px - 4px)*/
+	padding: 4px 0 4px 10px;
+	line-height: 24px; /*Set line-height of bg image- padding within link (ie: 32px - 4px - 4px)*/
+	text-decoration: none;
+	background:#eeeeee;
+	border-bottom:1px dotted #c9c9c9;
+	color:#000
+}	
+	
+.arrowgreen li a:link, .arrowgreen li a:visited {
+	color:#000;
+}
+
+.arrowgreen li a:hover{
+	color: #26370A;
+	background-position: 100% -32px;
+}
+
+	
+.arrowgreen li a.selected{
+	color: #26370A;
+	background-position: 100% -64px;
+	background:#2b60ac;
+	color:#fff;
+}
+.text12{
+        font-family:Tahoma;
+		font-size:12px;
+		color:#006699;
+		font-weight:600;
+		text-decoration:none;
+		font-style:normal;
+		line-height:16px;
+       }

@@ -1,0 +1,430 @@
+/* CSS Resets */
+.app {background: url(../images/fabric-patterns-03.png) repeat}
+/*.app { background: url(../images/whttex.jpg) repeat;}*/
+.app .header{
+	height: 42px;
+	background: url(../images/noise.png) #414141 repeat;
+	border-bottom: 1px solid #1D1D1D;
+	position: fixed;
+	left: 0;
+	right: 0;
+	color: #fff;
+    z-index: 100;
+}
+.app .logo_inner{ 
+	left: 10px; 
+	top: 6px; 
+	background: url(../images/logo.png) no-repeat; 
+	width: 143px; 
+	height: 32px
+}
+.app .app_title{ 
+	color: #FFF;
+	font-size: 24px;
+	left: 50px;
+	top: 14px;
+	text-shadow: 0 1px 0 #444;
+}
+.app .app_interaction{ right: 0; }
+.app .app_interaction a{ 
+	padding: 14px 10px 10px;
+	border-left: 1px solid #68707C;
+	border-right: 1px solid #1C2024;
+	color: #dedede;
+	cursor: pointer;
+}
+.app .app_interaction a:hover{ color: #fff}
+.app .app_interaction a:active{ color: #f5f5f5}
+.app .app_interaction a.first{ border-left: 0}
+.app .app_interaction a.last{ border-right: 0}
+.app .app_interaction a.logout{ 
+	background: url(../images/logout.png) no-repeat 0 0;
+	background-position: 12px 14px;
+	width: 16px;
+	height: 16px;
+	margin-top: 2px;
+	text-indent: -9999px
+}
+.app .app_interaction a.logout:hover{background-position: 12px -36px;}
+.app .app_interaction a.logout:active{background-position: 12px -86px;}
+.app .app_interaction a.logged_user{ padding-left: 30px}
+.app .icon{ 
+	background: url(../images/bgic.png) no-repeat;
+	display: inline-block;
+}
+.app .usr_ico{
+	width: 16px;
+	height: 16px;
+	left: 10px
+}
+.app .app_interaction a.logged_user:hover .usr_ico{ background-position:  0 -100px}
+.app .contentarea{ top: 43px;}
+.app .leftNav{ 
+	width: 240px; 
+	top: 43px; 
+	bottom: 0; 
+	left: 0;
+	overflow: auto;
+	border-right: 1px solid #EEEEEE;
+	padding-bottom: 40px
+}
+.app .leftNav li a{ 
+	margin-bottom: 10px; 
+	display: block;
+	/*color: #B3E4FF; */
+	color: #dedede; 
+}
+.app .leftNav li a:hover{ /*#7ED1FF;*/ color: #fff}
+.app .leftNav li a:active{ /*color: #C5EAFF;*/ color: #eee}
+.app .leftNav li a.active{ color: #F1D169; font-weight: bold;}
+.app .leftNav li a.collapse{ background: url(../images/down.png) no-repeat 180px 0}
+.app .leftNav li a.right-arrow{ background: url(../images/right-arrow.png) no-repeat 180px 0}
+.app .nav_emt{ padding: 20px 0 0 20px}
+.app .lft_sub_menu{ margin-left: 20px}
+.app .rightNav{ margin-left: 240px; color: #fff; padding-bottom: 40px}
+.app .rightNav .rightNav_head{
+	background: url(../images/noise.png) #707379 repeat;
+	height: 28px;
+	color: #fff;
+	font-size: 16px;
+	text-align: center;
+	font-weight: bold;
+	padding-top: 10px;
+	border-bottom: 1px solid #979797;
+	text-shadow: 0 1px 0 #111;
+}
+.app .rightNav .rightNav_cnt { padding: 20px 20px 0 20px}
+.app #footer{ 
+	background: url(../images/transparent.png)  repeat;
+	bottom: 0;
+	top: auto;
+	left: 0;
+	right:0;
+	height: 30px;
+	color: #fff;
+	padding:10px 10px 0;
+
+}
+.app #footer a{margin-right: 10px; color: #ddd}
+.app #footer a:hover{ color: #fff}
+.app #footer a:active{ color: #999}
+/*Start@@ Alert css*/
+
+.app .alert_info {
+	display: block;
+	width: 95%;
+	margin: 20px 3% 0 3%;
+	margin-top: 20px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background: #B5E5EF url(../images/icn_alert_info.png) no-repeat;
+	background-position: 10px 10px;
+	border: 1px solid #77BACE;
+	color: #082B33;
+	padding: 10px 0;
+	text-indent: 40px;
+	font-size: 14px;
+}
+
+.app .alert_warning {
+	display: block;
+	width: 95%;
+	margin: 20px 3% 0 3%;
+	margin-top: 20px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background: #F5F3BA url(../images/icn_alert_warning.png) no-repeat;
+	background-position: 10px 10px;
+	border: 1px solid #C7A20D;
+	color: #796616;
+	padding: 10px 0;
+	text-indent: 40px;
+	font-size: 14px;
+}
+
+.app .alert_error {
+	display: block;
+	width: 95%;
+	margin: 20px 3% 0 3%;
+	margin-top: 20px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background: #F3D9D9 url(../images/icn_alert_error.png) no-repeat;
+	background-position: 10px 10px;
+	border: 1px solid #D20009;
+	color: #7B040F;
+	padding: 10px 0;
+	text-indent: 40px;
+	font-size: 14px;
+}
+
+.app .alert_success {
+	display: block;
+	width: 95%;
+	margin: 20px 3% 0 3%;
+	margin-top: 20px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background: #E2F6C5 url(../images/icn_alert_success.png) no-repeat;
+	background-position: 10px 10px;
+	border: 1px solid #79C20D;
+	color: #32510F;
+	padding: 10px 0;
+	text-indent: 40px;
+	font-size: 14px;
+}
+
+.app .reset_alert .alert_info, .app .reset_alert .alert_warning, 
+.app .reset_alert .alert_error, .app .reset_alert .alert_success { 
+        margin-bottom: 2% !important;
+        margin-left: 0 !important
+}
+
+/*End@@ Alert css*/
+
+
+/*Start@@ Forms css*/
+
+.app div.error{ 
+    clear: both;
+    color:#bf1c12; 
+    font-size: 13px !important;
+    margin: 2px 0 0;
+    text-shadow:0 0 2px #F16181
+}
+.app label.error{ 
+    clear: both;
+    color:#bf1c12; 
+    font-size: 13px !important;
+    margin: 2px 0 0;
+    text-shadow:0 0 2px #F16181
+}
+
+/*End@@ Forms css*/
+
+/*start@@code for the Table*/
+
+.app table {
+	width: 100%;
+	border-collapse: separate;
+}
+
+.app td {
+	border-top: 1px solid #f6f6f6;
+	border-bottom: 1px solid #dedede;
+	text-align: center;
+	padding: 5px 2px;
+	font-size: 12px;
+	color: #333;
+	vertical-align: middle;
+}
+
+.app tr:last-child td { border-bottom: none; }
+
+.app table.data {
+	border: 1px solid #cbcbcb;
+	border-radius: 5px;
+}
+
+.app table.data td, .app table.data th {
+	border: 1px solid #cbcbcb;
+	border-width: 0 1px 1px 0;
+	background: #fbfbfb;
+	font-size: 12px;
+	color: #2f2f2f;
+	vertical-align: middle;
+	text-align: left;
+	padding: 7px;
+	line-height: 1.55;
+	height: auto;
+	border-color: #b2b2b2;
+}
+
+.app table.data th {
+	color: #2f2f2f;
+	font-weight: bold;
+	font-size: 14px;
+	text-align: center;
+	background: #f7f7f7 url(../images/th-grad2.png) 0 bottom repeat-x;
+}
+.app table.data thead tr .first { border-radius: 5px 0 0 0; }
+.app table.data thead tr :first-child { border-radius: 5px 0 0 0; }
+.app table.data thead tr .last { border-radius: 0 5px 0 0; }
+.app table.data thead tr :last-child { border-radius: 0 5px 0 0; }
+.app table.data thead tr .first.last { border-radius: 5px 5px 0 0; }
+.app table.data thead tr :first-child:last-child { border-radius: 5px 5px 0 0; }
+.app table.data tbody tr.last .first { border-radius: 0 0 0 5px; }
+.app table.data tbody tr:last-child :first-child { border-radius: 0 0 0 5px; }
+.app table.data tbody tr.last .last { border-radius: 0 0 5px 0; }
+.app table.data tbody tr:last-child :last-child { border-radius: 0 0 5px 0; }
+.app table.data tbody tr.last .first.last { border-radius: 0 0 5px 5px; }
+.app table.data tbody tr:last-child :first-child:last-child { border-radius: 0 0 5px 5px; }
+.app table.data td.last, .app table.data th.last { border-right: 0; }
+.app table.data td:last-child, .app table.data th:last-child { border-right: 0; }
+.app table.data tbody tr.last td, .app table.data tbody tr.last th { border-bottom: 0; }
+.app table.data tbody tr:last-child td, .app table.data tbody tr:last-child th { border-bottom: 0; }
+
+.app table.datagrid th {
+	height: auto;
+	border-color: #B2B2B2;
+}
+.app table.datagrid th {
+	font-size: 12px;
+	color: #2F2F2F;
+	background: #C6C6C6 url(../images/th-grad2.png) repeat-x;
+}
+
+.app .grid-msg {
+	width: 250px;
+	color: #666;
+	text-align: center;
+	margin: 23px auto 17px;
+	padding: 13px 6px;
+	border: 1px solid #E9E8E8;
+	font-weight: bold;
+	background: #F7F7F7;
+	-moz-border-radius: 0 0 5px 5px;
+	-webkit-border-radius: 0 0 5px 5px;
+	border-radius: 0 0 5px 5px;
+}
+
+/*End@@code for the Table*/
+.app .hdr1, .app .hdr2{ color: #FFEDB2}
+.app .hdr1{ font-size: 16px}
+.app .hdr2{ font-size: 14px}
+.app .sum_box{
+	background: #FFF;
+	padding: 10px 20px 20px;
+	border: 1px solid #ddd;
+	color: #727272; 
+}
+.app .sum_box .box{ width: 300px; margin-top: 10px}
+.app .sum_box div div{ font-size: 16px;  }
+.app .sum_box div div.rgt_fld{ color: #b8322e; margin-top: 4px; font-weight: bold;}
+.app .box_placeholder a{ margin-top: 2px; cursor: default; font-weight: bold;}
+.app .box_place{ 
+	background: #fff; 
+	padding:10px; 
+	border: 1px solid #ddd; 
+	width: 400px;
+	color: #888
+}
+.app .chn_img{background: url(../images/input-netbanx.png) #fff no-repeat 100% 4px;}
+.app .visa{background: url(../images/visa.png) #fff no-repeat 100% 10px;}
+.app .skrill{background: url(../images/skrill.png) #fff no-repeat 100% 8px;}
+.app .neteller{background: url(../images/neteller.png) #fff no-repeat 100% 10px;}
+.app .bankwire{background: url(../images/bankwire.png) #fff no-repeat 100% 10px;}
+.app .moneygram{background: url(../images/moneygram.png) #fff no-repeat 100% 8px;}
+.app .wstun{background: url(../images/westernunion.png) #fff no-repeat 100% 6px;}
+.app .exchanger{background: url(../images/exchanger.png) #fff no-repeat 100% 6px;}
+.app .help_text{ color: #CACACA}
+
+.app .fund_date ul li {
+	float: left;
+	margin: 5px 7px;
+	background-image: none;
+}
+.app .fund_date ul li.butadj{ margin: 0 7px}
+.app .fund_date .lbl {
+	padding-top: 4px;
+	margin-top: 5px;
+}
+.app .fund_date input.ip { width: 120px; }
+.app .plus{
+    font-weight: bold;
+    font-size: 18px;
+    position: relative;
+    top: 2px;
+}
+
+/* START @@ Progress bar Strip */
+.progress {
+    overflow: hidden;
+    height: 20px;
+    margin-bottom: 20px;
+    background-color: #f7f7f7;
+    background-image: -moz-linear-gradient(top, #f5f5f5, #f9f9f9);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f5f5f5), to(#f9f9f9));
+    background-image: -webkit-linear-gradient(top, #f5f5f5, #f9f9f9);
+    background-image: -o-linear-gradient(top, #f5f5f5, #f9f9f9);
+    background-image: linear-gradient(to bottom, #f5f5f5, #f9f9f9);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff5f5f5', endColorstr='#fff9f9f9', GradientType=0);
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+
+.progress-success .bar, .progress .bar-success {
+    width: 0%;
+    height: 100%;
+    color: #ffffff;
+    float: left;
+    font-size: 12px;
+    text-align: center;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    background-color: #62c462;
+    background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-repeat: repeat-x;
+    
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff62c462', endColorstr='#ff57a957', GradientType=0);
+    
+    -webkit-background-size: 40px 40px;
+    -moz-background-size: 40px 40px;
+    -o-background-size: 40px 40px;
+    background-size: 40px 40px;
+
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: width 0.6s ease;
+    -moz-transition: width 0.6s ease;
+    -o-transition: width 0.6s ease;
+    transition: width 0.6s ease;
+}
+/* END @@ Progress bar Strip */
+
+.app input.ip{ width: 300px; }
+.app select.sl_bx{ width: 310px; }
+.app textarea.t_ar{ width: 300px; }
+
+/*Start@@New changes*/
+.app.stf_joinform .lft_stflbl, .app.stf_joinform .rgt_stflbl{ float: left; font-size: 13px;}
+.app.stf_joinform .lft_stflbl{ width: 140px;  margin-right: 10px; }
+.app.stf_joinform .rgt_stflbl{ color: #111}
+.app.mywallet_update .flt_panel .left_fld, .app.getmanager_update .flt_panel .left_fld{ width: 70px; text-align: right;}
+.app.mywallet_update .flt_panel .right_fld, .app.getmanager_update .flt_panel .right_fld{ margin-left: 80px}
+.app.mywallet_update.new_mywallet_update .flt_panel .left_fld{ width: 120px}
+.app.mywallet_update.new_mywallet_update .flt_panel .right_fld{ margin-left: 130px}
+.app.mywallet_update a.nblu_btn.japply_filter, .app.getmanager_update a.nblu_btn.japply_filter {margin-left: 41px;margin-top: 0;}
+
+.app.pamm_man_update .lft_stflbl, .app.pamm_man_update .rgt_stflbl{ float: left; font-size: 13px;}
+.app.pamm_man_update .lft_stflbl{ width: 200px; margin:4px 10px 0 0;  }
+.app .star{ color: #D80C3D;font-weight: bold; margin-right: 2px}
+.app.getmanager_update .col_white, .app.mywallet_update .col_white{ color: #fff}
+.app .up_alert_error{ margin-left: 0; margin-right: 0; width: 100%}
+
+.app.getmanager_update .get_updatemanger .second .left_fld{ width: 140px}
+.app.getmanager_update .get_updatemanger .second .right_fld{ margin-left: 150px}
+
+.getmanager_update .ui-jqgrid tr.jqgrow.ui-state-hover a{color: #000}
+
+
+
+/*End@@New changes*/

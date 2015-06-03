@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+
+.arrowgreen{ margin:0;width:auto; height:40px; border:0; background:#5387b6}
+.arrowgreen ul li{ float:left; }
+.arrowgreen ul li a{ padding:0 10px;height:40px; background:0; color:#fff; border:0; line-height:40px;border-left:1px solid #82a5c5}
+.arrowgreen li a:link, .arrowgreen li a:visited{ color:#fff}
+.arrowgreen li a.selected {
+    background: #3E719E;
+}
+.smalllogo{ 
+	background:url(../images/s_logo.png) no-repeat;
+	width:120px;
+	height:40px;
+	margin:0 8px 
+}
+.topheader{ display:block}
+.topheader{
+	background:#265988; 
+	height:34px;
+	color:#9abbdc
+}
+.topheader .tphedcnt{ padding:8px 0 0}
+.topheader .tphedcnt a { color:#fff}
+.tablelogoutborder,.tablenew_conthed,
+.ui-jqgrid .ui-jqgrid-titlebar-close span{ display:none}
+.jqgrid_wrap{ margin:20px}
+.app .content{ padding:0}
+.ui-widget-header{
+	background:url(../images/grdhed.png) repeat-x;
+}
+.ui-th-column, .ui-jqgrid .ui-jqgrid-htable th.ui-th-column{ 
+	color:#4f87b6;
+	background:#e7f4fc;
+	height:50px
+}
+.ui-widget-content{border:1px solid #929292}
+.ui-jqgrid tr.jqgrow td{ padding:8px; border-color:#D2D2D2}
+.ui-jqgrid tr.jqgrow td:last-child{  border-right:1px solid #fff !important}
+.ui-jqgrid tr.jqgrow td:first-child{ border-left:1px solid #fff !important}
+
+.ui-state-default.ui-jqgrid-hdiv{ border-bottom:0}
+
+.jqgrow.ui-state-hover{background:#fcf4cc;}
+.jqgrow.ui-state-highlight {background:#C8DCEB; border:0 }
+.ui-jqgrid tr.jqgrow.ui-state-highlight td{ border-color: #999}
+.ui-jqgrid .ui-jqgrid-titlebar{ border:0; height:40px; line-height:34px}
+.ui-jqgrid-bdiv{ min-height:300px}
+.ui-jqgrid .ui-pg-button:hover {
+    padding: 1px;
+    border: 0;
+}
+.ui-jqgrid .loading{
+	background:url(../images/load32.gif) no-repeat;
+	text-indent:-90000px;
+	border:0 !important;
+	padding:0;
+	margin:-16px 0 0 -16px;
+	width:36px;
+	height:36px;
+	left:50%;
+	top:200px
+}
+.colwhite{ color:#fff}
+
+.header{ display:none}
