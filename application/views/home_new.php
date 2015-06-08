@@ -52,107 +52,52 @@
             
         	  
             <div class="slide-controls-wrapper">
-                        <div class="slide-controls" style="display: block;">
-                            <!-- **column - Starts** -->
+                           <?php if(!empty($home_pages_sections[9]->content)){ echo html_entity_decode($home_pages_sections[9]->content); } ?>
+	
+                        <!--<div class="slide-controls" style="display: block;">
+                       
                             <div class="column dt-sc-one-fourth no-space first">
-                                <!-- **dt-sc-ico-content type6 - Starts** -->
                                 <div class="dt-sc-ico-content type8">
                                     
                                     <p>Get 30% of Brokerage Withdrawal over Trading Volume * </p>
-                                </div> <!-- **dt-sc-ico-content type6 - Ends** -->
-                            </div> <!-- **column - Ends** -->
-                            <!-- **column - Starts** -->
+                                </div> 
+                            </div>
+                  
                             <div class="column dt-sc-one-fourth no-space">
-                                <!-- **dt-sc-ico-content type6 - Starts** -->
+                               
                                 <div class="dt-sc-ico-content type8">
                                  
                                     <p>Get upto 100% Bonus over Initial <br />
 Investment * </p>
-                                </div> <!-- **dt-sc-ico-content type6 - Ends** -->
-                            </div> <!-- **column - Ends** -->
-                            <!-- **column - Starts** -->
+                                </div> 
+                            </div>
                             <div class="column dt-sc-one-fourth no-space">
-                                <!-- **dt-sc-ico-content type6 - Starts** -->
                                 <div class="dt-sc-ico-content type8">
                                  
                                     <p>No Other Charges apart from Brokerage is our Promise</p>
-                                </div> <!-- **dt-sc-ico-content type6 - Ends** -->
-                            </div> <!-- **column - Ends** -->
-                            <!-- **column - Starts** -->
+                                </div> 
+                            </div>
                             <div class="column dt-sc-one-fourth no-space border-right">
-                                <!-- **dt-sc-ico-content type6 - Starts** -->
                                 <div class="dt-sc-ico-content type8">
                                     
                                     <p>Learn How Professional Traders are  <br /> Trading </p>
-                                </div> <!-- **dt-sc-ico-content type6 - Ends** -->
-                            </div> <!-- **column - Ends** -->
-                        </div>        
+                                </div> 
+                            </div> 
+                        </div>-->        
                     </div>
 
                     <div class="dt-sc-margin20"></div>
-			<!-- **Full-width-section - Starts** -->       
 			<div class="full-width-section">
-				<div class="container">
-             
-                    
-                    <div class="column dt-sc-one-fourth first animate" data-animation="fadeInUp" data-delay="100">
-				        <!-- **dt-sc-ico-content type2 - Starts** -->
-                        <div class="dt-sc-ico-content type2">
-				            <!-- **icon - Starts** -->
-                          
-				                <div class="icon_new">
-                                   <img src="<?= base_url() ?>public/images/open_ac.png" alt="image"> 
-                                </div>
-				            <!-- **icon - Ends** -->
-				            <h4>Open Account</h4>
-				            <p>Open a Real Account and trade with real money. Start from risk free Demo account if you are new.</p>
-                            
-				        </div> <!-- **dt-sc-ico-content type2 - Starts** -->
-				    </div>
-				    <div class="column dt-sc-one-fourth animate" data-animation="fadeInDown" data-delay="100">
-				        <!-- **dt-sc-ico-content type2 - Starts** -->
-                        <div class="dt-sc-ico-content type2">
-				            <!-- **icon - Starts** -->
-                            <div class="icon_new">
-                                   <img src="<?= base_url() ?>public/images/learn_trade.png" alt="image"> 
-                                </div> <!-- **icon - Ends** -->
-				            <h4>Learn Trading</h4>
-				            <p>We're here to help enhance your skills throughout your trading journey, not just at the beginning.</p>
-                            
-				        </div> <!-- **dt-sc-ico-content type2 - Starts** -->
-				    </div>
-				    <div class="column dt-sc-one-fourth animate" data-animation="fadeInUp" data-delay="100">
-				        <!-- **dt-sc-ico-content type2 - Starts** -->
-                        <div class="dt-sc-ico-content type2">
-				            <!-- **icon - Starts** -->
-                            <div class="icon_new">
-                                   <img src="<?= base_url() ?>public/images/meta_trade.png" alt="image"> 
-                                </div> <!-- **icon - Ends** -->
-				            <h4> Meta Trader 4</h4>
-				            <p>Forex bull now offers Forex and CFD trading on the popular MetaTrader 4 trading platform.</p>
-                            
-				        </div> <!-- **dt-sc-ico-content type2 - Starts** -->
-				    </div>
-				    <div class="column dt-sc-one-fourth animate" data-animation="fadeInDown" data-delay="100">
-                    	<!-- **dt-sc-ico-content type2 - Starts** -->
-				        <div class="dt-sc-ico-content type2">
-				           <div class="icon_new">
-                                   <img src="<?= base_url() ?>public/images/live_chat.png" alt="image"> 
-                                </div> <!-- **icon - Ends** -->
-				            <h4>Live Chat</h4>
-				            <p>Live Chat is available only to Live account holders FOR 24/7. <br>
-Do you need Help ? <a href="#"> Click Here</a></p>
-                            
-				        </div> <!-- **dt-sc-ico-content type2 - Starts** -->
-				    </div>
-                
-                </div> <!-- **container - Starts** -->
-            </div><!-- **Full-width-section - Ends** -->
+				
+                 <?php if(!empty($home_pages_sections[8]->content)){ echo html_entity_decode($home_pages_sections[8]->content); } ?>
+		
+            </div>
                                 <div class="dt-sc-margin20"></div>
 
-            <!-- **full-width-section - starts** -->
+         
             <div class="intro-text type1">
-                <div class="container">
+        <?php if(!empty($home_pages_sections[10]->content)){ echo html_entity_decode($home_pages_sections[10]->content); } ?>	
+                <!--<div class="container">
                     <div class="column dt-sc-one-half first pull-left">
                         <h4>Start trading with forexbull now</h4>
                     </div>
@@ -161,32 +106,36 @@ Do you need Help ? <a href="#"> Click Here</a></p>
                         <a class="dt-sc-button2" href="#">OPEN A REAL ACCOUNT</a> 
                         
                     </div>
-                </div>
-            </div><!-- **full-width-section - Ends** -->
+                </div>-->
+            </div>
+			<!-- **full-width-section - Ends** -->
             <div class="dt-sc-margin20"></div>
                         <!-- **full-width-section - starts** -->
             <div class=" full-width-section type1">
                 <div class="container">EURUSD  1.08076  1.08046          GBPUSD  1.49633  1.49593          USDCHF  0.95317  0.95145          USDJPY  118.919  118.899        USDCAD  1.22489  1.22459      EURGBP   </div>
             </div><!-- **full-width-section - Ends** -->
             <div class="dt-sc-margin20"></div>
-            
-<!--            <div class="parallax full-width-section rj-parallax" style="background-position: 50% -63px;">-->
             <div class="parallax full-width-section rj-parallax" style="background-position: 50% -63px;">
-                
-                    <!-- **column - Starts** -->
-                    <div class="column dt-sc-one-half first pull-left animate fadeInDown" data-animation="fadeInDown" data-delay="100">
+			
+			
+                 <?php if(!empty($home_pages_sections[7]->content)){ echo html_entity_decode($home_pages_sections[7]->content); } ?>	
+                   <!--  **column - Starts   welcome to forexbull page ** -->
+                  <!--   <div class="column dt-sc-one-half first pull-left animate fadeInDown" data-animation="fadeInDown" data-delay="100">
                     <div class="rjpad">
                         <h3 style="color:#fff;"> Welcome to Forex Bull</h3>
                         <p>ForexBull is a Foreign Exchange ("Forex") and CFD broker, with a focus on superior trading conditions and customer service. We offers spreads as low as 1 pip, interest paid on your account balance, direct interbank (ECN) trading access, and the lowest margin requirements for all products. Forex Bull’s advanced software allows you to easily trade from your PC, Mac, web-browser, iPhone, or other mobile device, whether using MetaTrader or ActTrader.</p>
                         
                           <a href="#" class="dt-sc-button large">Who We Are<span class="fa fa-angle-right"></span></a>
                         </div>
-                    </div> <!-- **column - Ends** -->  
+                    </div> 
+					<!-- **column - Ends** -->  
                                        
                     <!-- **column - Starts** -->
-                    <div class="column dt-sc-one-half animate zoomIn" data-animation="zoomIn" data-delay="100">
+                   <!--  <div class="column dt-sc-one-half animate zoomIn" data-animation="zoomIn" data-delay="100">
                         <img class="aligncenter" src="<?= base_url() ?>public/images/sliders/user.jpg" alt="image">
-                    </div> <!-- **column - Ends** -->
+                    
+					</div> 
+					<!-- **column - Ends** -->
                     
             </div>
             <div class="dt-sc-margin20"></div>  
@@ -196,7 +145,7 @@ Do you need Help ? <a href="#"> Click Here</a></p>
                     <div class="column dt-sc-one-fourth first fadeInLeft" data-animation="fadeInLeft" data-delay="100">
                         <div class="dt-sc-ico-content type4">
                     
-                                <img src="<?= base_url() ?>public/images/tr_p.jpg" alt="image">                            
+                             <!--   <img src="<?= base_url() ?>public/images/tr_p.jpg" alt="image">                            
                             <div class="dt-sc-location-detail">
                                 <h6>TRADING PRODUCTS</h6>
                                 <ul>
@@ -207,14 +156,19 @@ Do you need Help ? <a href="#"> Click Here</a></p>
                                     <li><span class="fa fa-angle-right"></span> Payment Systems</li>
                                 </ul>
                             </div>
-                            <div class="clearfix"></div>
+                            <div class="clearfix"></div> -->
+							
+			 <?php if(!empty($home_pages_sections[0]->content)){ echo html_entity_decode($home_pages_sections[0]->content); } ?>	
+							<?php if(!empty($home_pages_sections[0]->read_more_link)){  ?>	
+							<div class="overlay"><a style="color: white;" href="<?php echo $home_pages_sections[0]->read_more_link; ?>">Read More</a></div>
+							<?php } ?>
                             
                         </div>
                     </div>
                     <div class="column dt-sc-one-fourth fadeInRight" data-animation="fadeInRight" data-delay="100">
                              <div class="dt-sc-ico-content type4">
                     
-                                <img src="<?= base_url() ?>public/images/tr_c.jpg" alt="image">                            
+                               <!-- <img src="<?= base_url() ?>public/images/tr_c.jpg" alt="image">                            
                             <div class="dt-sc-location-detail">
                                 <h6>TRADE CONDITIONS</h6>
                                 <ul>
@@ -225,14 +179,18 @@ Do you need Help ? <a href="#"> Click Here</a></p>
                                     <li><span class="fa fa-angle-right"></span> Advantages </li>
                                 </ul>
                             </div>
-                            <div class="clearfix"></div>
+                            <div class="clearfix"></div> -->
+							 <?php if(!empty($home_pages_sections[2]->content)){ echo html_entity_decode($home_pages_sections[2]->content); } ?>	
+							<?php if(!empty($home_pages_sections[2]->read_more_link)){  ?>	
+							<div class="overlay"><a style="color: white;" href="<?php echo $home_pages_sections[2]->read_more_link; ?>">Read More</a></div>
+							<?php } ?>
                             
                         </div>
                     </div>
                     <div class="column dt-sc-one-fourth fadeInLeft" data-animation="fadeInLeft" data-delay="100">
                             <div class="dt-sc-ico-content type4">
                     
-                                <img src="<?= base_url() ?>public/images/t_s.jpg" alt="image">                            
+                                <!--<img src="<?= base_url() ?>public/images/t_s.jpg" alt="image">                            
                             <div class="dt-sc-location-detail">
                                 <h6>TRADING SOFTWARES</h6>
                                 <ul>
@@ -244,6 +202,11 @@ Do you need Help ? <a href="#"> Click Here</a></p>
                                 </ul>
                             </div>
                             <div class="clearfix"></div>
+							-->
+							 <?php if(!empty($home_pages_sections[1]->content)){ echo html_entity_decode($home_pages_sections[1]->content); } ?>	
+							<?php if(!empty($home_pages_sections[1]->read_more_link)){  ?>	
+							<div class="overlay"><a style="color: white;" href="<?php echo $home_pages_sections[1]->read_more_link; ?>">Read More</a></div>
+							<?php } ?>
                             
                         </div>
                     </div>
@@ -270,11 +233,11 @@ Do you need Help ? <a href="#"> Click Here</a></p>
 
 
 <div class="intro-text type5">
-                            <div class="intro-text-content">
+                                  <?php if(!empty($home_pages_sections[3]->content)){ echo html_entity_decode($home_pages_sections[3]->content); } ?>
+                            <!-- <div class="intro-text-content">
                                 <h2> Why ForexBull?</h2>
                                 <h6> Absolutely no trading restrictions:</h6>
-                               
-        <ul class="dt-sc-fancy-list tick">
+                            <ul class="dt-sc-fancy-list tick">
                             <li>We execute only through ECN/STP</li>
                             <li>Hedging possibility</li>
                             <li>Ultra-fast execution</li>
@@ -286,10 +249,11 @@ Do you need Help ? <a href="#"> Click Here</a></p>
                             <li>Commissions from USD 1 (for 1 lot)</li>
                         </ul>
                                 <a href="#" class="dt-sc-button medium"> WHY FOREXBULL? <span class="fa fa-angle-right"></span></a>
-                            </div>
+                            </div> -->
                         </div>
                 <section id="primary" class="content-full-width intro-text type1">
-                <div class="full-width-section">
+				 <?php if(!empty($home_pages_sections[6]->content)){ echo html_entity_decode($home_pages_sections[6]->content); } ?>
+                <!--<div class="full-width-section">
                     <div class="container">                        
                         <div class="dt-sc-margin30"></div>
                         <div class="column dt-sc-one-fifth first">
@@ -340,7 +304,7 @@ Do you need Help ? <a href="#"> Click Here</a></p>
                         </div>
                         
                     </div>
-                </div>
+                </div> -->
                 </section>
 
                 

@@ -3,13 +3,14 @@ $protocol=(!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' || $_SERVER['
 $server_domain_name=$protocol."forexray.com";
 ?>
 <div class="mt10 ml10 stocks_list">
-   <iframe src="<?php echo base_url();?>/plugins/raju/terminal.php" height="496px"></iframe> 
+   <!--<iframe src="<?php echo base_url();?>/plugins/raju/terminal.php" height="496px"></iframe>-->
+    <!-- Local --> 
    <!-- server -->
 
     <!-- <iframe src="http://forexray.com/plugins/raju/terminal.php" height="487px"></iframe>-->
     <!-- Local -->
 
-    <div class="tabs" style="display:none">
+    <div class="tabs" style="display:block">
         <ul class="navlist">
             <li class="bdr_none first"><a href="#first"><span>Forex</span></a></li>
             <li><a href="#second" class="second"><span>Commodities</span></a></li>

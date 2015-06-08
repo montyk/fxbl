@@ -294,15 +294,15 @@ if(!function_exists('buildSubMenu')){
             <div class="container">
             
                     <ul class="top-menu">
-                        <li><a href=""> <span class="fa fa-newspaper-o"></span> News</a></li>
-                        <li><a href=""> <span class="fa fa-calendar-o"></span> Events</a></li>
+                        <li><a href="<?php echo site_url('news'); ?>"> <span class="fa fa-newspaper-o"></span> News</a></li>
+                        <li><a href="<?php echo site_url('news/promotions'); ?>"> <span class="fa fa-calendar-o"></span> Events</a></li>
                         <li><a href=""> <span class="fa fa-phone"></span> +852 5805 3101</a></li>
                     </ul>
                 
                 <div class="top-rightt pull-right">
                     <ul class="top-menu">
-                        <li><a href=""> <span class="fa fa-comments"></span> Client Support</a></li>
-                        <li><a href=""> <span class="fa fa-user"></span> Sign in/ Sign up</a></li>
+                        <li><a href="<?php echo site_url('login'); ?>"> <span class="fa fa-comments"></span> Client Support</a></li>
+                        <li><a href="<?php echo site_url('registration'); ?>"> <span class="fa fa-user"></span> Sign in/ Sign up</a></li>
                         <li><a href=""> <span class="fa fa-globe"></span> English</a></li>
                     </ul>
                 </div>

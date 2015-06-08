@@ -781,9 +781,13 @@
   text-transform: uppercase;
 }
 .bootstrap-scope blockquote {
-  padding: 0 0 0 15px;
+  padding: 20px 0px 20px 0px;
   margin: 0 0 20px;
-  border-left: 5px solid #eeeeee;
+  /* border-left: 5px solid #eeeeee; */
+  background: #FFDAA3;
+  border-radius: 4px;
+  box-shadow: 0 1px rgba(255, 255, 255, 0.6) inset;
+  border: 1px solid #E0BC85;
 }
 .bootstrap-scope blockquote p {
   margin-bottom: 0;
@@ -2024,7 +2028,8 @@
   float: left;
   width: 160px;
   padding-top: 5px;
-  text-align: right;
+  text-align: left;
+  padding-left: 20px;
 }
 .bootstrap-scope .form-horizontal .controls {
   *display: inline-block;
