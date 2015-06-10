@@ -101,6 +101,20 @@ class Fileupload_model extends MY_Model {
         $qry = trim($qry, ",");
         $this->db->query($qry);
     }
+     function save_pages_attachnments($pages_id,$new_file_names, $orig_file_names) {
+        $qry = "INSERT INTO pages_attachnments (pages_id,db_file_name,original_file_name,url, date_added, last_modified, ip_address) values";
+        if (is_array($new_file_names) && is_array($orig_file_names)) {
+            foreach ($new_file_names as $k => $v) {
+                $url = 'uploads/' . $new_file_names[$k];
+                $qry.=" ('" . $pages_id . "','" . $new_file_names[$k] . "','" . $orig_file_names[$k] . "','" . $url . "','" . gmdate("Y-m-d H:i:s", time()) . "','" . gmdate("Y-m-d H:i:s", time()) . "','" . ipaddress() . "'),";
+            }
+        } else {
+            $url = 'uploads/' . $new_file_names;
+            $qry.=" ('" . $pages_id . "','" . $new_file_names . "','" . $orig_file_names . "','" . $url . "','" . gmdate("Y-m-d H:i:s", time()) . "','" . gmdate("Y-m-d H:i:s", time()) . "','" . ipaddress() . "')";
+        }
+        $qry = trim($qry, ",");
+        $this->db->query($qry);
+    }
 
     
 }

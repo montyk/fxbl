@@ -45,4 +45,11 @@ class Common_model extends MY_Model {
         return $res->id;
     }
 
+    function delete_pages_attachnments($pages_id) {
+        $sql = 'DELETE 
+				FROM pages_attachnments 
+				WHERE pages_id=' . $pages_id;
+        $qry = $this->db->query($sql);
+    }
+
 }
