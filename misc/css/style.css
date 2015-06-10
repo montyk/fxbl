@@ -334,14 +334,15 @@
 }
 .app .right_ca .stocks_list .tabs_content{
 	border: 1px solid #9A0808;
-	margin-top: -1px;
+	margin-top: -11px;
 	padding: 8px 6px;
+    width: 246px;
 }
 .app .right_ca .stocks_list li.li_last{
 	margin-right: 0;
 }
 .app .right_ca .stocks_list .navlist li a{
-	padding: 0 8px 0 9px;
+	padding: 0 5px 0 5px;
 	background: #E8E8E6;
 	color: #3D3E45;
 	-webkit-border-radius: 2px 2px 0 0;
@@ -374,7 +375,7 @@
 	width: 100px;
 }
 .app .right_ca .tabs_content .first .mi_row .mi_clo2{
-	width: 94px;
+	width: 70px;
 }
 .app .right_ca .tabs_content .first .mi_row .mi_clo3{
 	width: 42px;

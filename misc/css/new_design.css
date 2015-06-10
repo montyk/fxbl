@@ -208,7 +208,7 @@ box-shadow: 0 1px 11px #E9E9E9;}
 .app.newDesign .news_wrp, .app.newDesign .prom_wrp{height: 329px}
 
 
-.app .box_central{ border: 1px solid #DBDBDB; margin: 10px 0px; width: 246px; font-size: 13px}
+.app .box_central{ border: 1px solid #DBDBDB; margin: 10px 0px 10px 10px !important; width: 246px; font-size: 13px}
 .app .box_central_header{ 
 	padding: 0 11px;
 	line-height: 32px;

@@ -66,9 +66,10 @@
 	padding: 8px;
 	width: 200px;
 	border: 1px solid #dbdbdb;
-	margin-right: 10px;
+  /*margin-right: 10px;
 	margin-bottom: 20px;
-/*	margin-top: 42px;*/
+	margin-top: 42px;*/
+    margin: 42px 0 10px 0px !important
     border-top: 5px solid #FF554E;
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
