@@ -201,7 +201,7 @@
 
 /*start: styles for content */
 .app .outside{
-	background: url("images/gradient.png") repeat-x;
+	  background-image: url(https://assets-1.housingcdn.com/website/lyp/lyp-4268f55fcb7f2070228cba73f36979fc.jpg);
 }
 .app .left_ca{
 	width: 732px;

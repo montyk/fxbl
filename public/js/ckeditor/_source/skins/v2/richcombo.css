@@ -130,7 +130,7 @@
 {
 	display: inline-block;
 	background-position: 5px -715px;
-	background-image: url(images/sprites.png);
+	background-image: url(public/images/sprites.png);
 	_background-image: url(images/sprites_ie6.png);
 	background-repeat: no-repeat;
 

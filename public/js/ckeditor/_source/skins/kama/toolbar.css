@@ -30,8 +30,8 @@ For licensing, see LICENSE.html or http://ckeditor.com/license
 .cke_skin_kama a:hover.cke_toolbox_collapser
 {
 	/* arrowtop.gif */
-	background-image: url(images/sprites.png);
-	_background-image: url(images/sprites_ie6.png);
+	background-image: url(public/images/sprites.png);
+	_background-image: url(public/images/sprites_ie6.png);
 	background-position: 3px -1366px; /* +3px +4px */
 	background-repeat: no-repeat;
 	width: 11px;
@@ -65,8 +65,8 @@ For licensing, see LICENSE.html or http://ckeditor.com/license
 .cke_skin_kama a:hover.cke_toolbox_collapser_min
 {
 	/* arrowleft.gif*/
-	background-image: url(images/sprites.png);
-	_background-image: url(images/sprites_ie6.png);
+	background-image: url(public/images/sprites.png);
+	_background-image: url(public/images/sprites_ie6.png);
 	background-position: 4px -1387px; /* +4px +3px */
 	background-repeat: no-repeat;
 	margin: 2px 4px;
@@ -111,7 +111,7 @@ For licensing, see LICENSE.html or http://ckeditor.com/license
 	-moz-border-radius:5px;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
-	background-image: url(images/sprites.png);
+	background-image: url(public/images/sprites.png);
 	_background-image: url(images/sprites_ie6.png);
 	background-repeat: repeat-x;
 	background-position: 0 -500px;
@@ -308,7 +308,7 @@ For licensing, see LICENSE.html or http://ckeditor.com/license
 	height: 17px;
 	width: 8px;
 	background-position: 2px -1469px; /* (+2, -5) */
-	background-image: url(images/sprites.png);
+	background-image: url(public/images/sprites.png);
 	_background-image: url(images/sprites_ie6.png);
 	background-repeat: no-repeat;
 	cursor: default;

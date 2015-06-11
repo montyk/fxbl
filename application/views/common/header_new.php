@@ -302,7 +302,8 @@ if(!function_exists('buildSubMenu')){
                 <div class="top-rightt pull-right">
                     <ul class="top-menu">
                         <li><a href="<?php echo site_url('login'); ?>"> <span class="fa fa-comments"></span> Client Support</a></li>
-                        <li><a href="<?php echo site_url('registration'); ?>"> <span class="fa fa-user"></span> Sign in/ Sign up</a></li>
+                        <li><a href="<?php echo site_url('registration'); ?>"> <span class="fa fa-user"></span>Login</a></li>
+                         <li><a href="<?php echo site_url('registration'); ?>"> <span class="fa fa-user"></span>Registration</a></li>
                         <li><a href=""> <span class="fa fa-globe"></span> English</a></li>
                     </ul>
                 </div>

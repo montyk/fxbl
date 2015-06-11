@@ -3,7 +3,7 @@ var cWidth=64;
 var cHeight=64;
 var cTotalFrames=20;
 var cFrameWidth=128;
-var cImageSrc='images/sprites.png';
+var cImageSrc='public/images/sprites.png';
 
 var cImageTimeout=false;
 var cIndex=0;

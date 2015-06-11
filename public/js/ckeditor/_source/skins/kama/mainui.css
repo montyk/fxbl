@@ -31,7 +31,7 @@ span.cke_skin_kama
 	-webkit-touch-callout: none;
 	border-radius: 5px;
 	background-color: #d3d3d3;
-	background-image: url(images/sprites.png);
+	background-image: url(public/images/sprites.png);
 	background-repeat: repeat-x;
 	background-position: 0 -1950px;
 	display: block;
@@ -122,8 +122,8 @@ span.cke_skin_kama
 	display: block;
 	float: right;
 	/* resizer.gif*/
-	background-image: url(images/sprites.png);
-	_background-image: url(images/sprites_ie6.png);
+	background-image: url(public/images/sprites.png);
+	_background-image: url(public/images/sprites_ie6.png);
 	background-position: 0 -1428px;
 	background-repeat: no-repeat;
 	cursor: se-resize;

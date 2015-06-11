@@ -144,7 +144,7 @@ body .cke_dialog
 .cke_skin_kama a:hover.cke_dialog_tab,
 .cke_skin_kama a:visited.cke_dialog_tab
 {
-	background-image: url(images/sprites.png);
+	background-image: url(public/images/sprites.png);
 	background-repeat: repeat-x;
 	background-position: 0 -1323px;
 
@@ -361,7 +361,7 @@ body .cke_dialog
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
-	background: transparent url(images/sprites.png) repeat-x scroll 0 -1069px;
+	background: transparent url(public/images/sprites.png) repeat-x scroll 0 -1069px;
 	_background: none;
 	padding: 5px 0;
 	text-align: center;
@@ -424,7 +424,7 @@ body .cke_dialog
 
 .cke_skin_kama a.cke_dialog_ui_button_ok span
 {
-	background: transparent url(images/sprites.png) no-repeat scroll right -1219px;
+	background: transparent url(public/images/sprites.png) no-repeat scroll right -1219px;
 }
 
 .cke_skin_kama .cke_rtl a.cke_dialog_ui_button_ok span
@@ -446,7 +446,7 @@ body .cke_dialog
 
 .cke_skin_kama a.cke_dialog_ui_button_cancel span
 {
-	background: transparent url(images/sprites.png) no-repeat scroll right -1245px;
+	background: transparent url(public/images/sprites.png) no-repeat scroll right -1245px;
 }
 
 .cke_skin_kama .cke_rtl a.cke_dialog_ui_button_cancel span
@@ -584,7 +584,7 @@ body .cke_dialog
 
 .cke_skin_kama .cke_dialog .cke_dialog_body .cke_dialog_close_button
 {
-	background-image: url(images/sprites.png);
+	background-image: url(public/images/sprites.png);
 	background-repeat: no-repeat;
 	background-position: 0 -1022px;
 	position: absolute;
@@ -594,7 +594,7 @@ body .cke_dialog
 	width: 20px;
 	top: 5px;
 	/* IE 6 */
-	_background-image: url(images/sprites_ie6.png);
+	_background-image: url(public/images/sprites_ie6.png);
 }
 
 .cke_skin_kama .cke_dialog_close_button span

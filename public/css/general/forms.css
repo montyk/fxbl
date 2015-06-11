@@ -9,10 +9,19 @@
 .app .fr{ float:right !important;float:right}
 .app .oc{ overflow:hidden}
 .app .cb{clear:both}
-.app .d_fds{ padding:10px 0; font-size:13px}
+.app .d_fds{ padding:5px 0; font-size:13px}
 .app .left_fld{ width:280px;margin-right:10px; float:left}
-.app .left_fld label{ margin-top:4px;display:block; color:#565656; 	font-family:Arial, Helvetica, sans-serif;
+.app .left_fld label{ 
+	margin-top: 23px;
+/*	padding: 18px 0px;
+*/	display: block;
+	color: #2A2929;
+	font-size: 16px;
+	font-family: "Roboto", sans-serif !important;
+	margin-right: 10px;
 }
+.app .forgt .left_fld.lft_fldsmall {  width: auto !important;
+  margin-left: 25px;}
 .app .d_fds.vm .left_fld label{ margin-top:0;}
 .app .right_fld{ margin-left:290px; color:#000; }
 .app .uploadifyQueueItem{ margin-top: 3px;}
@@ -28,9 +37,11 @@
 #myfileUploader,#myfile2Uploader,#myfile1Uploader{ vertical-align: top; }
 
 .app .error_msg{
-	color: #F45A51;
-	background: url("images/error_ico.png") no-repeat scroll left center transparent;
-	padding-left: 18px;
+	color: #FF554E;
+	background: url("images/error_ico.png") no-repeat scroll 123px center transparent;
+	padding-left: 46px;
+	text-align: center;
+	font-size: 16px;
 }
 .app .success_msg{
 	color: #307A06;
@@ -120,9 +131,16 @@
 	margin: 0 auto;
 } 
 */.app .login.post input.ip{
-	width: 190px;
+  width: 260px;
+  height: 46px;
+  background-color: #FFF;
+  border-radius: 4px;
+  font-size: 16px;
 }
-
+.app .normal_a {
+ color: #2A2929 !important;
+ text-decoration: underline;
+}
 .addecur{
 	background: url("../../images/sprite.png") repeat-x 0 -1120px;
 	border: 1px solid #848484;

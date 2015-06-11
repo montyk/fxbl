@@ -27,7 +27,7 @@ For licensing, see LICENSE.html or http://ckeditor.com/license
 .cke_skin_v2 a.cke_toolbox_collapser,
 .cke_skin_v2 a:hover.cke_toolbox_collapser
 {
-	background-image: url(images/sprites.png);
+	background-image: url(public/images/sprites.png);
 	_background-image: url(images/sprites_ie6.png);
 	background-position: 3px -739px; /* +3px +4px */
 	background-repeat: no-repeat;
@@ -62,7 +62,7 @@ For licensing, see LICENSE.html or http://ckeditor.com/license
 .cke_skin_v2 a:hover.cke_toolbox_collapser_min
 {
 	/* arrowleft.gif*/
-	background-image: url(images/sprites.png);
+	background-image: url(public/images/sprites.png);
 	_background-image: url(images/sprites_ie6.png);
 	background-position: 4px -760px; /* +4px +3px */
 	background-repeat: no-repeat;
@@ -362,7 +362,7 @@ For licensing, see LICENSE.html or http://ckeditor.com/license
 	height: 17px;
 	width: 8px;
 	background-position: 2px -717px;
-	background-image: url(images/sprites.png);
+	background-image: url(public/images/sprites.png);
 	_background-image: url(images/sprites_ie6.png);
 	background-repeat: no-repeat;
 	cursor: default;

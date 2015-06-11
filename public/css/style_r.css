@@ -138,7 +138,7 @@
 	
 	textarea { height: 190px; overflow: auto; resize: none; padding: 16px 15px; width:100%; }
 	
-	input[type="submit"]:hover, input[type="reset"]:hover { background-color:#546d87; }
+	input[type="submit"]:hover, input[type="reset"]:hover {   background-color: #BB3A35; }
 	
 	input[type="submit"], input[type="reset"], input[type="button"], button, .add_to_cart_button, .product_type_variable, .product-details .button, .add_to_wishlist{ color: #ffffff; cursor: pointer; float: right; font-size: 15px; padding:16px 16px 15px 16px; border-radius:2px; }
 	
@@ -1303,7 +1303,7 @@
 	#loginform input[type="checkbox"] { margin-right: 3px; margin-top:-1px; }
 	
 	#loginform { text-align:center; }
-	#loginform label { float:left; clear:both; }
+	#loginform label { /*float:left; */clear:both; }
 	#loginform .dt-sc-button { float:none; margin-top:10px; }
 	
 	.page_info { float:left; width:100%; margin:0; }

@@ -178,7 +178,7 @@ For licensing, see LICENSE.html or http://ckeditor.com/license
 .cke_skin_kama .cke_menuarrow
 {
 	/* arrowright.gif*/
-	background-image: url(images/sprites.png);
+	background-image: url(public/images/sprites.png);
 	_background-image: url(images/sprites_ie6.png);
 	background-position: 0 -1411px;
 	background-repeat: no-repeat;
@@ -195,8 +195,8 @@ For licensing, see LICENSE.html or http://ckeditor.com/license
 	margin-right: 0;
 	margin-left: 2px;
 	/* arrowleft.gif*/
-	background-image: url(images/sprites.png);
-	_background-image: url(images/sprites_ie6.png);
+	background-image: url(public/images/sprites.png);
+	_background-image: url(public/images/sprites_ie6.png);
 	background-position: 0px -1390px;
 	background-repeat: no-repeat;
 }

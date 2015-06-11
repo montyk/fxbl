@@ -186,17 +186,15 @@
                                         </div>
                                         <div class="cb"></div>
                                     </div>
-                                    <div class="d_fds">
+                                    <div class="d_fds forgt">
                                         <div class="left_fld lft_fldsmall">
-                                            <label></label>
+                                            <label> <a class="normal_a" href="<?php echo site_url('forgotpassword'); ?>">Forgot Password?</a></label>
                                         </div>
                                         <div class="right_fld rgt_fldsmall_btn">	
                                             <input type='submit' name='login' class="submit din_med" value='Login' style="width: 85px; padding: 2px;"/>
                                         </div>
                                         <div class="cb"></div>	
-                                        <div>
-                                            <a class="normal_a" href="<?php echo site_url('forgotpassword'); ?>">Forgot Password</a>
-                                        </div>
+                                        
                                     </div>
 			  </form>
 			  </div>
