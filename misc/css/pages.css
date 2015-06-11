@@ -1,6 +1,6 @@
-
 .app .pg_width .overlay_bg{
-	margin-left: 12px;
+	/*margin-left: 12px;*/
+	width: 100% !important;
 }
 .app .h_1{
 	font-size: 24px;
@@ -15,16 +15,14 @@
 	border-bottom: 0 none;
 }
 .app .content_wrap{
-	width: 1000px;
-	margin-right: 0px;
+	width: 100%;
+	/*margin-right: 0px;*/
 }
 .app .pg_data{
 	font-family: "Roboto", sans-serif !important;
-	margin-left: 4px;
-	margin-top: 5px;
 	background: #fff;
-	border-top: 5px solid #FF554E;
-	/*background: url("images/shade_new.png") center bottom no-repeat #fff;*/
+/*	border-top: 5px solid #FF554E;
+*/	/*background: url("images/shade_new.png") center bottom no-repeat #fff;*/
 }
 .app .pg_data.none{
 	background: 0 none;
@@ -35,12 +33,12 @@
 }
 .app .pg_width .pg_data_view{
 	overflow: hidden;
-	padding: 18px 20px;
+	/*padding: 18px 20px;*/
 	margin-bottom: 20px;
-	border-top: 1px solid #ADADAD;
+	/*border-top: 1px solid #ADADAD;
 	border-left: 1px solid #d9d9d9;
 	border-right: 1px solid #dbdbdb;
-	border-bottom: 5px solid #FF554E;
+	border-bottom: 5px solid #FF554E;*/
 /*	-webkit-border-radius: 0 0 4px 4px;
 	-moz-border-radius: 0 0 4px 4px;
 	border-radius: 0 0 4px 4px;	*/
@@ -175,8 +173,10 @@
 	border-right: 1px solid #dbdbdb;
 }
 #breadcrumbs-one{
-  background: #FCBE63;
-  overflow: hidden;
+/*  background: #FCBE63;*/
+background-image:url(https://assets-1.housingcdn.com/website/careers/join-us-b63dceca2bfbd9acb7ec46256ff83f3c.jpg);
+min-height:200px;
+overflow: hidden;
 }
 
 #breadcrumbs-one li{

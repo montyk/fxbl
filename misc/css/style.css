@@ -1,6 +1,6 @@
 .app .pg_width {
 	margin: 0 auto;
-	width: 1000px;
+	width: 100% !important;
 }
 /* styles for header */
 .app .ca .header,

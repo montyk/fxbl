@@ -16,7 +16,7 @@
                     <div class="fore_ca">
                         <div class="fore_content">
                             <div class="content_wrap fl">
-                                <h1 class="h_1"><?php if(isset($pages[0]->title)) echo $pages[0]->title;?></h1>
+                               <?php /*?> <h1 class="h_1"><?php if(isset($pages[0]->title)) echo $pages[0]->title;?></h1><?php */?>
 							
                                 <div class="pg_data">
                                     <ul class="bread_crum" id="breadcrumbs-one">
