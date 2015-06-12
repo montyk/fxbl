@@ -32,7 +32,7 @@ class Login extends MY_Controller {
                  // redirect('login/maintanance');
                 $this->login_model->login_web($_POST);
                
-                $this->loginForum();
+               // $this->loginForum();
 				$user_details = unserialize($this->session->userdata['user_details']);
 				if($user_details->otp=='1')
 				{
