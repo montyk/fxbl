@@ -3,9 +3,7 @@
 ?>
 <?php $this->load->view('common/header', $data);?>
 
-
-
-        <link rel="stylesheet" href="<?php echo base_url();  ?>public/css/general/screen.css" type="text/css"/>
+      <link rel="stylesheet" href="<?php echo base_url();  ?>public/css/general/screen.css" type="text/css"/>
         <link href="<?php echo base_url();  ?>public/css/general/images/favicon.ico" type="image/x-icon" rel="shortcut icon"/>
         <link rel="stylesheet" href="<?php echo base_url();  ?>public/css/general/resets.css" />
         <!--<link rel="stylesheet" href="<?php echo base_url();  ?>public/css/general/layout.css?reload=true" />-->

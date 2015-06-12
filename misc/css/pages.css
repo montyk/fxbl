@@ -22,7 +22,8 @@
 	margin-left: 0px;
 }
 .app .content_wrap{
-	width: 100%;
+	width: 50%;
+	margin: 20px 10px 20px 200px;
 	/*margin-right: 0px;*/
 }
 .app .pg_data{
@@ -50,6 +51,16 @@
 	-moz-border-radius: 0 0 4px 4px;
 	border-radius: 0 0 4px 4px;	*/
 }
+.app .pg_width .pg_data_view .block1{
+	font-family: "Roboto", sans-serif !important;
+}
+.app .pg_width .pg_data_view .block1 h3{
+	font-family: "Roboto", sans-serif !important;
+}
+
+.app .pg_data_view .intro-text-content ul.dt-sc-fancy-list.tick li,.app .pg_data_view .intro-text-content ul.dt-sc-fancy-list.tick li:before{
+	color:#000 !important;}
+	
 .app .pg_data p{
 	line-height: 25px;
 	margin-bottom: 10px;
@@ -179,13 +190,22 @@
 	border-left: 1px solid #d9d9d9;
 	border-right: 1px solid #dbdbdb;
 }
+.app .wrap_container{width:1000px;margin:0 auto;}
+.app .pg_data .bread_crum{
+  position: absolute;
+  top: 115px;
+  border: none;
+  z-index: 1;
+  }
 #breadcrumbs-one{
-/*  background: #FCBE63;*/
-background-image:url(https://assets-1.housingcdn.com/website/careers/join-us-b63dceca2bfbd9acb7ec46256ff83f3c.jpg);
-min-height:200px;
+/*  background: #FCBE63;
+*//*background-image:url(https://assets-1.housingcdn.com/website/careers/join-us-b63dceca2bfbd9acb7ec46256ff83f3c.jpg);
+*//*min-height:200px;*/
 overflow: hidden;
 }
-
+.bread_img{
+	width:100%;
+}
 #breadcrumbs-one li{
   float: left;
 }

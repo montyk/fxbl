@@ -15,14 +15,17 @@
                 <div class="overlay_bg rel">
                     <div class="fore_ca">
                         <div class="fore_content">
+                        <div><img class="bread_img" src="http://fxprofitsmaster.com/wp-content/uploads/2013/11/cropped-header1.jpg"/></div>
                             <div class="content_wrap fl">
                                <?php /*?> <h1 class="h_1"><?php if(isset($pages[0]->title)) echo $pages[0]->title;?></h1><?php */?>
 							
                                 <div class="pg_data">
+                                    
                                     <ul class="bread_crum" id="breadcrumbs-one">
                                         <li><a href="<?php echo site_url('/'); ?>">Forexbull </a></li>
                                         <li><a class="current"><?php if (isset($pages[0]->title)) echo $pages[0]->title; ?></a></li>
                                     </ul>
+                                    
                                     <div class="pg_data_view">
                                         <?php if (!empty($pages)) {
                                             ?>
@@ -51,7 +54,7 @@
                                 </div>
                             </div>
 							
-                            <?php /*?><div class="right_ca fl">
+                            <div class="right_ca fl">
                                 <?php if(!empty($page_menu)){  ?>
                                     <div class="side_left_nav pg_data sidebar_right_nav" id="leftCol" style="margin:42px 0 10px 10px;width: 245px;">
                                         <?php foreach($page_menu as $k=>$v){  ?>
@@ -62,14 +65,15 @@
                                     </div>
                                 <?php  }  ?>
                                 
-                                <?php// $this->load->view('common/sidebar_1'); ?>
+                                <?php $this->load->view('common/sidebar_1'); ?>
                                
                                 <?php $this->load->view('common/sidebar_terminal'); ?>
 
                                 <?php //  $this->load->view('common/sidebar_news');?>
     
-                            </div><?php */?>
+                            </div>
                             <div class="cl"></div>
+                           
                         </div>
                     </div>
                 </div>
