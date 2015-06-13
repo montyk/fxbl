@@ -113,11 +113,10 @@ Investment * </p>
                         <!-- **full-width-section - starts** -->
             					<!-- Marquee-->
 		
-				<div class=" full-width-section type1">
-<div class="container" id="currency_scroller">EURUSD  1.08076  1.08046          GBPUSD  1.49633  1.49593          USDCHF  0.95317  0.95145          USDJPY  118.919  118.899        USDCAD  1.22489  1.22459      EURGBP   </div>
-                                </div>
-				
-		
+				<div class=" full-width-section type1 marquee-with-options">
+<marquee>
+<div id="currency_scroller">EURUSD  1.08076  1.08046          GBPUSD  1.49633  1.49593          USDCHF  0.95317  0.95145          USDJPY  118.919  118.899        USDCAD  1.22489  1.22459      EURGBP   </div>
+                                </marquee></div>
 	<!-- Marquee--><!-- **full-width-section - Ends** -->
             <div class="dt-sc-margin20"></div>
             <div class="parallax full-width-section rj-parallax" style="background-position: 50% -63px;">
