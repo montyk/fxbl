@@ -55,6 +55,28 @@
                     <!--include javascript files by Nr-->
                     <!-- **jQuery** -->  
                     <script src="<?= base_url() ?>public/js_r/jquery-1.10.2.min.js" type="text/javascript"></script> 
+                        <script type="text/javascript">
+
+                       jQuery=  $.noConflict();
+                        jQuery(document).ready(function(){
+                            var dataP='';
+                            jQuery.ajax({
+                        url:'<?php echo site_url('register/currency_json'); ?>',
+                        data:dataP,
+                        type:'POST',
+                        dataType:'json',
+                        beforeSend:function(){
+                            
+                        },
+                        success:function(dataR){
+                            
+                           // console.log(dataR);
+                            var CUR = "EURUSD " +dataR.post[0].EURUSD+"GBPUSD "+dataR.post[0].GBUSD+"USDCHF "+dataR.post[0].USDCHF+"USDJPY "+dataR.post[0].USDJPY+"USDCAD "+dataR.post[0].USDCAD+"EURGBP "+dataR.post[0].EURGBP;
+                            jQuery('#currency_scroller').html(CUR);
+                        }
+                    })
+                        })  
+                    </script>
                     <script src="<?= base_url() ?>public/js_r/jquery-migrate.min.js"></script>
                     <script src="<?= base_url() ?>public/js_r/preloader.js" type="text/javascript"></script>
                     <script src="<?= base_url() ?>public/js_r/pace.min.js" type="text/javascript"></script>

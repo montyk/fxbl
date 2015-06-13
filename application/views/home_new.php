@@ -113,16 +113,9 @@ Investment * </p>
                         <!-- **full-width-section - starts** -->
             					<!-- Marquee-->
 		
-				<div class='marquee-with-options'>
-				<?php while($row=mysql_fetch_array($qry)){?>
-					<span class="symbol"><img src="plugins/raju/img/<?php echo $row['status'];?>.gif" width="11" height="9">&nbsp;<?=$row['currency_from'].$row['currency_to']?>&nbsp;&nbsp;<?=$row['ask']?>&nbsp;&nbsp;<?=$row['bid']?></span>
-				<?php } ?>
-				<!--	<span class="symbol">VALUE-1</span><span class="bid">GBPUSD</span><span class="ask"> 1.5929</span><span class="ask">1.5933</span>
-					<span class="symbol">VALUE-1</span><span class="bid">USDCHF</span><span class="ask"> 0.9160</span><span class="ask">0.9165</span>
-					<span class="symbol">VALUE-1</span><span class="bid">USDJPY</span><span class="ask"> 98.62</span><span class="ask">98.66</span>
-					<span class="symbol">VALUE-1</span><span class="bid">AUDUSD</span><span class="ask">0.9514</span><span class="ask">0.9523</span>
-					<span class="symbol">VALUE-1</span><span class="bid">USDCAD</span><span class="ask"> 1.0360</span><span class="ask">1.0364</span>-->
-				</div>
+				<div class=" full-width-section type1">
+<div class="container" id="currency_scroller">EURUSD  1.08076  1.08046          GBPUSD  1.49633  1.49593          USDCHF  0.95317  0.95145          USDJPY  118.919  118.899        USDCAD  1.22489  1.22459      EURGBP   </div>
+                                </div>
 				
 		
 	<!-- Marquee--><!-- **full-width-section - Ends** -->
