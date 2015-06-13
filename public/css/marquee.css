@@ -21,7 +21,7 @@ div.marquee-with-options span{
 								cursor:pointer;
 							}
 
-	div.marquee-with-options span.symbol{
+div.marquee-with-options span.symbol{
 									z-index:9999999;
 									background:url(http://forexray.com/plugins/raju/img/down.gif) no-repeat;
 									background-position: 0.4em;

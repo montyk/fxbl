@@ -1,9 +1,9 @@
 /* CSS Resets */
-.app {background:#06C;}
+.app {background:#EEEEEE;}
 /*.app { background: url(../images/whttex.jpg) repeat;}*/
 .app .header{
-	height: 42px;
-	background: url(../images/noise.png) #414141 repeat;
+	height: 50px;
+	background: #222;
 	border-bottom: 1px solid #1D1D1D;
 	position: fixed;
 	left: 0;
@@ -15,7 +15,7 @@
 	left: 10px; 
 	top: 6px; 
 	background: url(../images/logo.png) no-repeat; 
-	width: 143px; 
+	width: 260px; 
 	height: 32px
 }
 .app .app_title{ 
@@ -27,7 +27,7 @@
 }
 .app .app_interaction{ right: 0; }
 .app .app_interaction a{ 
-	padding: 14px 10px 10px;
+	padding: 15px;
 	border-left: 1px solid #68707C;
 	border-right: 1px solid #1C2024;
 	color: #dedede;
@@ -58,36 +58,51 @@
 	left: 10px
 }
 .app .app_interaction a.logged_user:hover .usr_ico{ background-position:  0 -100px}
-.app .contentarea{ top: 43px;}
+.app .contentarea{ top: 51px; overflow:hidden;}
 .app .leftNav{ 
-	width: 240px; 
-	top: 43px; 
+	width: 240px;
+    background-color: #444;
+	box-shadow: -1px 0px 0px #5C5C5F inset;
+	top: 51px; 
 	bottom: 0; 
 	left: 0;
 	overflow: auto;
-	border-right: 1px solid #EEEEEE;
+	border-right: 1px solid #323232;
 	padding-bottom: 40px
 }
+
+.app .leftNav ul li{
+    border-bottom: 1px solid #333;
+    border-top: 1px solid #555;
+    padding-bottom: 0px;
+ }
+
+
 .app .leftNav li a{ 
-	margin-bottom: 10px; 
-	display: block;
-	/*color: #B3E4FF; */
+/*	margin-bottom: 10px; 
+*/	display: block;
+	color: #fff;
+    padding: 10px 10px !important;
 	color: #dedede; 
+	line-height: 24px;
 }
 .app .leftNav li a:hover{ /*#7ED1FF;*/ color: #fff}
 .app .leftNav li a:active{ /*color: #C5EAFF;*/ color: #eee}
 .app .leftNav li a.active{ color: #F1D169; font-weight: bold;}
-.app .leftNav li a.collapse{ background: url(../images/down.png) no-repeat 180px 0}
-.app .leftNav li a.right-arrow{ background: url(../images/right-arrow.png) no-repeat 180px 0}
-.app .nav_emt{ padding: 20px 0 0 20px}
-.app .lft_sub_menu{ margin-left: 20px}
+.app .leftNav li a.collapse{   background: url(../images/down.png) no-repeat 200px 15px;}
+.app .leftNav li a.right-arrow{   background: url(../images/right-arrow.png) no-repeat 200px 14px;}
+.app .nav_emt{ /*padding: 20px 0 0 20px*/}
+.app .lft_sub_menu{ /*margin-left: 20px*/}
+.app .lft_sub_menu ul li{border-bottom: 1px solid #555; margin-bottom:0px !important;}
 .app .rightNav{ margin-left: 240px; color: #fff; padding-bottom: 40px}
 .app .rightNav .rightNav_head{
-	background: url(../images/noise.png) #707379 repeat;
-	height: 28px;
+	background: #434344;
+	height: 40px;
+    line-height: 36px;
 	color: #fff;
 	font-size: 16px;
-	text-align: center;
+    padding-left: 20px;
+	text-align: left;
 	font-weight: bold;
 	padding-top: 10px;
 	border-bottom: 1px solid #979797;
@@ -293,7 +308,7 @@
 }
 
 /*End@@code for the Table*/
-.app .hdr1, .app .hdr2{ color: #FFEDB2}
+.app .hdr1, .app .hdr2{ color: #212122;}
 .app .hdr1{ font-size: 16px}
 .app .hdr2{ font-size: 14px}
 .app .sum_box{

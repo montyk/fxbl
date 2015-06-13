@@ -57,6 +57,9 @@
 .app .nav.fixed{
 	box-shadow: 0 6px 10px #d6efff;
 }
+
+.app .content .contentcontainer{
+	  min-height: 400px !important;}
 .app .nav li.li_first{
 	margin-left: 5px;
 }

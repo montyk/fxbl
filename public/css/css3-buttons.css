@@ -1,11 +1,12 @@
 /* Default button styling - this applies to all anchors with the .button class */
 .button {
 	display: inline-block; 
-        outline:none;
-	font-size: 12px; 
+    outline:none;
+	font-size: 13px; 
 	text-decoration: none!important; 
-	padding: 8px 12px; 
+	padding: 8px 16px; 
 	border-radius: 3px; 
+	min-height:0px;
 	-moz-border-radius: 3px; 
 	box-shadow: inset 0px 0px 2px #fff;
 	-o-box-shadow: inset 0px 0px 2px #fff;
