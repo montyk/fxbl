@@ -122,7 +122,7 @@
                 <div class="">
                     <a href="<?php echo site_url('en/Anti-money-Laundering'); ?>">Anti-Money Laundering</a>|<a href="<?php echo site_url('en/Disclaimer'); ?>">Disclaimer</a>|<a href="<?php echo site_url('en/Privacy-Policy'); ?>">Privacy Policy</a>|<a href="<?php echo site_url('en/Risk-Warning'); ?>">Risk Warnings</a>|<a href="<?php echo site_url('en/ExecutionMethodology'); ?>" class="lst">Execution Methodology</a>
                 </div>
-                <div class="mt12">&copy; 2005- <?php echo date('Y');?>  Forexray All rights reserved.</div>
+                <div class="mt12">&copy; 2005- <?php echo date('Y');?> <?php echo $this->config->item('project_name') ?>  All rights reserved.</div>
                 <div class="follow pos_ab">
                     <div>FOLLOW US</div>
                     <div class="mt6">

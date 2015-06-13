@@ -21,7 +21,7 @@ class Forgotpassword extends MY_Controller {
 		}
                 
         $data['msg']=$msg;
-        $page[0]->title='ForexRay - Forgot Password';
+        $page[0]->title=$this->config->item('project_name').' - Forgot Password';
         $data['pages'] = $page;
         $this->load->view('login/general/forgotpassword', $data);
     }
@@ -45,8 +45,8 @@ class Forgotpassword extends MY_Controller {
                 $email_data['login'] = $_POST['login_name'];
                 $email_data['from'] = $this->config->item('from_mail');
                 $email_data['to'] = $this->db->escape_str($answerData['email']);
-                $email_data['subject'] = 'ForexRay - Reset your Password';
-                $email_data['email_header'] = 'ForexRay - Reset your Password';
+                $email_data['subject'] = $this->config->item('project_name').' - Reset your Password';
+                $email_data['email_header'] = $this->config->item('project_name').' - Reset your Password';
                 $email_data['name'] = ucfirst($answerData['name']);
                 $email_data['content'] = $this->load->view('email_templates/template_2/reset_password', $email_data, true);
                 //echo '<pre>';
@@ -103,8 +103,8 @@ class Forgotpassword extends MY_Controller {
                 $email_data['password'] = $_POST['password'];
                 $email_data['from'] = $this->config->item('from_mail');
                 $email_data['to'] = $this->db->escape_str($answerData2['email']);
-                $email_data['subject'] = 'Forexray - Password Reset';
-                $email_data['email_header'] = 'Forexray - Password Reset';
+                $email_data['subject'] = $this->config->item('project_name').'- Password Reset';
+                $email_data['email_header'] = $this->config->item('project_name').'- Password Reset';
                 $email_data['name'] = ucfirst($answerData2['name']);
                 $email_data['content'] = $this->load->view('email_templates/template_2/after_resetpwd', $email_data, true);
                 $result = $this->mail_model->send_mail($email_data);

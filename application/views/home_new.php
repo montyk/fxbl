@@ -2,12 +2,7 @@
     $data['active_link'] = "active";
     $data['active'] = "0";
     $this->load->view('common/header_new');
-//	   $con=mysql_connect("localhost","root","") or die('Unable to connect Host');
-//    $db=mysql_select_db('forexray',$con) or die('Unable to connect DB');
-//	//$sql="SELECT id, currency_from, currency_to, ask, bid, status FROM currency_converter ORDER BY id";
-//	$sql="SELECT * FROM currency_converter ORDER BY id";
-//	//echo $sql;
-//	$qry=mysql_query($sql);
+
 ?>
 
 </div>

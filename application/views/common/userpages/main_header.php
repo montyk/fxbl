@@ -7,7 +7,7 @@
         
         <meta name="google" content="notranslate" />
         
-        <title>FOREXRAY User Panel</title>
+        <title><?php echo $this->config->item('project_name') ?> User Panel</title>
 
         <link rel="shortcut icon" type="image/png" href="<?=base_url()?>/misc/css/images/fav.png" />
 

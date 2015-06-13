@@ -171,7 +171,7 @@
 			<!-- <a class="logout_user" href="#" title="Logout">Logout</a> -->
 		</div>
 		<div class="breadcrumbs_container">
-			<article class="breadcrumbs article"><a href="#">FOREXRAY Admin</a> <div class="breadcrumb_divider"></div> <a class="current">My Profile</a></article>
+			<article class="breadcrumbs article"><a href="#"><?php echo $this->config->item('project_name') ?> Admin</a> <div class="breadcrumb_divider"></div> <a class="current">My Profile</a></article>
 		</div>
 	</section><!-- end of secondary bar -->
 	

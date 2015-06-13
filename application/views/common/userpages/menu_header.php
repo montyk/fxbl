@@ -3,7 +3,7 @@
 
         <?php $userDetails = unserialize($this->session->userdata('user_details')); ?>
         <div class="fl topnav"> 
-            <a href="<?php echo site_url(); ?>"><img src="<?php echo base_url(); ?>misc/css/images/logo.png" alt="Forexray" class="fl " width="200"/></a>
+            <a href="<?php echo site_url(); ?>"><img src="<?php echo base_url(); ?>misc/css/images/logo.png" alt="<?php echo $this->config->item('project_name') ?>" class="fl " width="200"/></a>
             <div class="user">
                 <!-- <a class="logout_user" href="#" title="Logout">Logout</a> -->
                 <div class="user_details">

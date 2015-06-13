@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-        <title>ForexRay - Upload Validation Documents</title>
+        <title><?php echo $this->config->item('project_name') ?> - Upload Validation Documents</title>
         <?php $this->load->view('common/userpages/head_links_file_uplaoder_new'); ?>
         
         <script type="text/javascript">
@@ -112,7 +112,7 @@
                         
                         <?php $this->load->view('common/userpages/notifications'); ?>
                         
-                        <p  class="help_text">ForexRay is legally required to hold on record (to file) the necessary documentation in support of your application. Trading access and/or withdrawals will not be permitted until your documents have been received and verified.</p>
+                        <p  class="help_text"><?php echo $this->config->item('project_name') ?> is legally required to hold on record (to file) the necessary documentation in support of your application. Trading access and/or withdrawals will not be permitted until your documents have been received and verified.</p>
                         <p  class="help_text m_t_20">Please scan and upload the documentation specified below.</p>
                         <p  class="help_text">Accepted file formats: .GIF, .JPG, .PNG, .PDF</p>
                                                

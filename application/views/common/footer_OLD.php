@@ -75,7 +75,7 @@
 				<div class="">
 					<a href="#">Anti-Money Laundering</a>|<a href="#">Disclaimer</a>|<a href="#">Privacy Policy</a>|<a href="#">Risk Warnings</a>|<a href="#" class="lst">Execution Methodology</a>
 				</div>
-				<div class="mt12">&copy; 2005- 2012  Forexray All rights reserved.</div>
+				<div class="mt12">&copy; 2005- 2015  <?php echo $this->config->item('project_name') ?> All rights reserved.</div>
 				<div class="follow pos_ab">
 					<div>FOLLOW US</div>
 					<div class="mt6">

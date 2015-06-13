@@ -20,7 +20,7 @@
 							
                                 <div class="pg_data">
                                     <ul class="bread_crum" id="breadcrumbs-one">
-                                        <li><a href="<?php echo site_url('/'); ?>">Forexray </a></li>
+                                        <li><a href="<?php echo site_url('/'); ?>"><?php echo $this->config->item('project_name') ?> </a></li>
                                         <li><a href="<?php $siteurl=($pagetype=='Promotions')?'news/promotions':'news'; echo site_url('/'.$siteurl); ?>"><?php echo $pagetype;?> </a></li>
                                         <li><a class="current"><?php //if (isset($news[0]->heading)) echo $news[0]->heading; ?> &nbsp;</a></li>
                                     </ul>

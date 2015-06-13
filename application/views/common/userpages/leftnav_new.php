@@ -5,7 +5,7 @@
     <li><a href="<?php echo site_url('userpages/depositnew'); ?>">Deposit</a></li>
     <li><a href="<?php echo site_url('userpages/withdrawalnew'); ?>">Withdrawal</a></li>
     <li><a href="<?php echo site_url('userpages/mywallet'); ?>"> My Wallet</a></li>     
-    <li><a href="#forexray_menu" class="collapse j_submenu_toggle">Reports</a></li>
+    <li><a href="#<?php echo $this->config->item('project_name') ?>_menu" class="collapse j_submenu_toggle">Reports</a></li>
     <ul class="lft_sub_menu">
         <li>
             <a href="<?php echo site_url('userpages/trading_history'); ?>"> Trading History </a>
@@ -19,7 +19,7 @@
             <a href="<?php echo site_url('userpages/deposits_withdrawls'); ?>"> Deposits/Withdrawals </a>
         </li>
 	</ul>
-    <li><a href="#forexray_menu" class="collapse j_submenu_toggle">My Account</a></li>
+    <li><a href="#<?php echo $this->config->item('project_name') ?>_menu" class="collapse j_submenu_toggle">My Account</a></li>
     <ul class="lft_sub_menu">
 <!--        <li>
             <a href="<?php echo site_url('userpages/change_leverage'); ?>"> Change Leverage </a>
@@ -45,7 +45,7 @@
 	<?php }?>
 
     </ul>
-    <li><a href="#forexray_menu" class="collapse j_submenu_toggle">Upload Documents</a></li>
+    <li><a href="#<?php echo $this->config->item('project_name') ?>_menu" class="collapse j_submenu_toggle">Upload Documents</a></li>
     <ul class="lft_sub_menu">
         <li>
             <a href="<?php echo site_url('userpages/validation_documents'); ?>"> Validation Documents </a>

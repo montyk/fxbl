@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-        <title>ForexRay - PAMM Manager Account</title>
+        <title><?php echo $this->config->item('project_name') ?> - PAMM Manager Account</title>
         <?php $this->load->view('common/userpages/head_links_new'); ?>
 		<script src="<?php echo base_url(); ?>public/js/jquery-1.5.2.min.js" type="text/javascript"></script>
 		<script type="text/javascript" src="<?php echo base_url(); ?>public/js/jquery-ui-1.8.custom.min.js"></script>  

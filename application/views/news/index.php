@@ -20,7 +20,7 @@
 							
                                 <div class="pg_data">
                                     <ul class="bread_crum" id="breadcrumbs-one">
-                                        <li><a href="<?php echo site_url('/'); ?>">Forexray </a></li>
+                                        <li><a href="<?php echo site_url('/'); ?>"><?php echo $this->config->item('project_name') ?> </a></li>
                                         <li><a class="current"><?php echo $pagetype;?></a></li>
                                     </ul>
                                     <div class="pg_data_view">

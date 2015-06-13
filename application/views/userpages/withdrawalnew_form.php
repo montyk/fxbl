@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-        <title>ForexRay - Withdrawal Form</title>
+        <title><?php echo $this->config->item('project_name') ?> - Withdrawal Form</title>
         <?php $this->load->view('common/userpages/head_links_new'); ?>
     </head>
     <body class="app">
@@ -26,7 +26,7 @@
                         <?php if(isset($fx_user_details->account_verification) && $fx_user_details->account_verification=='1'){ ?>
                         <div class="hdr2 f_b m_b_10 m_t_40"><?php echo $page;?> WITHDRAWAL</div>
                         <p  class="help_text">To withdrawal funds using <?php echo $page; ?>  please send a mail to <a href="mailto:<?php echo $email_id;?>" target="_blank"><?php echo $email_id;?></a></p>
-                        <p  class="help_text">Please complete the form below to request a withdrawal. ForexRay will contact you if any further information is required. Kindly note that this is a request for withdrawal and not an automated function. The payment will be completed within 2 - 5 working days.</p>
+                        <p  class="help_text">Please complete the form below to request a withdrawal. <?php echo $this->config->item('project_name') ?> will contact you if any further information is required. Kindly note that this is a request for withdrawal and not an automated function. The payment will be completed within 2 - 5 working days.</p>
 
                         <div class="o_h sum_box r_f m_t_20">
                             <form method="post" action="<?php echo site_url('userpages/withdrawalnew_form'); ?>" class="withdrawal_form j_general_validate" >
@@ -45,7 +45,7 @@
                         </div>
 
                         <div class="hdr2 f_b m_b_10 m_t_40">PAYMENT PROTECTION AND DATA SECURITY</div>
-                        <p  class="help_text">Please note that ForexRay does not receive and/or store any personal credit card or payment information. All transactions are processed and protected by Level 1 PCI-DSS Certified Independent International Payment Gateways.</p>
+                        <p  class="help_text">Please note that <?php echo $this->config->item('project_name') ?> does not receive and/or store any personal credit card or payment information. All transactions are processed and protected by Level 1 PCI-DSS Certified Independent International Payment Gateways.</p>
                         
                         <?php }else{ ?>
                         

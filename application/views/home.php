@@ -147,7 +147,7 @@ div.whatforextext .block2, div.whatforextext .block3{ display:none}
 
     <div class='marquee-with-options'>
         <?php while($row=mysql_fetch_array($qry)){?>
-                            <span class="symbol"><img alt="<?php echo $row['status'];?>" src="plugins/raju/img/<?php echo $row['status'];?>.gif" width="9" height="5">&nbsp;<?=$row['currency_from'].$row['currency_to']?>&nbsp;&nbsp;<?=$row['ask']?>&nbsp;&nbsp;<?=$row['bid']?></span>
+  <span class="symbol"><img alt="<?php echo $row['status'];?>" src="plugins/raju/img/<?php echo $row['status'];?>.gif" width="9" height="5">&nbsp;<?=$row['currency_from'].$row['currency_to']?>&nbsp;&nbsp;<?=$row['ask']?>&nbsp;&nbsp;<?=$row['bid']?></span>
         <?php } ?>
     </div>
                 

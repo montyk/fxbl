@@ -185,7 +185,7 @@
        
         <div class="breadcrumbs_container">
             <article class="article breadcrumbs">
-                <a href="#">FOREXRAY Admin</a>
+                <a href="#"><?php echo $this->config->item('project_name') ?> Admin</a>
                 <div class="breadcrumb_divider"></div>
                 <a class="current">Users List</a>
             </article>

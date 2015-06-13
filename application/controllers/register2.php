@@ -107,42 +107,14 @@ class Register extends MY_Controller {
                             $loginNum = $answer['login'];
                             $sql = 'update users set login="' . $loginNum . '", varification_status = "1" where id = "' . $result . '" ';
                             $this->db->query($sql);
-
-                            /*
-                             * Create t	he forum user
-                             */
-                           // $this->createForumUser($loginNum);
-
-
-                            /*
-                              $email_data['from'] = $this->config->item('from_mail');
-                              $email_data['to'] = $this->db->escape_str($post['email']);
-                              $email_data['subject'] = 'ForexRay Account Details';
-                              $email_data['email_header'] = 'ForexRay Account Details';
-                              $email_data['name'] = ucfirst($post['firstname']);
-                              $emailMessage = 'Login:' . $loginNum . '<br>Password:' . $post['password']; // urlencode($email_data['to'])
-                              $email_data['message'] = $emailMessage;
-                              // $email_data['content'] =  $this->load->view('email_templates/user_reg',$email_data,true);
-
-                              $email_data['content'] = $this->load->view('email_templates/template_2/email_verification', $email_data, true);
-
-                             */
-
-                            //$this->users_model->activateUserID($user_id);
-                            
-                            //if($post['account_for'] == '2')
-                            //{
-                            //    $post['password']='FxRay@123';
-                            //}
-                            
                             $email_data['login_id'] = $loginNum;
                             $email_data['password'] = $post['password'];
                             $email_data['registration_type'] = $post['registration_type'];
                             $email_data['phone_password'] = $post['phone_password'];
                             $email_data['from'] = $this->config->item('from_mail');
                             $email_data['to'] = $this->db->escape_str($post['email']);
-                            $email_data['subject'] = 'ForexRay - Welcome to ForexRay ' . ucfirst($post['firstname']) . '. Your Account Details';
-                            $email_data['email_header'] = 'ForexRay - Welcome to ForexRay. Your Account Details';
+                            $email_data['subject'] = $this->config->item('project_name').'- Welcome to'.$this->config->item('project_name'). ucfirst($post['firstname']) . '. Your Account Details';
+                            $email_data['email_header'] = $this->config->item('project_name').'- Welcome to '.$this->config->item('project_name').' Your Account Details';
                             $email_data['name'] = ucfirst($post['firstname']);
                             $email_data['content'] = $this->load->view('email_templates/template_2/after_verification', $email_data, true);
 

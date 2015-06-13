@@ -1,6 +1,6 @@
 
 <div class="admin_ftr">
-      &copy; 2005- 2013  Forexray All rights reserved.
+      &copy; 2005- 2013 <?php echo $this->config->item('project_name') ?> All rights reserved.
 </div>
 </body>
  <?php $this->load->view('common/analyticstracking');?>  

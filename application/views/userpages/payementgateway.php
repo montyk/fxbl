@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-        <title>ForexRay - Payment Gateway</title>
+        <title><?php echo $this->config->item('project_name') ?> - Payment Gateway</title>
         <?php $this->load->view('common/userpages/head_links_new'); ?>
     </head>
 
@@ -81,7 +81,7 @@
                                 </div>  </div>
                                 
                                  <div class="m_t_10 clearfix">
-                                <div class="lft_stflbl"><label for="amount"><span class="star">*</span>Payment amount in payment system’s currency:</label> </div> 
+                                <div class="lft_stflbl"><label for="amount"><span class="star">*</span>Payment amount in payment systemï¿½s currency:</label> </div> 
                                 <div class="rgt_stflbl"><input type="text" name="amount" id="amount"  class="ip r_f required" placeholder="Amount"/> 
                                     <label for="amount" class="error clearfix"></label>
                                 </div>  </div>

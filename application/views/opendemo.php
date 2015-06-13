@@ -10,7 +10,7 @@
 				<div class="fore_content">
     			   <div class="content_wrap">
 						<h1>Open Demo</h1>
-						<p>Please complete the form below to create your Free Demo trading account with ForexRay.						Once you have submitted your details, you will receive an email which contains a link to activate your account,and you can then begin trading with your practice account immediately.</p>
+						<p>Please complete the form below to create your Free Demo trading account with <?php echo $this->config->item('project_name') ?>.						Once you have submitted your details, you will receive an email which contains a link to activate your account,and you can then begin trading with your practice account immediately.</p>
 						
 						<form action="#" method="post" class="open_form form">
 						<div>

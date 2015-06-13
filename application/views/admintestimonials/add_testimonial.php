@@ -13,7 +13,7 @@
 
 		<div class="breadcrumbs_container">
 			<article class="breadcrumbs article">
-                <a href="#">FOREXRAY Admin</a> 
+                <a href="#"><?php echo $this->config->item('project_name') ?> Admin</a> 
                 <div class="breadcrumb_divider"></div>
                 <a class="current">Testimonials</a>
              </article>

@@ -334,7 +334,7 @@ $('#hiddenpassword').hide();
                 
                     <div class="d_fds">
                         <label><input style="width: 18px;" type="checkbox" name="newsletter" value="1" <?php  if ($send_reports == '1') { echo 'checked=checked'; } ?>/>
-                        I accept to receive newsletters from ForexRay</label>
+                        I accept to receive newsletters from <?php echo $this->config->item('project_name') ?></label>
                     </div>
                         
                     <div class="d_fds">

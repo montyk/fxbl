@@ -46,7 +46,7 @@ class Mail_model extends MY_Model {
         $smtp_acc['gmail']['smtp_host'] = 'ssl://smtp.gmail.com';
         $smtp_acc['gmail']['smtp_port'] = '465';
         $smtp_acc['gmail']['smtp_timeout'] = '7';
-        $smtp_acc['gmail']['smtp_user'] = 'forexray100@gmail.com';
+        $smtp_acc['gmail']['smtp_user'] = 'forexbull100@gmail.com';
         $smtp_acc['gmail']['smtp_pass'] = 'FxRay100';
         $smtp_acc['gmail']['charset'] = 'utf-8';
         $smtp_acc['gmail']['newline'] = "\r\n";
@@ -57,7 +57,7 @@ class Mail_model extends MY_Model {
         $smtp_acc['forexray']['smtp_host'] = 'smtp.mandrillapp.com';
         $smtp_acc['forexray']['smtp_port'] = '587';
         $smtp_acc['forexray']['smtp_timeout'] = '7';
-        $smtp_acc['forexray']['smtp_user'] = 'accounts@forexray.com';
+        $smtp_acc['forexray']['smtp_user'] = 'accounts@forexbull.com';
         $smtp_acc['forexray']['smtp_pass'] = 'aMPHLHeitCybUM-TINMvkQ';
         $smtp_acc['forexray']['charset'] = 'utf-8';
         $smtp_acc['forexray']['newline'] = "\r\n";

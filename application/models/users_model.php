@@ -407,15 +407,15 @@ class Users_model extends MY_Model {
                 $emailMessage='<p>Please find your Login Details are as below.</p><br/><p>Login: '.$loginNum.'</p><p>Password: '.$data[0]->password.'</p>';
                 $email_data['from'] = $this->config->item('from_mail');
                 $email_data['to'] = $this->db->escape_str($data[0]->email);
-                $email_data['subject'] = 'ForexRay Registration - Login Credentials';
-                $email_data['email_header']='ForexRay - Account Login Credentials';
+                $email_data['subject'] = $this->config->item('project_name').' Registration - Login Credentials';
+                $email_data['email_header']=$this->config->item('project_name').' - Account Login Credentials';
                 $email_data['name'] = ucfirst($data[0]->firstname);
                 $email_data['message'] = $emailMessage;
                 $email_data['content'] =  $this->load->view('email_templates/user_reg',$email_data,true);
                 $this->mail_model->send_mail($email_data);
             }
             
-            $this->session->set_flashdata('success_msg','Welcome to ForexRay. Your account is activated. You can Login now.');
+            $this->session->set_flashdata('success_msg','Welcome to'.$this->config->item('project_name').'. Your account is activated. You can Login now.');
             redirect('login');
             // echo 'Your account is activated';
         }
@@ -457,15 +457,15 @@ class Users_model extends MY_Model {
                 $emailMessage='<p>Please find your Login Details are as below.</p><br/><p>Login: '.$loginNum.'</p><p>Password: '.$data[0]->password.'</p>';
                 $email_data['from'] = $this->config->item('from_mail');
                 $email_data['to'] = $this->db->escape_str($data[0]->email);
-                $email_data['subject'] = 'ForexRay Registration - Login Credentials';
-                $email_data['email_header']='ForexRay Registration - Account Login Credentials';
+                $email_data['subject'] = $this->config->item('project_name').' Registration - Login Credentials';
+                $email_data['email_header']=$this->config->item('project_name').' Registration - Account Login Credentials';
                 $email_data['name'] = ucfirst($data[0]->firstname);
                 $email_data['message'] = $emailMessage;
                 $email_data['content'] =  $this->load->view('email_templates/user_reg',$email_data,true);
                 $result = $this->mail_model->send_mail($email_data);
             }
             
-            $this->session->set_flashdata('success_msg','Welcome to ForexRay. Your account is activated. You can Login now.');
+            $this->session->set_flashdata('success_msg','Welcome to.'.$this->config->item('project_name').'. Your account is activated. You can Login now.');
             redirect('login');
             // echo 'Your account is activated';
         }

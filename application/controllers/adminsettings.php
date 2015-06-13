@@ -74,8 +74,8 @@ class Adminsettings extends MY_Controller {
         $email_data['password']=$userDetails[0]->password;
         $email_data['from'] = $this->config->item('from_mail');
         $email_data['to'] = $this->db->escape_str($this->input->get('to'));
-        $email_data['subject'] = 'ForexRay - Welcome to ForexRay '.ucfirst($userDetails[0]->firstname).'. Your Account Details';
-        $email_data['email_header'] = 'ForexRay - Welcome to ForexRay. Your Account Details';
+        $email_data['subject'] = 'ForexBull - Welcome to ForexBull '.ucfirst($userDetails[0]->firstname).'. Your Account Details';
+        $email_data['email_header'] = 'ForexBull - Welcome to ForexBull. Your Account Details';
         $email_data['name'] = ucfirst($userDetails[0]->firstname);
         $email_data['content'] = $this->load->view('email_templates/template_2/after_verification', $email_data, true);
         $result = $this->mail_model->send_mail($email_data);

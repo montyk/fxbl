@@ -22,7 +22,7 @@
                                 
                                 <div class="pg_data">
                                     <ul class="bread_crum" id="breadcrumbs-one">
-                                        <li><a href="<?php echo site_url('/'); ?>">Forexray </a></li>
+                                        <li><a href="<?php echo site_url('/'); ?>"><?php echo $this->config->item('project_name') ?></a></li>
                                         <li><a class="current">Real Account Registration</a></li>
                                     </ul>
                                     <div class="pg_data_view">
@@ -315,7 +315,7 @@
                                                                         <div class="control-group">
                                                                             <label class="control-label" for="send_reports"><input type="checkbox" name="send_reports" value="1"  <?php if(!empty($form_data['send_reports']) && $form_data['send_reports']=='1'){ echo 'checked'; } ?>/></label>
                                                                             <div class="controls">
-                                                                                I agree to receive account reports, newsletters, special offers and also agree to be contacted by ForexRay representatives via phone or e-mail.
+                                                                                I agree to receive account reports, newsletters, special offers and also agree to be contacted by <?php echo $this->config->item('project_name') ?> representatives via phone or e-mail.
                                                                             </div>
                                                                         </div>
                                                                         <div class="control-group">
@@ -327,7 +327,7 @@
                                                                         <div class="control-group">
                                                                             <label class="control-label" for="risk_ack"><input type="checkbox" name="risk_ack" value="1" class="required"  title="Please accept the conditions" /></label>
                                                                             <div class="controls">
-                                                                                I declare & acknowledge the risk warning of ForexRay that forex trading and trading in other products, and I accept and agree with significant level of risk and wish to proceed with my registering a Trading Account with ForexRay.
+                                                                                I declare & acknowledge the risk warning of <?php echo $this->config->item('project_name') ?> that forex trading and trading in other products, and I accept and agree with significant level of risk and wish to proceed with my registering a Trading Account with <?php echo $this->config->item('project_name') ?>.
                                                                             </div>
                                                                         </div>
 

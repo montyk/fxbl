@@ -75,7 +75,7 @@ class Login extends MY_Controller {
         if ($pwd_details) {
             $email_data['from'] = $this->config->item('from_mail');
             $email_data['to'] = $this->db->escape_str($_POST['login_name']);
-            $email_data['subject'] = 'ForexRay Login Details';
+            $email_data['subject'] = $this->config->item('project_name').'Login Details';
             $email_data['name'] = ucfirst($pwd_details[0]->name);
             $email_data['password'] = $pwd_details[0]->password;
             $email_data['content'] = $this->load->view('email_templates/send_password', $email_data, true);
@@ -193,8 +193,8 @@ class Login extends MY_Controller {
             if (!empty($pwd_details)) {
                 $email_data['from'] = $this->config->item('from_mail');
                 $email_data['to'] = $this->db->escape_str($post['login_name']);
-                $email_data['subject'] = 'ForexRay Registration - Verify your Account with 24 hours';
-                $email_data['email_header'] = 'ForexRay Registration - Account Verification';
+                $email_data['subject'] = $this->config->item('project_name').'Registration - Verify your Account with 24 hours';
+                $email_data['email_header'] = $this->config->item('project_name').'Registration - Account Verification';
                 $email_data['name'] = ucfirst($pwd_details[0]->name);
                 $email_data['message'] = 'Please <a href="' . base_url() . 'signup/activate/' . urlencode($email_data['to']) . '" >Click Here</a> with-in 24 hours to activate your account<br/>';
                 $email_data['content'] = $this->load->view('email_templates/user_reg', $email_data, true);
@@ -244,8 +244,8 @@ class Login extends MY_Controller {
         if ($pwd_details) {
             $email_data['from'] = $this->config->item('from_mail');
             $email_data['to'] = $this->db->escape_str($_POST['login_name']);
-            $email_data['subject'] = 'ForexRay Registration - Verify your Account with 24 hours';
-            $email_data['email_header'] = 'ForexRay Registration - Account Verification';
+            $email_data['subject'] = $this->config->item('project_name').'Registration - Verify your Account with 24 hours';
+            $email_data['email_header'] = $this->config->item('project_name').'Registration - Account Verification';
             $email_data['name'] = ucfirst($pwd_details['name']);
             $emailMessage = '<p>Please <a href="' . site_url('registration/activate') . '/' . $this->my_encrypt->encode($pwd_details[0]->id) . '" >Click Here</a> with-in 24 hours to activate your account</p><br/>'; // urlencode($email_data['to'])
             $email_data['message'] = $emailMessage;

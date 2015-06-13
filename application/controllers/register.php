@@ -11,26 +11,25 @@ class Register extends MY_Controller {
         $post = $this->input->post();
         if (!empty($post)) {
             $post['dob'] = dateFormat($this->input->post('dob'), 'Y-m-d h:i:s');
-			$post['leverage_id']='11';
-			if($post['account_for'] == '2' || $post['account_for'] == '3'){
-				if($post['account_for'] == '3')
-					$post['group_id']='9';
-				else if($post['account_for'] == '2')
-				{
-					$post['deposit_status']='N';
-					$post['group_id']='8';
-				}
-				$post['start_date'] = '';
-				$post['exp_date'] = '';
-				$post['account_base_id']='';
-				$post['leverage_id']='11';
-				$post['estimate_income_id']='';
-				$post['estimate_net_worth_id']='';
-				$post['level_of_education_id']='';
-				$post['employment_status_id']='';
-				//$post['nature_of_business_id']='';
-				$post['nature_of_business']='';	
-			}
+            $post['leverage_id'] = '11';
+            if ($post['account_for'] == '2' || $post['account_for'] == '3') {
+                if ($post['account_for'] == '3')
+                    $post['group_id'] = '9';
+                else if ($post['account_for'] == '2') {
+                    $post['deposit_status'] = 'N';
+                    $post['group_id'] = '8';
+                }
+                $post['start_date'] = '';
+                $post['exp_date'] = '';
+                $post['account_base_id'] = '';
+                $post['leverage_id'] = '11';
+                $post['estimate_income_id'] = '';
+                $post['estimate_net_worth_id'] = '';
+                $post['level_of_education_id'] = '';
+                $post['employment_status_id'] = '';
+                //$post['nature_of_business_id']='';
+                $post['nature_of_business'] = '';
+            }
 
             if ($post['group_id'] == '7') {
                 $post['start_date'] = dateFormat($this->input->post('start_date'), 'Y-m-d h:i:s');
@@ -39,8 +38,9 @@ class Register extends MY_Controller {
                 $post['start_date'] = '';
                 $post['exp_date'] = '';
             }
-			if($post['registration_type'] == 'demo') $post['account_for'] == '1';
-			$this->session->set_flashdata('reg_form_data', $post);
+            if ($post['registration_type'] == 'demo')
+                $post['account_for'] == '1';
+            $this->session->set_flashdata('reg_form_data', $post);
 
             /**
              *  START @@ Captcha Checking... 
@@ -67,11 +67,10 @@ class Register extends MY_Controller {
             }else if ($this->formtoken->validateToken($post)) {
 
                 $post['varification_status'] = 1;
-                
-               // echo '<pre>';
-             //   print_r($post);
-                //exit();
 
+                // echo '<pre>';
+                //   print_r($post);
+                //exit();
                 // Save the registration form.
                 $result = $this->users_model->save_registration($post);
                 //echo $result;
@@ -80,69 +79,39 @@ class Register extends MY_Controller {
                     if (empty($post['id'])) {
                         //$info = $this->mql_model->create_account_mql($result);
                         $data = $this->webapi_model->getUser($result);
-                        
-                        if($data[0]['account_for']=='2')
-			{
-			$data[0]['deposit']='0';
-			$data[0]['password_investor']=$data[0]['password'];
-			$data[0]['password']='FxRay@123';
-			}
-			if($data[0]['account_for']=='3')
-			{
-			$data[0]['deposit']='0';
-			}
-                        
+
+                        if ($data[0]['account_for'] == '2') {
+                            $data[0]['deposit'] = '0';
+                            $data[0]['password_investor'] = $data[0]['password'];
+                            $data[0]['password'] = 'FxRay@123';
+                        }
+                        if ($data[0]['account_for'] == '3') {
+                            $data[0]['deposit'] = '0';
+                        }
+
                         $mt4request = new CMT4DataReciver;
                         //$mt4request->SetSafetyData($secretHash, $encryptionKey); // you can turn on encryption and hash by uncommenting this line. (you need to turn it on on the server too)
                         $mt4request->OpenConnection(SERVER_ADDRESS, SERVER_PORT);
-                        
+
                         $answer = $mt4request->MakeRequest("createaccount", $data[0]);
-                        
-                        
+
+
                         //echo '<pre>';
-                       // print_r($answer);
-                       // exit();
-	
-                        if($answer['result']==1){
+                        // print_r($answer);
+                        // exit();
+
+                        if ($answer['result'] == 1) {
                             $loginNum = $answer['login'];
                             $sql = 'update users set login="' . $loginNum . '", varification_status = "1" where id = "' . $result . '" ';
                             $this->db->query($sql);
-
-                            /*
-                             * Create t	he forum user
-                             */
-                           // $this->createForumUser($loginNum);
-
-
-                            /*
-                              $email_data['from'] = $this->config->item('from_mail');
-                              $email_data['to'] = $this->db->escape_str($post['email']);
-                              $email_data['subject'] = 'ForexRay Account Details';
-                              $email_data['email_header'] = 'ForexRay Account Details';
-                              $email_data['name'] = ucfirst($post['firstname']);
-                              $emailMessage = 'Login:' . $loginNum . '<br>Password:' . $post['password']; // urlencode($email_data['to'])
-                              $email_data['message'] = $emailMessage;
-                              // $email_data['content'] =  $this->load->view('email_templates/user_reg',$email_data,true);
-
-                              $email_data['content'] = $this->load->view('email_templates/template_2/email_verification', $email_data, true);
-
-                             */
-
-                            //$this->users_model->activateUserID($user_id);
-                            
-                            //if($post['account_for'] == '2')
-                            //{
-                            //    $post['password']='FxRay@123';
-                            //}
-                            
                             $email_data['login_id'] = $loginNum;
                             $email_data['password'] = $post['password'];
                             $email_data['registration_type'] = $post['registration_type'];
                             $email_data['phone_password'] = $post['phone_password'];
                             $email_data['from'] = $this->config->item('from_mail');
                             $email_data['to'] = $this->db->escape_str($post['email']);
-                            $email_data['subject'] = 'ForexRay - Welcome to ForexRay ' . ucfirst($post['firstname']) . '. Your Account Details';
-                            $email_data['email_header'] = 'ForexRay - Welcome to ForexRay. Your Account Details';
+                            $email_data['subject'] = 'ForexBull - Welcome to ForexBull ' . ucfirst($post['firstname']) . '. Your Account Details';
+                            $email_data['email_header'] = 'ForexBull - Welcome to ForexBull. Your Account Details';
                             $email_data['name'] = ucfirst($post['firstname']);
                             $email_data['content'] = $this->load->view('email_templates/template_2/after_verification', $email_data, true);
 
@@ -215,7 +184,7 @@ class Register extends MY_Controller {
             $this->load->view('register/index', $data);
         }
     }
-    
+
     function open_demo_acc() {
 
         $data = array();
@@ -255,7 +224,7 @@ class Register extends MY_Controller {
 //            $data['sidebar_promotions'] = $this->adminhomepage_model->getnews('', ' LIMIT ' . $sidebar_promotions_count, TRUE);
         $this->load->view('register/open_demo_acc', $data);
     }
-    
+
     function success($registration_info) {
         // $this->load->model('adminhomepage_model');
         // $data['registration_info'] = $registration_info = $this->session->flashdata('registration_info');
@@ -268,18 +237,9 @@ class Register extends MY_Controller {
             $this->load->view('registration/success', $data);
         }
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    public function test()
-    {
-        $user_id='193';
+
+    public function test() {
+        $user_id = '193';
         $data = $this->webapi_model->getUser($user_id);
         echo '<pre>';
         print_r($data);
@@ -289,61 +249,57 @@ class Register extends MY_Controller {
         $mt4request = new CMT4DataReciver;
         //$mt4request->SetSafetyData($secretHash, $encryptionKey); // you can turn on encryption and hash by uncommenting this line. (you need to turn it on on the server too)
         $mt4request->OpenConnection(SERVER_ADDRESS, SERVER_PORT);
-        
+
         $params['group'] = $data[0]['group'];
-    	$params['agent'] = isset($data[0]['agent'])?$data[0]['agent']:'0';
-    	$params['login'] = 0;
-    	$params['country'] = $data[0]['country'];
-    	$params['state'] = $data[0]['state'];
-    	$params['city'] = $data[0]['city'];
-    	$params['address'] = $data[0]['address'];
-    	$params['name'] = $data[0]['name'];
-    	$params['email'] = $data[0]['email'];
-    	$params['password'] = ($data[0]['account_for']=='2')?'FxRay@123':$data[0]['password'];
-    	$params['password_investor'] = ($data[0]['account_for']=='2')?$data[0]['password']:'';
-    	$params['password_phone'] = $data[0]['phone_password'];
-    	$params['leverage'] = $data[0]['leverage'];
-    	$params['zipcode'] = $data[0]['zipcode'];
-    	$params['phone'] = $data[0]['phone'];
-    	$params['id'] = '';
-    	$params['comment'] = 'NO COMMENT';
-    	//$params['send_reports'] = rawurlencode($data[0]['send_reports']);
-            
+        $params['agent'] = isset($data[0]['agent']) ? $data[0]['agent'] : '0';
+        $params['login'] = 0;
+        $params['country'] = $data[0]['country'];
+        $params['state'] = $data[0]['state'];
+        $params['city'] = $data[0]['city'];
+        $params['address'] = $data[0]['address'];
+        $params['name'] = $data[0]['name'];
+        $params['email'] = $data[0]['email'];
+        $params['password'] = ($data[0]['account_for'] == '2') ? 'FxRay@123' : $data[0]['password'];
+        $params['password_investor'] = ($data[0]['account_for'] == '2') ? $data[0]['password'] : '';
+        $params['password_phone'] = $data[0]['phone_password'];
+        $params['leverage'] = $data[0]['leverage'];
+        $params['zipcode'] = $data[0]['zipcode'];
+        $params['phone'] = $data[0]['phone'];
+        $params['id'] = '';
+        $params['comment'] = 'NO COMMENT';
+        //$params['send_reports'] = rawurlencode($data[0]['send_reports']);
         //echo '<pre>';
         //print_r($params);
-	//exit();
-	$answer = $mt4request->MakeRequest("createaccount", $data[0]);
-	
-	if($answer['result']!=1)
-	{
-		print "<p style='background-color:#FFEEEE'>An error occured: <b>".$answer['reason']."</b>.</p>";
-	}
-	else
-	{	
-		print "<p style='background-color:#EEFFEE'>Account No. <b>".$answer["login"]."</b> has just been created.</p>";
-	}
+        //exit();
+        $answer = $mt4request->MakeRequest("createaccount", $data[0]);
 
-
+        if ($answer['result'] != 1) {
+            print "<p style='background-color:#FFEEEE'>An error occured: <b>" . $answer['reason'] . "</b>.</p>";
+        } else {
+            print "<p style='background-color:#EEFFEE'>Account No. <b>" . $answer["login"] . "</b> has just been created.</p>";
+        }
     }
-    
-    
-    public function charts2()
-    {
-        echo $msg='12';echo '<br/>';
-        echo $enc=$this->encrypt->encode($msg);echo '<br/>';
-        echo  $dec=$this->encrypt->decode($enc);echo '<br/>';
-        echo $enc=base64_encode($msg);echo '<br/>';
-        echo  $dec=base64_decode($enc);echo '<br/>';
+
+    public function charts2() {
+        echo $msg = '12';
+        echo '<br/>';
+        echo $enc = $this->encrypt->encode($msg);
+        echo '<br/>';
+        echo $dec = $this->encrypt->decode($enc);
+        echo '<br/>';
+        echo $enc = base64_encode($msg);
+        echo '<br/>';
+        echo $dec = base64_decode($enc);
+        echo '<br/>';
         exit();
         $this->load->view('register/charts');
     }
-    
-    public function piechart()
-    {
-         $mt4request = new CMT4DataReciver;
+
+    public function piechart() {
+        $mt4request = new CMT4DataReciver;
         $mt4request->OpenConnection(SERVER_ADDRESS, SERVER_PORT);
         //$user_details = unserialize($this->session->userdata['user_details']);
-        $user_details->id='391';
+        $user_details->id = '391';
         $params['login'] = '101242';
         $data['my_investors'] = $this->pamm_relations_model->my_investors($user_details->id);
         //echo '<pre>';
@@ -352,158 +308,156 @@ class Register extends MY_Controller {
         //$amount=0;
         //for($i=0;$i<sizeof($data);$i++)
         //{
-            //echo 'coming heere';
-            //echo $data->amount;
-           // echo '         ';
-            //echo $data['amount'];
-            //print_r($data[$i]);
-          //  $amount+=$data[$i]->amount;echo '<br/>';
+        //echo 'coming heere';
+        //echo $data->amount;
+        // echo '         ';
+        //echo $data['amount'];
+        //print_r($data[$i]);
+        //  $amount+=$data[$i]->amount;echo '<br/>';
         //}
         //echo $amount;
         //exit();
-        $this->load->view('register/piechart',$data);
+        $this->load->view('register/piechart', $data);
     }
-    
-    public function piewithlegendchart()
-    {
+
+    public function piewithlegendchart() {
         $this->load->view('register/piewithlegendchart');
     }
-    
-    public function barchartwithbasiccolumn()
-    {
+
+    public function barchartwithbasiccolumn() {
         $mt4request = new CMT4DataReciver;
         $mt4request->OpenConnection(SERVER_ADDRESS, SERVER_PORT);
         $params['login'] = '101463';
 
         //$startTS = strtotime(date('2014-04-07')); //echo '</br>';
         $startTS = strtotime(date('2014-03-10')); //echo '</br>';
-
         //echo $startTS = strtotime('2014-03-05');
         //echo $startTS = '2013-02-18';
         //$time    =mktime(23,59,59,date('n'),date('j'),date('Y'));
-	//$time2=$time-2592000;
-        
+        //$time2=$time-2592000;
+
         $params['login'] = '101463';
-        $answerDataa = $mt4request->MakeRequest("getmargininfoex",$params);
-        echo $balance=$answerDataa['balance'];echo '<br/>';
-        $endTS = strtotime(date('2014-03-13')); 
+        $answerDataa = $mt4request->MakeRequest("getmargininfoex", $params);
+        echo $balance = $answerDataa['balance'];
+        echo '<br/>';
+        $endTS = strtotime(date('2014-03-13'));
         $params['from'] = $startTS;
         $params['to'] = $endTS;
 
-        $answerData2 = $mt4request->MakeRequest("gethistory", $params);   
-        echo $data['size'] = $size = sizeof($answerData2['csv']);//echo '<br/>';
-                //$profit_loss=0;
-        $xaxis='';
-        $buy='';
-        $sell='';
-        for($i = 0; $i <= $size; $i++)
-        {
-            if($i==0)
-                $balance=$balance;
+        $answerData2 = $mt4request->MakeRequest("gethistory", $params);
+        echo $data['size'] = $size = sizeof($answerData2['csv']); //echo '<br/>';
+        //$profit_loss=0;
+        $xaxis = '';
+        $buy = '';
+        $sell = '';
+        for ($i = 0; $i <= $size; $i++) {
+            if ($i == 0)
+                $balance = $balance;
             else
-            $balance=$bal[$i-1];
+                $balance = $bal[$i - 1];
             $answerData2['csv'][$i];
             $values = explode(";", $answerData2['csv'][$i]);
             echo '<pre>';
             print_r($values);
             //echo $values[15];
-            $buy[$i]='';
-           $xaxis[$i]=$values[5]+$values[14]+$values[15];//echo '<br/>';
-           if($i==0)
-                $bal[$i]=$balance;
-           else
-                $bal[$i]=$balance-($xaxis[$i-1]);//echo '<br/>';
+            $buy[$i] = '';
+            $xaxis[$i] = $values[5] + $values[14] + $values[15]; //echo '<br/>';
+            if ($i == 0)
+                $bal[$i] = $balance;
+            else
+                $bal[$i] = $balance - ($xaxis[$i - 1]); //echo '<br/>';
         }
         //print_r($xaxis);
         //print_r($bal);
         exit();
-        $data['bal']=$bal;
-        $this->load->view('register/barchartwithbasiccolumn',$data);
+        $data['bal'] = $bal;
+        $this->load->view('register/barchartwithbasiccolumn', $data);
     }
-    
-    public function charts()
-    {
+
+    public function charts() {
         $mt4request = new CMT4DataReciver;
         $mt4request->OpenConnection(SERVER_ADDRESS, SERVER_PORT);
         $params['login'] = '101463';
 
         //$startTS = strtotime(date('2014-04-07')); //echo '</br>';
         $startTS = strtotime(date('2014-03-10')); //echo '</br>';
-
         //echo $startTS = strtotime('2014-03-05');
         //echo $startTS = '2013-02-18';
         //$time    =mktime(23,59,59,date('n'),date('j'),date('Y'));
-	//$time2=$time-2592000;
-        
+        //$time2=$time-2592000;
+
         $params['login'] = '101463';
-        $answerDataa = $mt4request->MakeRequest("getmargininfoex",$params);
-        echo $balance=$answerDataa['balance'];echo '<br/>';
-        $endTS = strtotime(date('2014-03-13')); 
+        $answerDataa = $mt4request->MakeRequest("getmargininfoex", $params);
+        echo $balance = $answerDataa['balance'];
+        echo '<br/>';
+        $endTS = strtotime(date('2014-03-13'));
         $params['from'] = $startTS;
         $params['to'] = $endTS;
 
-        $answerData2 = $mt4request->MakeRequest("gethistory", $params);   
-        echo $data['size'] = $size = sizeof($answerData2['csv']);//echo '<br/>';
-                //$profit_loss=0;
-        $xaxis='';
-        $sum=0;
-        for($i = 0; $i <= $size; $i++)
-        {
-            if($i==0)
-                $balance=$balance;
+        $answerData2 = $mt4request->MakeRequest("gethistory", $params);
+        echo $data['size'] = $size = sizeof($answerData2['csv']); //echo '<br/>';
+        //$profit_loss=0;
+        $xaxis = '';
+        $sum = 0;
+        for ($i = 0; $i <= $size; $i++) {
+            if ($i == 0)
+                $balance = $balance;
             else
-            $balance=$bal[$i-1];
+                $balance = $bal[$i - 1];
             $answerData2['csv'][$i];
             $values = explode(";", $answerData2['csv'][$i]);
             //echo '<pre>';
             //print_r($values);
             //echo $values[15];
-           $xaxis[$i]=$values[5]+$values[14]+$values[15];//echo '<br/>';
-           if($i==0)
-                $bal[$i]=$balance;
-           else
-                $bal[$i]=$balance-($xaxis[$i-1]);//echo '<br/>';
+            $xaxis[$i] = $values[5] + $values[14] + $values[15]; //echo '<br/>';
+            if ($i == 0)
+                $bal[$i] = $balance;
+            else
+                $bal[$i] = $balance - ($xaxis[$i - 1]); //echo '<br/>';
         }
         //print_r($xaxis);
         //print_r($bal);
         //exit();
-        $data['bal']=$bal;
+        $data['bal'] = $bal;
         //echo sizeof($bal);
-        $this->load->view('register/charts',$data);
+        $this->load->view('register/charts', $data);
     }
 
-    public function pie_charts()
-    {
-        $data='';
-        $this->load->view('register/pie_charts',$data);
-    }
-	
-	public function numbertowords()
-	{
-		error_reporting(E_ALL);ini_set('display_errors','on');
-
-		$this->load->library('numbertoword');
-		
-		echo $this->numbertoword->convertCurrencyToWords('24').'<br/>';
-		echo $this->numbertoword->convertCurrencyToWords('24.00').'<br/>';
-		echo $this->numbertoword->convertCurrencyToWords('24.0').'<br/>';
-		echo $this->numbertoword->convertCurrencyToWords('24.2').'<br/>';
-		echo $this->numbertoword->convertCurrencyToWords('24.27').'<br/>';
-	}
-        public  function currency_json(){
-        
-       // echo 11;
-            $currency=array();
-          $currency['post'][]=array('EURUSD'=>'1.08076  1.08046 ','GBUSD'=>'1.49633  1.43 9593'
-                                    ,'USDJPY'=>'118.919  118.899','EURGBP'=>'118.919  118.899','USDCHF'=>'1.49633  1.43 9593',
-                                      'USDCAD'=>'118.919  118.899');
-        
-           echo json_encode($currency);
-        
-        
-        
+    public function pie_charts() {
+        $data = '';
+        $this->load->view('register/pie_charts', $data);
     }
 
+    public function numbertowords() {
+        error_reporting(E_ALL);
+        ini_set('display_errors', 'on');
+
+        $this->load->library('numbertoword');
+
+        echo $this->numbertoword->convertCurrencyToWords('24') . '<br/>';
+        echo $this->numbertoword->convertCurrencyToWords('24.00') . '<br/>';
+        echo $this->numbertoword->convertCurrencyToWords('24.0') . '<br/>';
+        echo $this->numbertoword->convertCurrencyToWords('24.2') . '<br/>';
+        echo $this->numbertoword->convertCurrencyToWords('24.27') . '<br/>';
+    }
+
+    public function currency_json() {
+
+        // echo 11;
+        $currency = array();
+        $currency['post'][] = array('EURUSD' => '1.08076  1.08046 ', 'GBUSD' => '1.49633  1.43 9593'
+            , 'USDJPY' => '118.919  118.899', 'EURGBP' => '118.919  118.899', 'USDCHF' => '1.49633  1.43 9593',
+            'USDCAD' => '118.919  118.899');
+
+        echo json_encode($currency);
+    }
+    
+       public function tette(){
+           
+           $d=$this->config->item('project_name');
+            echo $d;
+           
+       }
 }
 
 ?>

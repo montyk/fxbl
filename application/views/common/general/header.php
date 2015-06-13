@@ -22,7 +22,7 @@
 <div class="topheader ovrclr">
     <div class="inner">
         <div class="fr ovrclr tphedcnt">
-            Welcome <span class="colwhite"> ForexRay </span> &nbsp; |   &nbsp;
+            Welcome <span class="colwhite"> <?php echo $this->config->item('project_name') ?> </span> &nbsp; |   &nbsp;
             <a href="">My Account</a> &nbsp; |   &nbsp;
             Date:08-09-2012 &nbsp; |   &nbsp; <a href="<?php echo site_url("logout"); ?>" class="nav-link">Logout</a>        
         </div>

@@ -21,7 +21,7 @@ class News extends MY_Controller {
         $sidebar_promotions_count=$this->config->item('sidebar_promotions_count');
         $data['sidebar_news'] = $this->adminhomepage_model->getnews('',' LIMIT  '.$sidebar_news_count);
         $data['sidebar_promotions'] = $this->adminhomepage_model->getnews('',' LIMIT '.$sidebar_promotions_count,TRUE);
-        $pag[0]->title='ForexRay - News';
+        $pag[0]->title=$this->config->item('project_name').'- News';
         $data['pages'] = $pag;
         $this->load->view('news/index', $data);
     }
@@ -37,7 +37,7 @@ class News extends MY_Controller {
             $where_id = " and n.id=$news_id AND n.language_id=$userLangID ";
             $news = $this->news_model->viewnews($where_id);
         }
-        $news[0]->title='ForexRay - News Full Story';
+        $news[0]->title=$this->config->item('project_name').'- News Full Story';
         $data['sidebar_news'] = $this->adminhomepage_model->getnews('',' LIMIT 5 ');
         $data['sidebar_promotions'] = $this->adminhomepage_model->getnews('',' LIMIT 5 ',TRUE);
         $data['news']=$news;

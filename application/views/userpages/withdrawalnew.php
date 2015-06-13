@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-        <title>ForexRay - Withdrawal</title>
+        <title><?php echo $this->config->item('project_name') ?> - Withdrawal</title>
         <?php $this->load->view('common/userpages/head_links_new'); ?>
     </head>
     <body class="app">
@@ -31,7 +31,7 @@
 
                            <p> We strongly suggest that you submit withdrawal requests after closing your positions.
 </p>
-<p class="m_t_b_10">Please note that ForexRay accepts withdrawal requests for trading accounts with opened positions.</p>
+<p class="m_t_b_10">Please note that <?php echo $this->config->item('project_name') ?> accepts withdrawal requests for trading accounts with opened positions.</p>
 
                         </div>
 

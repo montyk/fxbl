@@ -356,9 +356,9 @@ $config['rewrite_short_tags'] = FALSE;
 |
 */
 $config['proxy_ips'] = '';
-
-
-$config['app_name']         = '';// 'forexray\forex_new'; 
+$config['finance_email']         = 'finance@forexBull.com';
+$config['project_name']         = 'ForexBull';
+$config['app_name']         = 'fxbl';// 'forexray\forex_new'; 
 $config['from_mail']        = 'accounts@forexray.com'; // 'info@forexray.com'; 
 $config['contact_us_mail']  = 'contact@forexray.com';
 

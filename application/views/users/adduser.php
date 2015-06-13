@@ -290,7 +290,7 @@ $(document).ready(function(){
 	<section id="secondary_bar" class="section">
 
 		<div class="breadcrumbs_container">
-			<article class="breadcrumbs article"><a href="#">FOREXRAY Admin</a> <div class="breadcrumb_divider"></div> <a class="current">User</a></article>
+			<article class="breadcrumbs article"><a href="#"><?php echo $this->config->item('project_name') ?> Admin</a> <div class="breadcrumb_divider"></div> <a class="current">User</a></article>
 		</div>
 	</section><!-- end of secondary bar -->
 	

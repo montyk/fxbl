@@ -42,7 +42,7 @@
       
 	<header id="header">
 		<hgroup>
-			<h1 class="site_title"><a href="dashboard.php">FOREXRAY Admin</a></h1>
+			<h1 class="site_title"><a href="dashboard.php"><?php echo $this->config->item('project_name') ?> Admin</a></h1>
 			<h2 class="section_title">Dashboard</h2><div class="btn_view_site"><a href="#">Logout</a></div>
 		</hgroup>
 	</header> <!-- end of header bar -->
@@ -54,7 +54,7 @@
 		</div>
 		<div class="breadcrumbs_container">
         	<article class="breadcrumbs">
-                <a href="#">FOREXRAY Admin</a> 
+                <a href="#"><?php echo $this->config->item('project_name') ?> Admin</a> 
                 <div class="breadcrumb_divider"></div>
                 <a class="current">Dashboard</a>
              </article>

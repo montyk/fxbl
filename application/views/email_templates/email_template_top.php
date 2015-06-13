@@ -11,7 +11,7 @@
                             </td>
                             <td style="padding:.75pt .75pt .75pt .75pt">
                                 <p style="margin: 10px 0;">
-                                    <img src="<?php echo base_url();  ?>public/images/email/logo.png" alt="ForexRay" width="282" height="54" style="padding-right: 20px;"/>
+                                    <img src="<?php echo base_url();  ?>public/images/email/logo.png" alt="<?php echo $this->config->item('project_name') ?>" width="282" height="54" style="padding-right: 20px;"/>
                                 </p>
                             </td>
                         </tr>

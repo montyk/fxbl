@@ -139,7 +139,7 @@
                                         <div class="gallery_content">
                                             <div class="gallery_slide">
                                                     <h2>Welcome to <?php echo $i; ?></h2>
-                                                    <p>Welcome to ForexRay</p>
+                                                    <p>Welcome to <?php echo $this->config->item('project_name') ?></p>
                                                     <div class="fr r_more brad4"><a href="#">Read more</a></div>
                                             </div>
                                         </div>
@@ -222,7 +222,7 @@
 							</div>
 							<div class="testimonial fl">
 								<h2><b>TESTIMONIAL</b></h2>
-                                                                <p>“<?php echo ((!empty($testmonial))?$testmonial[0]->message:'Loading...');  ?>�?</p>
+                                                                <p>“<?php echo ((!empty($testmonial))?$testmonial[0]->message:'Loading...');  ?>�?</p>
                                                                 <div class="tip">&nbsp;</div>
 								<div><?php echo ((!empty($testmonial))?$testmonial[0]->name:'Loading...');  ?></div>
                                                                 <div class="fr r_more brad4"><a href="<?php echo site_url('testimonials')  ?>">View All</a></div>

@@ -4,15 +4,15 @@
         <!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />-->
     
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title><?php if (isset($pages[0]->title)) echo $pages[0]->title; else echo 'FOREXRAY'; ?></title>
+        <title><?php if (isset($pages[0]->title)) echo $pages[0]->title; else  echo $this->config->item('project_name'); ?></title>
         
         <meta name="description" content="<?php if (isset($pages[0]->meta_description)) echo $pages[0]->meta_description; ?>" />
         <meta name="keywords" content="<?php if (isset($pages[0]->meta_keywords)) echo $pages[0]->meta_keywords; ?>" />
-        <meta name="author" content="FOREXRAY" />
+        <meta name="author" content="<?php echo $this->config->item('project_name') ?>" />
         <meta name="robots" content="index, follow" />
         
-        <meta name="copyright" content="Ã‚Â© 2005- 2013  Forexray All rights reserved. forexray.com" />
-        <meta name="contact" content="contact_us@forexray.com" />
+        <meta name="copyright" content="Ã‚Â© 2005- 2013  <?php echo $this->config->item('project_name') ?> All rights reserved. <?php echo $this->config->item('project_name') ?>.com" />
+        <meta name="contact" content="<?php echo $this->config->item('contact_us_mail') ?>" />
         <meta name="google" content="notranslate" />
         
         <link rel="canonical" href="<?php echo current_url()?>" />

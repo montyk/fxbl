@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-        <title>ForexRay - PAMM Manager Account</title>
+        <title><?php echo $this->config->item('project_name') ?> - PAMM Manager Account</title>
         <?php $this->load->view('common/userpages/head_links_new'); ?>
     </head>
     <body class="app pamm_man_update">
@@ -231,7 +231,7 @@
                                 },
                                 tooltip: {
                                     valueSuffix: ''
-                                    //valueSuffix: '°C'
+                                    //valueSuffix: 'ï¿½C'
                                 },
                                 legend: {
                                     layout: 'vertical',
@@ -324,23 +324,23 @@
                         </table>
                         <?php // echo '<pre>'; print_r($info); echo '</pre>'; ?>
              <?php if($is_relation<=0){?>
-			                   <p style='padding-top: 15px;'> <input type="checkbox" name='terms' id='terms' value='1'> I agree to the FOREXRAY PAMM Program 
+			                   <p style='padding-top: 15px;'> <input type="checkbox" name='terms' id='terms' value='1'> I agree to the <?php echo $this->config->item('project_name') ?> PAMM Program 
 							    <a id='tc' class='m_t_20'>Terms and Conditions</a>
 								</p>
 								<div id='tctc' style='padding: 5px; border: 1px solid white; margin-top: 17px; display: none;'>
 								<p><b>NOTICE OF RISK</b></p>
 
 								<p>
-								FOREXRAY does not guarantee profit to any of its Managed account investors and warns them that no positive record of trading strategy implementation ensures the repeat of trading success in future.
+								<?php echo $this->config->item('project_name') ?> does not guarantee profit to any of its Managed account investors and warns them that no positive record of trading strategy implementation ensures the repeat of trading success in future.
                                 </p>  
 
-								<p>FOREXRAY is not responsible for Manager's and Investors' actions providing "Managed account" service. Any positive or negative consequences of Management have a direct effect solely upon Manager and Investor and are a result of Manager's activity.
+								<p><?php echo $this->config->item('project_name') ?> is not responsible for Manager's and Investors' actions providing "Managed account" service. Any positive or negative consequences of Management have a direct effect solely upon Manager and Investor and are a result of Manager's activity.
 
 
 Manager conducts trading activity solely on his own behalf and at his own responsibility.
 </p>
 <p>
-FOREXRAY does not assess Manager's competence, his business or ethical merits and bears no responsibility for the possible loss or missed profit caused by those before Investor at any stage of manager’s activity.
+<?php echo $this->config->item('project_name') ?> does not assess Manager's competence, his business or ethical merits and bears no responsibility for the possible loss or missed profit caused by those before Investor at any stage of managerï¿½s activity.
 </p>								</div>
                                 <a class="button yellow m_t_20 cur_def j_general_submit" id='join_pamm' href="<?php echo site_url('userpages/join_pamm/'.$id);?>" >Join Under PAMM Program</a>
                                 <?php }?>

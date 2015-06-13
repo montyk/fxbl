@@ -18,7 +18,7 @@
                                         <p align="left" class="article-title" style="font-size: 18px; line-height:24px; color: #b0b0b0; font-weight:bold; margin-top:0px; margin-bottom:18px; font-family: 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif;">Welcome to <span class="cm-singleline" label="Title"><span style="color:#5599d6;">Forex</span><span style="color:#f0893a;">Ray</span></span></p>
                                         <div align="left" class="article-content" style="font-size: 13px; line-height: 18px; color: #444444; margin-top: 0px; margin-bottom: 18px; font-family: 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif;">
                                             <p>Dear <?php if(!empty($name)){ echo $name; }else{ echo 'Customer'; } ?>,</p>
-                                            <!--<p>Thank you for choosing <a href="<?php echo site_url(); ?>" target="_blank"><b style="color:#FCA810;">ForexRay</b></a> to access the financial markets real-time and practice your trading skills with a risk-free demo account.</p>-->
+                                            <!--<p>Thank you for choosing <a href="<?php echo site_url(); ?>" target="_blank"><b style="color:#FCA810;"><?php// echo $this->config->item('project_name') ?></b></a> to access the financial markets real-time and practice your trading skills with a risk-free demo account.</p>-->
                                             <p><span><?php echo $message;?></span></p>
                                         </div>
                                     </td>
@@ -97,7 +97,7 @@
                                                 Kind Regards,
                                             </p>
                                             <p>
-                                               FOREXRAY Customer Support
+                                               <?php echo $this->config->item('project_name') ?> Customer Support
                                             </p>
                                         </div>
                                     </td>
@@ -176,7 +176,7 @@
                                         <div align="left" class="article-content" style="font-size: 13px; line-height: 18px; color: #444444; margin-top: 0px; margin-bottom: 18px; font-family: 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif;">
                                             <p>
                                                 <a href="<?php echo site_url('home/metatrader'); ?>" target="_blank" style="display: block; color: #986a39; border: 1px solid #e6b650; outline: none; font-size: 18px; padding: 20px 10px; text-align: center; text-decoration: none!important; border-radius: 3px; -moz-border-radius: 3px; box-shadow: inset 0px 0px 2px #fff; -o-box-shadow: inset 0px 0px 2px #fff; -webkit-box-shadow: inset 0px 0px 2px #fff; -moz-box-shadow: inset 0px 0px 2px #fff; background-image: -moz-linear-gradient(#ffd974, #febf4d); background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#febf4d), to(#ffd974)); background-image: -webkit-linear-gradient(#ffd974, #febf4d); background-image: -o-linear-gradient(#ffd974, #febf4d); text-shadow: 1px 1px 1px #fbe5ac; background-color: #febf4d;">
-                                                    Download ForexRay Trading Platform
+                                                    Download <?php echo $this->config->item('project_name') ?> Trading Platform
                                                 </a>
                                             </p>
                                         </div>

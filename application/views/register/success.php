@@ -22,7 +22,7 @@
                                 
                                 <div class="pg_data">
                                     <ul class="bread_crum" id="breadcrumbs-one">
-                                        <li><a href="<?php echo site_url('/'); ?>">Forexray </a></li>
+                                        <li><a href="<?php echo site_url('/'); ?>"><?php echo $this->config->item('project_name') ?> </a></li>
                                         <li><a class="current">Registration Success</a></li>
                                     </ul>
                                     <div class="pg_data_view">
@@ -32,7 +32,7 @@
                                                     <div style="">
                                                         <div class="well">
                                                             <p>Dear <b><?php if(!empty($registration_info['firstname'])) echo $registration_info['firstname']; ?></b>,</p>
-                                                            <p>Thank you for opening an account with ForexRay.</p>
+                                                            <p>Thank you for opening an account with <?php echo $this->config->item('project_name') ?>.</p>
                                                             <p>Your account login details have been sent to the email address you have provided us - <?php if(!empty($registration_info['email'])) echo $registration_info['email']; ?>. Please check your inbox (as well as your spam folder).</p>
                                                         </div>
                                                         
@@ -40,15 +40,15 @@
                                                         
                                                         <h4 class="title">HOW TO GET STARTED</h4>
 
-                                                        <p>To start trading, please <a href="<?php echo base_url(); ?>/home/metatrader">download and install the ForexRay MetaTrader</a>, or use the credentials sent to your email address to log in to any of our 8 trading platforms that you can download or access any time from the Platforms section.</p>
+                                                        <p>To start trading, please <a href="<?php echo base_url(); ?>/home/metatrader">download and install the <?php echo $this->config->item('project_name') ?> MetaTrader</a>, or use the credentials sent to your email address to log in to any of our 8 trading platforms that you can download or access any time from the Platforms section.</p>
 
                                                         <h4>HOW TO FUND YOUR ACCOUNT</h4>
 
-                                                        <p>With the login details sent to your email address you can log in to our Members Area at ForexRay.com, where you can monitor your account, make deposits and withdrawals, and perform other account-related functions.</p>
+                                                        <p>With the login details sent to your email address you can log in to our Members Area at <?php echo $this->config->item('project_name') ?>.com, where you can monitor your account, make deposits and withdrawals, and perform other account-related functions.</p>
 
                                                         <p>You can close this window now, or you can <a href="<?php echo site_url('home');?>">Click Here</a> to go to our homepage.</p>
 
-                                                        <p>The ForexRay Team</p>
+                                                        <p>The <?php echo $this->config->item('project_name') ?> Team</p>
                                                         
                                                     </div>
                                                     <div style="clear: both"></div>

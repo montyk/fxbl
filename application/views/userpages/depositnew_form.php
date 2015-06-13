@@ -25,14 +25,10 @@
                             <!--<p class="m_t_b_10">To deposit funds using <?php echo $page;?> please send a mail to <a href="mailto:<?php echo $email_id;?>" target="_blank"><?php echo $email_id;?></a>.</p>-->
 
 
-                           
-                           <!--  <p class="m_t_b_10">In order to fund your account via Wire Transfer, please download Fund Transfer Form, complete the necessary details, and email  it back to us along with the SWIFT confirmation document(TT Receipt) .</p><br/>
-  <p class="m_t_b_10"><b>Please download the form below:</b></p>
-  <p><span style="BORDER: #C0C0C0 1px solid;BORDER-BOTTOM:#C0C0C0 2px solid;padding:5px 10px 5px 10px;">Fund Transfer to SEB Bank Estonia (Remittance) Notice in US$  &nbsp;&nbsp;&nbsp;&nbsp;    <a href="http://www.forexray.com/downloads/Fund_Transfer_to_SEB_en.Docx"><span style="text-decoration: underline;
-    font-size: 12px;color: #0066FF;">Download</span><img src="https://www.forexray.com/public/images/down.png"></a></span></p><br>-->
+                    
                             <p class="m_t_b_10"><b>In order to fund your account via  <?php echo $page;?></b></p>
-                           <!-- <p class="m_t_b_10">Please Contact Forexray Finance Department Email: </p>-->
-                            <p class="m_t_b_10">Please Contact Forexray Finance Department Email: <span style="color: #0066FF;">finance@forexray.com</span></p>
+                           
+                            <p class="m_t_b_10">Please Contact <?php echo $this->config->item('project_name') ?> Finance Department Email: <span style="color: #0066FF;"><?php echo $this->config->item('finance_email') ?></span></p>
                            
 
 

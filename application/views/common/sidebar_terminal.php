@@ -1,6 +1,6 @@
 <?php    
 $protocol=(!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
-$server_domain_name=$protocol."forexray.com";
+$server_domain_name=$protocol.$this->config->item('project_name').".com";
 ?>
 <div class="mt10 ml10 stocks_list">
    <!--<iframe src="<?php echo base_url();?>/plugins/raju/terminal.php" height="496px"></iframe>-->

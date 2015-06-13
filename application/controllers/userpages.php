@@ -172,36 +172,36 @@ class Userpages extends MY_Controller {
     public function depositnew_form($page_id = 0) {
         if(isset($page_id) && $page_id=='chcard'){
             $page='Chinese Debit/Credit Cards';
-            $email_id='finance@forexray.com';
+            $email_id=$this->config->item('finance_email');
         }else if(isset($page_id) && $page_id=='card'){
             $page='Credit/Debit Cards';
-            $email_id='finance@forexray.com';
+            $email_id=$this->config->item('finance_email');
         }else if(isset($page_id) && $page_id=='sk'){
             $page='Skrill (MoneyBookers)';
-            $email_id='finance@forexray.com';
+            $email_id=$this->config->item('finance_email');
         }else if(isset($page_id) && $page_id=='net'){
             $page='Neteller';
-            $email_id='finance@forexray.com';
+            $email_id=$this->config->item('finance_email');
         }else if(isset($page_id) && $page_id=='bwt'){
             $page='Bank Wire Transfer';
-            $email_id='finance@forexray.com';
+            $email_id=$this->config->item('finance_email');
         }
 		else if(isset($page_id) && $page_id=='bwt2'){
             $page='Bank Wire Transfer';
-            $email_id='finance@forexray.com';
+            $email_id=$this->config->item('finance_email');
         }
 		else if(isset($page_id) && $page_id=='chcard'){
             $page='Chinese Debit/Credit Cards Instant';
-            $email_id='finance@forexray.com';
+            $email_id=$this->config->item('finance_email');
         }else if(isset($page_id) && $page_id=='mg'){
             $page='MoneyGram';
-            $email_id='finance@forexray.com';
+            $email_id=$this->config->item('finance_email');
         }else if(isset($page_id) && $page_id=='wu'){
             $page='Western Union';
-            $email_id='finance@forexray.com';
+            $email_id=$this->config->item('finance_email');
         }else {
             $page='';
-            $email_id='finance@forexray.com';
+            $email_id=$this->config->item('finance_email');
         }
         $data['page']=$page;
 		$data['page_id']=$page_id;

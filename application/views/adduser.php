@@ -177,7 +177,7 @@
 
 	<header id="header">
 		<hgroup>
-			<h1 class="site_title"><a href="dashboard.php">FOREXRAY Admin</a></h1>
+			<h1 class="site_title"><a href="dashboard.php"><?php echo $this->config->item('project_name') ?> Admin</a></h1>
 			<h2 class="section_title">Add New User</h2><div class="btn_view_site"><a href="#">Logout</a></div>
 		</hgroup>
 	</header> <!-- end of header bar -->
