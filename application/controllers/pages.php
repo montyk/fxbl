@@ -12,7 +12,7 @@ class Pages extends MY_Controller {
             
             $data=$this->adminwidget_model->get_widgets_template();
             
-            $pageDetails = $this->pages_model->getpagedet(trim($url_key),$language_id);
+            $pageDetails = $this->pages_model->getpagedet_atta(trim($url_key),$language_id);
 
             if(!empty($pageDetails) && stripos($pageDetails[0]->content, '{EMBEDPAGE')>0){
                 $matches = array();
@@ -22,7 +22,7 @@ class Pages extends MY_Controller {
                     foreach ($matches[1] as $key => $value) {
                         $embed_url_key=substr($value, 1);
                         $embedPage  = '';
-                        $embedPageDetails = $this->pages_model->getpagedet(trim($embed_url_key), $language_id);
+                        $embedPageDetails = $this->pages_model->getpagedet_atta(trim($embed_url_key), $language_id);
                         if (!empty($embedPageDetails))
                             $embedPage = $embedPageDetails[0]->content;
                         $pageDetails[0]->content=str_replace($matches[0][$key], $embedPage, $pageDetails[0]->content);

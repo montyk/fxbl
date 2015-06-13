@@ -15,14 +15,17 @@
                 <div class="overlay_bg rel">
                     <div class="fore_ca">
                         <div class="fore_content">
-                        <div><img class="bread_img" src="http://fxprofitsmaster.com/wp-content/uploads/2013/11/cropped-header1.jpg"/></div>
+                            <?php if (isset($pages[0]->url)){ ?>
+<!--                        <div><img class="bread_img" src="http://fxprofitsmaster.com/wp-content/uploads/2013/11/cropped-header1.jpg"/></div>-->
+                            <div><img class="bread_img" src="<?php echo base_url()?>/<?php echo $pages[0]->url;?>"/></div>
+                       <?php } ?>
                             <div class="content_wrap fl">
                                <?php /*?> <h1 class="h_1"><?php if(isset($pages[0]->title)) echo $pages[0]->title;?></h1><?php */?>
 							
                                 <div class="pg_data">
                                     
                                     <ul class="bread_crum" id="breadcrumbs-one">
-                                        <li><a href="<?php echo site_url('/'); ?>">Forexbull </a></li>
+                                        <li><a href="<?php echo site_url('/'); ?>"><?php echo $this->config->item('project_name') ?></a></li>
                                         <li><a class="current"><?php if (isset($pages[0]->title)) echo $pages[0]->title; ?></a></li>
                                     </ul>
                                     

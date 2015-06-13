@@ -52,8 +52,8 @@ class Adminusers extends MY_Controller {
 				//$email_data['phone_password'] = $post['phone_password'];
 				$email_data['from'] = $this->config->item('from_mail');
 				$email_data['to'] = $this->db->escape_str($post['email']);
-				$email_data['subject'] = 'ForexRay - Welcome to ForexRay ' . ucfirst($post['firstname']) . '. Your Account Approved';
-				$email_data['email_header'] = 'ForexRay - Welcome to ForexRay. Your Account Approved';
+				$email_data['subject'] = $this->config->item('project_name').' - Welcome to '.$this->config->item('project_name') . ucfirst($post['firstname']) . '.Your Account Approved';
+				$email_data['email_header'] = $this->config->item('project_name').' - Welcome to '.$this->config->item('project_name'). 'Your Account Approved';
 				$email_data['name'] = ucfirst($post['firstname']);
 				$email_data['message'] = 'Our verification team has reviewed the Identification and Proof of Address documents, your account is approved.';
 				$email_data['content'] = $this->load->view('email_templates/template_2/after_acc_verification', $email_data, true);

@@ -87,5 +87,13 @@ class Pages_model extends MY_Model {
 
         return $data;
     }
+     function getpagedet_atta($url_key = '', $language_id = 1) {
+        $sql = 'select p.id, p.name, p.title, p.url_key, p.meta_keywords, p.meta_description, p.content,p.url_key,p.plaintext,patt.url
+                    from pages as p left join pages_attachnments as patt on p.id=patt.pages_id
+                    where p.url_key = "' . $url_key . '" AND p.language_id = "' . $language_id . '" ';
+        $data = $this->getDBResult($sql, 'object');
+
+        return $data;
+    }
 
 }
