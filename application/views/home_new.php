@@ -13,7 +13,7 @@
 </div>
 
         <!-- **Main - Starts** --> 
-		<div id="main">
+		<div id="main" class="app">
         
         	<!-- **banner - Starts** -->
             <div class="banner">
@@ -120,8 +120,7 @@ Investment * </p>
 	<!-- Marquee--><!-- **full-width-section - Ends** -->
             <div class="dt-sc-margin20"></div>
             <div class="parallax full-width-section rj-parallax" style="background-position: 50% -63px;">
-			
-			
+						
                  <?php if(!empty($home_pages_sections[7]->content)){ echo html_entity_decode($home_pages_sections[7]->content); } ?>	
                    <!--  **column - Starts   welcome to forexbull page ** -->
                   <!--   <div class="column dt-sc-one-half first pull-left animate fadeInDown" data-animation="fadeInDown" data-delay="100">
@@ -144,9 +143,7 @@ Investment * </p>
             </div>
             <div class="dt-sc-margin20"></div>  
             <div class="container">
-                    
-                    
-                    <div class="column dt-sc-one-fourth first fadeInLeft" data-animation="fadeInLeft" data-delay="100">
+                 <div class="column dt-sc-one-fourth first fadeInLeft" data-animation="fadeInLeft" data-delay="100">
                         <div class="dt-sc-ico-content type4">
                     
                              <!--   <img src="<?= base_url() ?>public/images/tr_p.jpg" alt="image">                            
@@ -215,10 +212,10 @@ Investment * </p>
                         </div>
                     </div>
                     <div class="column dt-sc-one-fourth fadeInRight" data-animation="fadeInRight" data-delay="100">
-                            <div class="dt-sc-ico-content type4">
                     
-                                <img src=" http://www.placehold.it/245x123&text=Image" alt="image">                            
-                            <div class="dt-sc-location-detail">
+                          <div class="dt-sc-ico-content type4">
+                            <!-- <img src=" http://www.placehold.it/245x123&text=Image" alt="image">     -->                       
+                            <!--<div class="dt-sc-location-detail">
                                 <h6>TRADING PRODUCTS</h6>
                                 <ul>
                                  <li><span class="fa fa-angle-right"></span> Account Types</li>
@@ -227,7 +224,11 @@ Investment * </p>
                                     <li><span class="fa fa-angle-right"></span> Forexcopy System</li>
                                     <li><span class="fa fa-angle-right"></span> Payment Systems</li>
                                 </ul>
-                            </div>
+                            </div>-->
+                            <div class="mt10 ml10 stocks_list">
+   <!--<iframe src="<?php echo base_url();?>/plugins/raju/terminal.php" height="496px"></iframe>-->
+   <img src="<?= base_url() ?>public/images/chart.png" /></div>
+   
                             <div class="clearfix"></div>
                             
                         </div>

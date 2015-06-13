@@ -47,7 +47,6 @@ $server_domain_name=$protocol."forexray.com";
 
 </div>
 
-
 <div class="box_central rad_four">
 
     <div class="box_central_header">Central Banks Rates</div>

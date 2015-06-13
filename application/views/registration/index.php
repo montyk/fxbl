@@ -385,7 +385,7 @@
                                 </div>
                             </div>
 							
-                            <div class="right_ca fl">
+                            <?php /*?><div class="right_ca fl">
                                 
                                 <?php $this->load->view('common/sidebar_1'); ?>
                                 
@@ -393,7 +393,7 @@
                                 
                                 <?php // $this->load->view('common/sidebar_news');?>
     
-                            </div>
+                            </div><?php */?>
                             <div class="cl"></div>
                         </div>
                     </div>
@@ -547,7 +547,7 @@
     });
 </script>
 
-<?php $this->load->view('common/footer');?>
+<?php $this->load->view('common/footer_new');?>
 
 
 
