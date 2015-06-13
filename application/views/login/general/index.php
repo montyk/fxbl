@@ -223,7 +223,7 @@
 
 <!-- end div#wrapper -->
 <!--	Start footer content-->
-<?php  $this->load->view('common/footer');?>
+<?php  $this->load->view('common/footer_new');?>
 <!--end footer content-->
 
 </div>

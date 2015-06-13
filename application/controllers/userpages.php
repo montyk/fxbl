@@ -13,6 +13,7 @@ class Userpages extends MY_Controller {
     }
 
     public function index() {
+        
         redirect('userpages/homenew');
     }
     
@@ -61,7 +62,10 @@ class Userpages extends MY_Controller {
     }
     
     public function homenew_mql() {
+       // echo 111;die;
         $post = $this->session->userdata('mql_login');
+       // print_r($post);die;
+        
         $data = $this->mql_model->MQ_Login_Account($post['login_name'], $post['user_password']);
         // echo '<pre>'; print_r($data); echo '</pre>';
         if (!$data['error']) {
@@ -74,8 +78,11 @@ class Userpages extends MY_Controller {
     }
     public function homenew() {
         $post = $this->session->userdata('mql_login');
-        $data = $this->mql_model->MQ_Login_Account($post['login_name'], $post['user_password']);
-        // echo '<pre>'; print_r($data); echo '</pre>';
+      //  print_r($post);die;
+        
+        //$data = $this->mql_model->MQ_Login_Account($post['login_name'], $post['user_password']);
+       // echo '<pre>'; print_r($data); echo '</pre>';die;
+           $data['error']=0;
         if (!$data['error']) {
             $var = new stdclass();
             $var->info = explode("\r\n", $data['response']);

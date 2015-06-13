@@ -490,6 +490,19 @@ class Register extends MY_Controller {
 		echo $this->numbertoword->convertCurrencyToWords('24.2').'<br/>';
 		echo $this->numbertoword->convertCurrencyToWords('24.27').'<br/>';
 	}
+        public  function currency_json(){
+        
+       // echo 11;
+            $currency=array();
+          $currency['post'][]=array('EURUSD'=>'1.08076  1.08046 ','GBUSD'=>'1.49633  1.43 9593'
+                                    ,'USDJPY'=>'118.919  118.899','EURGBP'=>'118.919  118.899','USDCHF'=>'1.49633  1.43 9593',
+                                      'USDCAD'=>'118.919  118.899');
+        
+           echo json_encode($currency);
+        
+        
+        
+    }
 
 }
 

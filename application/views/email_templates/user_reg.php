@@ -2,7 +2,7 @@
 
 <tr>
     <td colspan='2' style="border-top:solid #999ba0 1px;border-left:0 none;border-right: 0 none;background:#fefefe;padding:11.25pt 11.25pt 11.25pt 15.0pt;min-height:45.0pt">
-        <span style="font-size:10.0pt;font-family:Arial, Helvetica, sans-serif;color:#565656">Thank you for registering with <a href="<?php echo base_url();  ?>" style="text-decoration: none;"><b style='color: #FCA810;'>ForexRay</b></a>.</span>
+        <span style="font-size:10.0pt;font-family:Arial, Helvetica, sans-serif;color:#565656">Thank you for registering with <a href="<?php echo base_url();  ?>" style="text-decoration: none;"><b style='color: #FCA810;'>ForexBull</b></a>.</span>
         <br/>
         <span style="font-size:10.0pt;font-family:Arial, Helvetica, sans-serif;color:#565656"><?php if(!empty($message)){ echo $message; }  ?></span>
     </td>

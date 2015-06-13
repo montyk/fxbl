@@ -9,8 +9,8 @@ class MY_Controller extends CI_Controller {
     
     private $arrSessionLess = array(
                                     'signup','testimonials','contact_us',
-                                    'uploadify','pages','en','home','fn','ru','welcome','news','registration','fileupload','pamm_manager','forgotpassword','register','createaccountform','updatebalance','payment'
-                                );
+                                    'uploadify','pages','en','home','fn','ru','welcome','news','registration','fileupload','pamm_manager','forgotpassword','register','createaccountform','updatebalance','payment',
+                                    );
     
     private $staffUrls=array('staff','userpages','otp','otpmessage');
     

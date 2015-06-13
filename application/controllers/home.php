@@ -20,9 +20,9 @@ class Home extends MY_Controller {
         $sidebar_promotions_count=$this->config->item('sidebar_promotions_count');
         $data['sidebar_news'] = $this->adminhomepage_model->getnews('',' LIMIT  '.$sidebar_news_count);
         $data['sidebar_promotions'] = $this->adminhomepage_model->getnews('',' LIMIT '.$sidebar_promotions_count,TRUE);
-        $page[0]->title='ForexRay | ForexRay Trading | Trading Tools | Trading Conditions';
-        $page[0]->meta_keywords='ForexRay, ForexRay Trading, Trading Tools, Trading Conditions';
-        $page[0]->meta_description='ForexRay aim to provide you with the same professional service, execution, and trading functionality demanded by interbank traders';
+        $page[0]->title='ForexBull | ForexBull Trading | Trading Tools | Trading Conditions';
+        $page[0]->meta_keywords='ForexBull, ForexBull Trading, Trading Tools, Trading Conditions';
+        $page[0]->meta_description='ForexBull aim to provide you with the same professional service, execution, and trading functionality demanded by interbank traders';
         $data['pages'] = $page;
         $data['menus'] = $menus;
         $this->load->view("home_new", $data);
@@ -63,7 +63,7 @@ class Home extends MY_Controller {
 
     
     function metatrader() {
-        //redirect('fileupload/download/downloads/forexray4.exe');
+        
         redirect('fileupload/download/downloads/forexray4setup.exe');
     }
     
@@ -79,6 +79,7 @@ class Home extends MY_Controller {
     {
         $this->load->view('refresh');
     }
+  
     
 }
 
