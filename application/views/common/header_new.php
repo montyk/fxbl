@@ -31,7 +31,7 @@
 <link rel="stylesheet" type="text/css" href="<?= base_url() ?>/misc/css/base.css" />  
     
 <link rel="stylesheet" type="text/css" href="<?= base_url() ?>/misc/css/style.css" />
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="<?= base_url() ?>/misc/css/images/favicon.ico" type="image/x-icon" />
 <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,300italic' rel='stylesheet' type='text/css'>
 <link id="skin-css" rel="stylesheet" href="<?= base_url() ?>public/skins/skyblue/style.css" type="text/css" media="all"/>
 <link id="layer-slider" rel="stylesheet"  href="<?= base_url() ?>public/css/layerslider.css" media="all" />
@@ -302,7 +302,7 @@ if(!function_exists('buildSubMenu')){
                 <div class="top-rightt pull-right">
                     <ul class="top-menu">
                         <li><a href="<?php echo site_url('login'); ?>"> <span class="fa fa-comments"></span> Client Support</a></li>
-                        <li><a href="<?php echo site_url('registration'); ?>"> <span class="fa fa-user"></span>Login</a></li>
+                        <li><a href="<?php echo site_url('login'); ?>"> <span class="fa fa-user"></span>Login</a></li>
                          <li><a href="<?php echo site_url('registration'); ?>"> <span class="fa fa-user"></span>Registration</a></li>
                         <li><a href=""> <span class="fa fa-globe"></span> English</a></li>
                     </ul>

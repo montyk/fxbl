@@ -10,9 +10,9 @@
 
     @media only screen and (min-width:960px) and (max-width:1270px) {
 		
-	.container { width:900px; }		
+	.container { width:980px; }		
 		
-	.boxed .wrapper { width:940px; margin:0 auto; float:none; }  
+	.boxed .wrapper { width:980px; margin:0 auto; float:none; }  
   	.boxed .header, .boxed .header6 #header-wrapper { width:940px; }
 	.megamenu-child-container > ul.sub-menu > li { width:190px; }
 	.megamenu-5-columns-group .megamenu-child-container > ul.sub-menu > li { width:150px; }
@@ -22,7 +22,7 @@
 	.header7 .main-menu-container { width:900px; }
 	
 	/*----*****---- << Header >> ----*****----*/	
-	#logo { width:23%; }
+	#logo { width:19%; }
 	.top-right { width:33%; }
 	
 	.top-contact-details li { margin:0 11px 0 0; }
@@ -145,12 +145,17 @@
 		.side-nav-container ul li a .fa { margin-left:5px; }
 		
 		.intro-text.type3 .intro-text-content { background:rgba( 216, 205, 200, 0.5 ); }
-		.intro-text.type5 { background-size:inherit; background-image:none; background-color:#662729; }
-	
+		.intro-text.type5 { background-size:inherit; background-image:none; background-color:#1C1821 !important; max-height: 460px !important;}
+		
 		.dt-sc-hours-icon span { top:-34px; }
 		.dt-sc-fd-price { float:none; margin-left:10px; line-height:normal; }
+		.dt-sc-button2 {margin-left:40px !important;}
+		.column.dt-sc-one-half.first.pull-left{width: 50% !important;}
+		.column.dt-sc-one-half.btn_pad{width: 50% !important; float:right; margin:0px !important;}
+		.dt-sc-button1.ico-button {margin-right: 10px !important;}
+		.rj-parallax .rjpad { padding: 4% 2% 0% 5% !important; line-height: 21px;}
 		
-		/*----*****---- << BMI >> ----*****----*/
+				/*----*****---- << BMI >> ----*****----*/
 		
 		.dt-sc-bmi-frm-detail { padding: 35px 20px; width: 60.5%; }
 		.dt-sc-bmi-frm input[type="submit"], .dt-sc-bmi-frm input[type="reset"] { padding: 10px 11px; }
