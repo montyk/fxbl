@@ -52,6 +52,7 @@
 	
 	.dt-sc-one-fourth { width:23.4%; }
 	.dt-sc-one-half { width:48.9%; }
+	.parallax .dt-sc-one-half { width:50%; margin: 0px !important;}
 	.dt-sc-one-third { width:31.9%; }
 	.dt-sc-three-fourth { width:74.5%; }	
 	.dt-sc-two-third { width:65.8%; }
@@ -67,7 +68,7 @@
 	.dt-sc-four-sixth { width:60%; }
 	.dt-sc-five-sixth { width:75%; }		
 	
-	.column img { max-width:100%; height:auto; }
+	.column img { width:100%; height:auto; }
 	
 	.column.no-space { margin-left:0px; margin-right:0px; }
 	.column.no-space.dt-sc-one-fourth { width:25%; } 	
@@ -402,11 +403,12 @@
 	.intro-text.type4 p, .intro-text.type4 .dt-sc-button.large:hover span, .intro-text.type5 h6 { color:#ffffff; }
 	.intro-text.type4 p { clear:both; }
 	.intro-text.type4 .dt-sc-button.large { margin:20px 0px 0px 0px; }
-	.intro-text.type5 { background:url(images/btm_bg.jpg) repeat-y;background-size:100%; background-color:#09F; min-height: 360px; } 
+	.intro-text.type5 { background:url(images/btm_bg.jpg) no-repeat; background-size:100%; background-color:#ff554e; max-height: 420px; } 
 	.intro-text.type5 h2 { color:#ffffff; font-weight:bold; text-transform: none; }
 	.intro-text.type5 p { color:#af7e84; }
 	.intro-text.type5 .dt-sc-button, .intro-text.type6 .dt-sc-button { float:none; }
-	.intro-text.type5 .intro-text-content { width:410px; margin:0 auto; }
+	.intro-text.type5 .intro-text-content { width: 40%; margin: 0 40%;}	
+    .intro-text.type5 .intro-text-content ul.dt-sc-fancy-list{ float: left; width: 50%;}
     .intro-text-content .dt-sc-fancy-list{ color:#00C;}
 	.intro-text.type6 { -moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box; }
 	.intro-text.type6 h2 { font-size:30px; text-transform:inherit; font-weight:400; margin-bottom:20px; }
@@ -850,7 +852,10 @@
 	#footer .mailchimp .dt-sc-social-icons li a:hover:before { height:100%; }
 	.copyright .dt-sc-social-icons li a:before { height:100%; }
 	.copyright .dt-sc-social-icons li a:hover:before { height:0%; }
-    #footer .footer_container{ background:#1E2126; padding:1% 10%; color:#fff;}
+    #footer .footer_container{ background:#1E2126; padding: 2% 6%; color:#fff;}
+    #footer .copyright .footer_copyright {color:#363636;}
+    #footer .copyright .footer_copyright a {color:#111;}
+    #footer .copyright .footer_copyright a:hover {color:#FF554E;}
 	
 	#footer .mailchimp .dt-sc-social-icons li .facebook:hover:before, .copyright .dt-sc-social-icons li .facebook:before  { background-color:#3b5998; }
 	#footer .mailchimp .dt-sc-social-icons li .twitter:hover:before, .copyright .dt-sc-social-icons li .twitter:before  { background-color:#00aced; }

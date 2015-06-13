@@ -95,7 +95,7 @@ a:hover {
 }*/
 .topnav{
 /*	background: url(../images/black_bg.png) repeat-x 0 0;*/
-	background: #00162C;
+	background: #FF554E;
 	z-index: 3000;
 	position: fixed;
 	left: 0;
@@ -159,7 +159,6 @@ border-top: 1px solid #266AAD;
 	display: block;
 	float: left;
 	border-right: 1px solid #707070;
-	text-shadow: 0 1px 0 #323232;
 	padding-left: 24px;
 	padding-right: 12px;
 	background: url(../images/icn_user_white.png) no-repeat center left;
@@ -176,12 +175,11 @@ border-top: 1px solid #266AAD;
 
 .user a {
 	text-decoration: none;
-	color: #B9BFC1;
-	text-shadow: 0 1px 0 #323232;
+	color: #fff;
 }
 
 .user a:hover {
-	color: #ffffff;
+	color: #f00;
 }
 
 /* notify messaging */

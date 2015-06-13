@@ -11,7 +11,7 @@
                     }
                     ?>		
 				<div class="container">
-                	<p style="color:#f00;">© 2005- 2015  <a href="#" style="color:#f00;">Forexray</a> All rights reserved.</p>
+                	<p class="footer_copyright">© 2005- 2015  <a href="#">Forexbull</a> All rights reserved.</p>
                     <ul class="footer-links">
                     	<li><a href="index.html">Anti-Money Laundering</a>/</li>
                         <li><a href="about.html">Disclaimer</a>/</li>
