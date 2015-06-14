@@ -314,8 +314,15 @@
 	.woocommerce form .form-row, .woocommerce-page form .form-row { margin: 0 0 14px; position:relative; }
 	.selection-box { clear: both; position: relative; background-color: #f8f8f8; }
 	.woocommerce form .form-row select, .woocommerce-page form .form-row select { cursor: pointer; margin: 0; width: 100%; }
-	select { -moz-appearance: none; border: 1px solid #eaeaea; border-radius: 0; color: #92a7bb; cursor: pointer; height: 50px; margin: 0px; text-indent: 0.01px; text-overflow: ""; width: 100%; padding: 0px 10px 0px 10px; line-height:43px; }
-	select option { background-color: #f8f8f8; padding: 15px 0px 14px 10px; }
+	select { min-width: 70px;-moz-appearance: none;  border-radius: 0; color: #fff; cursor: pointer; margin: 0px; text-indent: 0.01px; text-overflow: "";appearance:none;-moz-appearance:none; /* Firefox */-webkit-appearance:none; /* Safari and Chrome */ }
+	select+i{color:#fff!important;}
+	.top-rightt select+i {
+		position: absolute;
+  right: 19px;
+  top: 8px;
+  cursor: pointer;	
+	}
+	select option { background-color: #f8f8f8; padding: 15px 0px 14px 10px;color: #000; }
 	.woocommerce .cart-collaterals .shipping_calculator, .woocommerce-page .cart-collaterals .shipping_calculator { clear: right; float: right; margin: 30px 0 0; text-align: right;  width: 48%; }
 	.woocommerce .button, .woocommerce-page .button, .button { font-size: 14px; padding: 15px 11px 16px; border:none; min-height:50px; backface-visibility: hidden; }
 	.woocommerce .button:hover, .button:hover { background-color:#546d87; }

@@ -339,7 +339,17 @@ else
                                                         <li><a href="<?php echo site_url('login'); ?>"> <span class="fa fa-comments"></span> Client Support</a></li>
                                                         <li><a href="<?php echo site_url('login'); ?>"> <span class="fa fa-user"></span>Login</a></li>
                                                         <li><a href="<?php echo site_url('registration'); ?>"> <span class="fa fa-user"></span>Registration</a></li>
-                                                        <li><a href=""> <span class="fa fa-globe"></span> English</a></li>
+                                                        <li> <span class="fa fa-globe"></span> 
+                                                            <select>
+                                                                <option value="germany">English</option>
+                                                                <option value="germany">Germany</option>
+                                                                <option value="spanish">Spanish</option>
+                                                                <option value="arabic">Arabic</option>
+
+                                                            </select>
+                                                            <i class="fa fa-angle-down"></i>
+
+                                                        </li>
                                                     </ul>
                                                 </div>
 
