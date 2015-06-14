@@ -51,7 +51,7 @@ $active_record = TRUE;
 $db['default']['hostname'] = 'localhost';
 $db['default']['username'] = 'root';
 $db['default']['password'] = '';
-$db['default']['database'] = 'forexray';
+$db['default']['database'] = 'fxbl';
 //edealspot
 $db['default']['dbdriver'] = 'mysqli';
 $db['default']['dbprefix'] = '';
@@ -68,7 +68,7 @@ $db['default']['stricton'] = FALSE;
 $db['ticket']['hostname'] = 'localhost';
 $db['ticket']['username'] = 'root';
 $db['ticket']['password'] = '';
-$db['ticket']['database'] = 'forexray';
+$db['ticket']['database'] = 'fxbl';
 $db['ticket']['dbdriver'] = 'mysqli';
 $db['ticket']['dbprefix'] = '';
 $db['ticket']['pconnect'] = TRUE;
