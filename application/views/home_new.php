@@ -213,20 +213,46 @@ Investment * </p>
                     </div>
                     <div class="column dt-sc-one-fourth fadeInRight" data-animation="fadeInRight" data-delay="100">
                     
-                          <div class="dt-sc-ico-content type4">
-                             <img src="<?= base_url() ?>public/images/cc.jpg" alt="image" />                            
+                          <div class="dt-sc-ico-content type4 live_data">
+                                                         
                             <div class="dt-sc-location-detail">
-                                <h6>CURRENCY CONVERTER</h6>
-                                <p class="cc">Now you can  Calculate live currency and foreign exchange rates with this free currency converter. You can convert currencies and precious metals with this currency ...
-</p>
-                                <!--<ul>
-                                 <li><span class="fa fa-angle-right"></span> Account Types</li>
-                                    <li><span class="fa fa-angle-right"></span> PAMM </li>
-                                    <li><span class="fa fa-angle-right"></span> Forex Islamic</li>
-                                    <li><span class="fa fa-angle-right"></span> Forexcopy System</li>
-                                    <li><span class="fa fa-angle-right"></span> Payment Systems</li>
-                                </ul>
--->                            </div>
+                                <h6>LIVE RATES</h6>
+                                
+							<table class="table">
+								<thead>
+									<tr>
+										<th>Symbol</th>
+										<th>Bid</th>
+									</tr>
+								</thead>
+							<tbody>
+									<tr>
+										<td>EURUSD</td>
+										<td>1.12375</td>
+									</tr>
+									<tr>
+										<td>EURUSD</td>
+										<td>1.12375</td>
+									</tr>
+									<tr>
+										<td>EURUSD</td>
+										<td>1.12375</td>
+									</tr>
+									<tr>
+										<td>EURUSD</td>
+										<td>1.12375</td>
+									</tr>
+									<tr>
+										<td>EURUSD</td>
+										<td>1.12375</td>
+									</tr>
+									<tr>
+										<td>EURUSD</td>
+										<td>1.12375</td>
+									</tr>
+							</tbody>
+							</table>
+                            </div>
                           <!--  <div class="mt10 ml10 stocks_list">
    <img src="<?= base_url() ?>public/images/chart.png" /></div>-->
    

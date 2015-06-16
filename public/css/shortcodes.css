@@ -739,6 +739,28 @@
 							  padding:10px; 
 							  border-top:1px solid #ff554e; 
 							}
+.dt-sc-ico-content.live_data{
+	border:none;
+	box-shadow: none;
+}
+.live_data{
+	padding:0px;
+	width: 100%;
+}
+.live_data .dt-sc-location-detail h6{
+	background-color: rgb(255, 85, 78);
+	color: #fff;
+	text-align: center;
+	padding: 10px;
+	margin: 0;
+}
+.live_data .dt-sc-location-detail{
+	padding: 0px;
+}
+.list_view,.list_view1{
+	float: left;
+}
+
  .dt-sc-location-detail:before{border-left: 8px solid transparent;
   border-right: 8px solid transparent;
   border-top: 8px solid #ff554e;
