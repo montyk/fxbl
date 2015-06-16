@@ -76,7 +76,7 @@ else
                             jQuery.each(curren_key, function (index, value) {
                             jQuery.each(value, function (index1, value1) {
                             CUR.push(index1 + ' - ' + value1);
-                               console.log(index1 + ' - ' + value1);
+                               console.log('<li>'+index1 + '</li><li>' + value1+'</li>');
                                 });
                             });
 
