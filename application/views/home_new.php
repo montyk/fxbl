@@ -23,10 +23,10 @@
            <div class="ls-slide" data-ls="slidedelay:10000;transition2d:4;">
                         <img src="<?php echo base_url().$v->attachment; ?>" data-src="<?php echo base_url().$v->attachment; ?>" class="ls-bg" alt="bg2" />
                         
-                        <div class="ls-l" style="top:240px;left:320px;font-weight:700; z-index:3;font-family:'Roboto';font-size:24px;line-height:21px;color:#fff;white-space: nowrap;" data-ls="offsetxin:-100;durationin:1500;delayin:800;">
+                        <div class="ls-l" style="top:240px;left:50%;margin-left:-100px;font-weight:700; z-index:3;font-family:'Roboto';font-size:24px;line-height:21px;color:#fff;white-space: nowrap;" data-ls="offsetxin:-100;durationin:1500;delayin:800;">
 						<?php echo $v->heading; ?></div>
 
-                        <div class="ls-l" style="top:300px;left:20px;font-weight:700; z-index:3; letter-spacing:2.5px;font-family:'Roboto';font-size:42px;line-height:26px;color:#ffffff; text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5); white-space: nowrap;"  data-ls="offsetxin:0;offsetyin:100;durationin:1500;delayin:2000;">
+                        <div class="ls-l" style="top:300px;left:50%;margin-left:-150px;font-weight:700; z-index:3; letter-spacing:2.5px;font-family:'Roboto';font-size:42px;line-height:26px;color:#ffffff; text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5); white-space: nowrap;"  data-ls="offsetxin:0;offsetyin:100;durationin:1500;delayin:2000;">
 						<?php echo substr(filterStringDecode($v->meta_description), 0, 100) ; ?></div>
                                                
                         <p class="ls-l" style="top:370px;left:320px;white-space: nowrap; line-height:30px;" data-ls="offsetxin:0;offsetyin:100;delayin:4000;"> <a href="#" class="dt-sc-button1 ico-button"> OPEN A REAL ACCOUNT</a></p>
