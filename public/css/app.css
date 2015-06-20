@@ -3,8 +3,8 @@
 /*.app { background: url(../images/whttex.jpg) repeat;}*/
 .app .header{
 	height: 50px;
-	background: #222;
-	border-bottom: 1px solid #1D1D1D;
+	background: #FF554E;
+	border-bottom: 1px solid #FF554E;
 	position: fixed;
 	left: 0;
 	right: 0;
@@ -60,20 +60,22 @@
 .app .app_interaction a.logged_user:hover .usr_ico{ background-position:  0 -100px}
 .app .contentarea{ top: 51px; overflow:hidden;}
 .app .leftNav{ 
-	width: 240px;
+	width:100%;
     background-color: #444;
 	box-shadow: -1px 0px 0px #5C5C5F inset;
 	top: 51px; 
-	bottom: 0; 
+	/*bottom: 0;*/ 
 	left: 0;
 	overflow: auto;
 	border-right: 1px solid #323232;
-	padding-bottom: 40px
+	/*padding-bottom: 40px*/
 }
-
+.app .lft_sub_menu li a{
+	float: none!important;
+}
 .app .leftNav ul li{
-    border-bottom: 1px solid #333;
-    border-top: 1px solid #555;
+    /*border-bottom: 1px solid #333;
+    border-top: 1px solid #555;*/
     padding-bottom: 0px;
  }
 
@@ -85,6 +87,7 @@
     padding: 10px 10px !important;
 	color: #dedede; 
 	line-height: 24px;
+	float: left;
 }
 .app .leftNav li a:hover{ /*#7ED1FF;*/ color: #fff}
 .app .leftNav li a:active{ /*color: #C5EAFF;*/ color: #eee}
@@ -94,7 +97,7 @@
 .app .nav_emt{ /*padding: 20px 0 0 20px*/}
 .app .lft_sub_menu{ /*margin-left: 20px*/}
 .app .lft_sub_menu ul li{border-bottom: 1px solid #555; margin-bottom:0px !important;}
-.app .rightNav{ margin-left: 240px; color: #fff; padding-bottom: 40px}
+.app .rightNav{ /*margin-left: 240px;*/ color: #fff; margin-top: 52px;/*padding-bottom: 40px*/}
 .app .rightNav .rightNav_head{
 	background: #434344;
 	height: 40px;
