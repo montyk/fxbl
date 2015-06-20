@@ -75,7 +75,6 @@ class Adminhomepage_model extends MY_Model {
                 FROM pages AS p
                 LEFT JOIN languages AS lang ON lang.id=p.language_id
                 WHERE 1 AND (p.name LIKE "%'.$search_term.'%" OR p.url_key LIKE "%'.$search_term.'%") AND  p.language_id='.$language_id.' AND p.status=1
-                
                 LIMIT 50
             '; // ORDER BY name ASC
         return $res = $this->getDBResult($sql);

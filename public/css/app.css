@@ -52,6 +52,8 @@
 	background: url(../images/bgic.png) no-repeat;
 	display: inline-block;
 }
+.app #main-menu.leftNav{overflow:initial;}
+.leftNav#main-menu ul li.menu-item-simple-parent ul{top:54px;}
 .app .usr_ico{
 	width: 16px;
 	height: 16px;

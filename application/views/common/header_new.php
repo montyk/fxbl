@@ -3,11 +3,12 @@
         <!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />-->
 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title><?php if (isset($pages[0]->title))
-    echo $pages[0]->title;
-else
-    echo $this->config->item('project_name');
-?></title>
+        <title><?php
+            if (isset($pages[0]->title))
+                echo $pages[0]->title;
+            else
+                echo $this->config->item('project_name');
+            ?></title>
 
         <meta name="description" content="<?php if (isset($pages[0]->meta_description)) echo $pages[0]->meta_description; ?>" />
         <meta name="keywords" content="<?php if (isset($pages[0]->meta_keywords)) echo $pages[0]->meta_keywords; ?>" />
@@ -58,35 +59,14 @@ else
                             <!--include javascript files by Nr-->
                             <!-- **jQuery** -->  
                             <script src="<?= base_url() ?>public/js_r/jquery-1.10.2.min.js" type="text/javascript"></script> 
+
                             <script type="text/javascript">
-                var CUR = [];
-                jQuery = $.noConflict();
-                jQuery(document).ready(function () {
-                    var dataP = '';
-                    jQuery.ajax({
-                        url: '<?php echo site_url('register/currency_json'); ?>',
-                        data: dataP,
-                        type: 'POST',
-                        dataType: 'json',
-                        beforeSend: function () {
-
-                        },
-                        success: function (dataR) {
-                            var curren_key = dataR.post;
-                            jQuery.each(curren_key, function (index, value) {
-                            jQuery.each(value, function (index1, value1) {
-                            CUR.push(index1 + ' - ' + value1);
-                               console.log('<li>'+index1 + '</li><li>' + value1+'</li>');
-                                });
-                            });
-
-                   // console.log(dataR);
-                //var CUR = "EURUSD " +dataR.post[0].EURUSD+"GBPUSD "+dataR.post[0].GBUSD+"USDCHF "+dataR.post[0].USDCHF+"USDJPY "+dataR.post[0].USDJPY+"USDCAD "+dataR.post[0].USDCAD+"EURGBP "+dataR.post[0].EURGBP;
-                            jQuery('#currency_scroller').html(CUR);
-                        }
-                    })
-                })
+            jQuery = $.noConflict();
+            var site_url ='<?php echo base_url();?>';
+            //var CUR = [];
+           // var CUR_Table = [];
                             </script>
+                            <script src="<?= base_url() ?>public/js/notifications_1.js" type="text/javascript"></script> 
                             <script src="<?= base_url() ?>public/js_r/jquery-migrate.min.js"></script>
                             <script src="<?= base_url() ?>public/js_r/preloader.js" type="text/javascript"></script>
                             <script src="<?= base_url() ?>public/js_r/pace.min.js" type="text/javascript"></script>
@@ -156,40 +136,40 @@ else
                             <!--include javascript files -->
 
                             <script type="text/javascript">
-                                            /*
-                                             $(function () {
-                                             $('a.active').parents('li.first_level').find('a:first').addClass('active');
-                         
-                                             $('#language_select').live('change', function () {
-                                             dataP = $('#language_select').serialize();
-                                             $.ajax({
-                                             url: '<?php echo site_url('home/set_user_language'); ?>',
-                                             data: dataP,
-                                             type: 'POST',
-                                             beforeSend: function () {
-                         
-                                             },
-                                             success: function (dataR) {
-                                             window.location = '<?php echo site_url(); ?>';
-                                             }
-                                             })
-                                             });
-                         
-                                             /*sticky header*/
-                                            /*
-                                             var stickyHeaderTop = $('#main_menu').offset().top;
-                                             $(window).scroll(function () {
-                                             if ($(window).scrollTop() > stickyHeaderTop) {
-                                             $('#main_menu').addClass('fixed');
-                                             $('#main_menu').css({position: 'fixed', top: '0px', left: "0px", right: "0"});
-                                             } else {
-                                             $('#main_menu').removeClass('fixed');
-                                             $('#main_menu').css({position: 'static', top: '0px'});
-                                             }
-                                             });
-                         
-                                             });
-                                             */
+
+                                jQuery(function () {
+                                    jQuery('a.active').parents('li.first_level').find('a:first').addClass('active');
+
+                                    jQuery('#language_select').live('change', function () {
+                                        dataP = jQuery('#language_select').serialize();
+                                        jQuery.ajax({
+                                            url: '<?php echo site_url('home/set_user_language'); ?>',
+                                            data: dataP,
+                                            type: 'POST',
+                                            beforeSend: function () {
+
+                                            },
+                                            success: function (dataR) {
+                                                window.location = '<?php echo site_url(); ?>';
+                                            }
+                                        })
+                                    })
+                                });
+                                /*sticky header*/
+                                /*
+                                 var stickyHeaderTop = $('#main_menu').offset().top;
+                                 $(window).scroll(function () {
+                                 if ($(window).scrollTop() > stickyHeaderTop) {
+                                 $('#main_menu').addClass('fixed');
+                                 $('#main_menu').css({position: 'fixed', top: '0px', left: "0px", right: "0"});
+                                 } else {
+                                 $('#main_menu').removeClass('fixed');
+                                 $('#main_menu').css({position: 'static', top: '0px'});
+                                 }
+                                 });
+                                 
+                                 });
+                                 */
                             </script>
                             <script type="text/javascript">
                                 /*
@@ -340,12 +320,13 @@ else
                                                         <li><a href="<?php echo site_url('login'); ?>"> <span class="fa fa-user"></span>Login</a></li>
                                                         <li><a href="<?php echo site_url('registration'); ?>"> <span class="fa fa-user"></span>Registration</a></li>
                                                         <li> <span class="fa fa-globe"></span> 
-                                                            <select>
-                                                                <option value="germany">English</option>
-                                                                <option value="germany">Germany</option>
-                                                                <option value="spanish">Spanish</option>
-                                                                <option value="arabic">Arabic</option>
+                                                            <select id="language_select" class="required" name="language_id" >
+                                                                <!--                                                                <option value="germany">English</option>
+                                                                                                                                <option value="germany">Germany</option>
+                                                                                                                                <option value="spanish">Spanish</option>
+                                                                                                                                <option value="arabic">Arabic</option>-->
 
+<?php echo selectBox('', 'languages', 'id,name', ' status=1 ', $userLangID, ''); ?>
                                                             </select>
                                                             <i class="fa fa-angle-down"></i>
 
@@ -358,10 +339,10 @@ else
 
                                     </div></div>
 
-<?php
-$langDetails = array('language_id' => $userLangID);
-$menu = $this->adminmenus_model->get_menus($this->config->item('cache_menu'), $langDetails);
-?>
+                                <?php
+                                $langDetails = array('language_id' => $userLangID);
+                                $menu = $this->adminmenus_model->get_menus($this->config->item('cache_menu'), $langDetails);
+                                ?>
                                 <div id="header-wrapper">
                                     <!-- **Header** -->
                                     <header class="header">
@@ -380,30 +361,33 @@ $menu = $this->adminmenus_model->get_menus($this->config->item('cache_menu'), $l
                                                         <span class="dt-menu-toggle-icon"></span>
                                                     </div>
                                                     <ul class="menu">
-<?php
-foreach ($menu as $k => $v) {
-    if (!empty($v['show_in_main_menu']) && $v['show_in_main_menu'] == '1') {
-        $activeClass = '';
-        if (substr($v['href'], -strlen($url_2)) == $url_2) {
-            $activeClass = 'current active';
-        } else if ($url_1 != $userLanguageABBR && strpos($v['href'], $url_1)) {
-            $activeClass = 'current active';
-        }
-        if (($url_1 == '' || $url_1 == 'home') && $v['href'] == base_url()) {
-            $activeClass = 'current active';
-        }
-        ?>
+                                                        <?php
+                                                        foreach ($menu as $k => $v) {
+                                                            if (!empty($v['show_in_main_menu']) && $v['show_in_main_menu'] == '1') {
+                                                                $activeClass = '';
+                                                                if (substr($v['href'], -strlen($url_2)) == $url_2) {
+                                                                    $activeClass = 'current active';
+                                                                } else if ($url_1 != $userLanguageABBR && strpos($v['href'], $url_1)) {
+                                                                    $activeClass = 'current active';
+                                                                }
+                                                                if (($url_1 == '' || $url_1 == 'home') && $v['href'] == base_url()) {
+                                                                    $activeClass = 'current active';
+                                                                }
+                                                                ?>
                                                                 <li class="current_page_item menu-item-simple-parent" <?php echo $activeClass; ?> >
                                                                     <!--                                                        <a href="index.html">-->
-        <?php echo anchor($v['href'], $v['label'], 'class="' . strtolower(strtok($v['label'], " ")) . '_ico ' . $activeClass . ' "'); ?>
-        <?php if (!empty($v['submenu'])) {
-            echo buildSubMenu($v['submenu'], $url_string, $url_1, $url_2, $url_3, $url_4, $userLanguageABBR);
-        } ?>
+                                                                    <?php echo anchor($v['href'], $v['label'], 'class="' . strtolower(strtok($v['label'], " ")) . '_ico ' . $activeClass . ' "'); ?>
+                                                                    <?php
+                                                                    if (!empty($v['submenu'])) {
+                                                                        echo buildSubMenu($v['submenu'], $url_string, $url_1, $url_2, $url_3, $url_4, $userLanguageABBR);
+                                                                    }
+                                                                    ?>
 
                                                                     <!--                                                        </a>-->
                                                                 </li>
     <?php }
-} ?>
+}
+?>
                                                         <!--                                                    <li class="menu-item-megamenu-parent megamenu-4-columns-group menu-item-depth-0"><a href="#">TRADING</a>
                                                         
                                                                                                             </li>

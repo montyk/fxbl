@@ -18,7 +18,7 @@
             <?php $this->load->view('common/userpages/header_new'); ?>
             
             <div class="contentarea p_r">
-                <div class="leftNav p_f tf_animation animation_setting fadeInLeft">
+                <div  id="main-menu" class="leftNav p_f tf_animation animation_setting fadeInLeft">
                     <?php $this->load->view('common/userpages/leftnav_new'); ?>
                 </div>
                 <div class="rightNav">

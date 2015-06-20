@@ -45,11 +45,12 @@ class Adminhomepage extends MY_Controller {
     
     public function add_menu(){
         $post=$this->input->post(); 
-        // echo '<pre>'; print_r($post); echo '</pre>'; die;
+        //echo '<pre>'; print_r($post); echo '</pre>'; die;
         if(!empty($post)){
             if(!empty($post['page_id'])){
                 $post['page_id']=trim($post['page_id'],',');
             }
+           // echo '<pre>'; print_r($post); echo '</pre>'; die;
             $this->adminhomepage_model->save_menus($post);
             if(!isset($post['show_in_main_menu'])){
                 $this->session->set_flashdata('success_msg','Home page updated successfully.');

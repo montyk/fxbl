@@ -134,26 +134,29 @@
             "<?php echo site_url('adminhomepage/get_pages');  ?>", 
             {
                 asHtmlID:'page_id<?php echo $k; ?>',
-                selectionLimit:1,
+                selectionLimit:5,
                 startText:'Search Page Name',
                 selectedItemProp: "name",
                 searchObjProps: "name",
                 queryParam:'search_term',
-                disableTabPress:true,
+                disableTabPress:false,
                 resultClick: function(data){
                     $('#name<?php echo $k; ?>').val(data.attributes.name);
                     $('#selected_page_link<?php echo $k; ?>').html('Check Page Link: '+data.attributes.page_link);
+                   // $('#add_menu4[name="page_id"]').show();
                 },
                 selectionRemoved: function(elem){ 
                     $('#add_menu<?php echo $k; ?> [name="page_id"]').val('');
                     $('#name<?php echo $k; ?>').val('');
                     $('#selected_page_link<?php echo $k; ?>').html('');
+                   // $('#add_menu4[name="page_id"]').show();
                     elem.remove();
                     $('#add_menu<?php echo $k; ?> [name="page_id"]').show();
                     $('#as-selections-page_id<?php echo $k; ?>').removeClass('no_border');
                 },
                 selectionAdded:function(elem){
-                    $('#add_menu<?php echo $k; ?> [name="page_id"]').hide();
+                   // $('#add_menu<?php echo $k; ?> [name="page_id"]').hide();
+                   // $('#add_menu4[name="page_id"]').show();
                     $('#as-selections-page_id<?php echo $k; ?>').addClass('no_border');
                     $('#as-selections-page_id<?php echo $k; ?> label.error').hide();
                 },

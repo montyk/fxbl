@@ -134,7 +134,15 @@
                         </div>
                         <div class="cb"></div>
                     </div>
-
+                                    <div class="d_fds">
+                                <div class="left_fld">
+                                    <label for="metakey"><span class="validcol">*</span> Author Description :</label> 
+                                </div>
+                                <div class="right_fld">
+                                    <textarea id='meta_AuthorDescription' value='' class="required t_ar" name='author_description'><?php echo $author_description; ?></textarea>
+                                </div>
+                                <div class="cb"></div>
+                            </div>
                     <div class="d_fds">
                         <div class="left_fld">
                             <label for="metakey"><span class="validcol">*</span> Meta Keywords:</label> 
@@ -144,6 +152,7 @@
                         </div>
                         <div class="cb"></div>
                     </div>
+                   
 
                     <div class="d_fds">
                         <div class="left_fld">
