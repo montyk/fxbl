@@ -265,7 +265,51 @@ Investment * </p>
 
 
 <div class="intro-text type5">
-                                  <?php if(!empty($home_pages_sections[3]->content)){ echo html_entity_decode($home_pages_sections[3]->content); } ?>
+<div class="column dt-sc-one-half first">
+    <img src="<?= base_url() ?>public/images/btm_bg.jpg" class="intro-bg"/>
+</div>
+<div class="column dt-sc-one-half">
+                        
+                        <!-- **dt-sc-team-carousel-wrapper - Starts** -->
+                        <div class="dt-sc-team-carousel-wrapper type2">
+                            <div class="caroufredsel_wrapper" style="display: block; text-align: start; float: left; position: relative; top: auto; right: auto; bottom: auto; left: auto; z-index: auto; width: 572px; height: 300px; margin: 0px; overflow: hidden;"><div class="dt-sc-team-carousel" style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 5148px; height: 223px;">
+                                <div class="column dt-sc-one-column" style="width: 572px;">
+                                    <!-- **dt-sc-team - Starts** -->
+                                    <div class="dt-sc-team type5">
+                                       
+                                        <!-- **team-details - Starts** -->
+                                        <div class="team-details">
+                                            <?php if(!empty($home_pages_sections[3]->content)){ echo html_entity_decode($home_pages_sections[3]->content); } ?>
+
+                                        </div> <!-- **team-details - Ends** -->
+                                    </div><!-- **dt-sc-team - Ends** -->
+                                </div>
+                                <div class="column dt-sc-one-column" style="width: 572px;">
+                                    <!-- **dt-sc-team - Starts** -->
+                                    <div class="dt-sc-team type5">
+                                       
+                                        <!-- **team-details - Starts** -->
+                                        <div class="team-details">
+                                            <?php if(!empty($home_pages_sections[3]->content)){ echo html_entity_decode($home_pages_sections[3]->content); } ?>
+                                            
+                                        </div> <!-- **team-details - Ends** -->
+                                    </div><!-- **dt-sc-team - Ends** -->
+                                </div>
+                                
+                            </div></div>
+                                    
+                            <div class="carousel-arrows">
+                                <div class="pager" style="display: block;">
+                                    
+                                    
+                                    
+                                <a href="#" class="selected"><span>1</span></a><a href="#"><span>2</span></a><a href="#"><span>3</span></a><a href="#"><span>4</span></a></div>
+                            </div>
+                        
+                        </div><!-- **dt-sc-team-carousel-wrapper - Ends** -->
+                    </div>
+
+            
                             <!-- <div class="intro-text-content">
                                 <h2> Why ForexBull?</h2>
                                 <h6> Absolutely no trading restrictions:</h6>

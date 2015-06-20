@@ -1173,7 +1173,7 @@
 	.product-carousel .fa { font-size:20px; line-height:40px; }	
 	
 	.dt-sc-team-carousel-wrapper.type2 .carousel-arrows a { width:10px; height:10px; border-radius:50%; margin-left:5px; }
-	.dt-sc-team-carousel-wrapper.type2 .carousel-arrows { left:inherit; right:0; top:20px; bottom:inherit; }
+	.dt-sc-team-carousel-wrapper.type2 .carousel-arrows { left:inherit; right:40px; top:20px; bottom:inherit; }
 	.dt-sc-team-carousel-wrapper.type2 .carousel-arrows a span { display:none; }
 	.dt-sc-team-carousel-wrapper.type2 { position:initial; }
 	

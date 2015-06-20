@@ -403,12 +403,13 @@
 	.intro-text.type4 p, .intro-text.type4 .dt-sc-button.large:hover span, .intro-text.type5 h6 { color:#ffffff; }
 	.intro-text.type4 p { clear:both; }
 	.intro-text.type4 .dt-sc-button.large { margin:20px 0px 0px 0px; }
-	.intro-text.type5 { background:url(images/btm_bg.jpg) no-repeat; background-size:100%; background-color:#ff554e; max-height: 420px; } 
+	.intro-text.type5 {  background-color:#ff554e; max-height: 420px; } 
+	/*.intro-bg{background:url(images/btm_bg.jpg) no-repeat; background-size:100%;}*/
 	.intro-text.type5 h2 { color:#ffffff; font-weight:bold; text-transform: none; }
 	.intro-text.type5 p { color:#af7e84; }
 	.intro-text.type5 .dt-sc-button, .intro-text.type6 .dt-sc-button { float:none; }
 	.intro-text.type5 .intro-text-content { width: 40%; margin: 0 40%;}	
-    .intro-text.type5 .intro-text-content ul.dt-sc-fancy-list{ float: left; width: 50%;}
+    /*.intro-text.type5 .intro-text-content ul.dt-sc-fancy-list{ float: left; width: 50%;}*/
     .intro-text-content .dt-sc-fancy-list{ color:#00C;}
 	.intro-text.type6 { -moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box; }
 	.intro-text.type6 h2 { font-size:30px; text-transform:inherit; font-weight:400; margin-bottom:20px; }
@@ -519,7 +520,7 @@
 	.dt-sc-tabs-vertical-frame-content { background:#ffffff; float:left; width:74.5%; margin:13px 0px 0px 2%; }		
 	.dt-sc-tabs-vertical-frame-content h4 { text-transform:none; margin-bottom:25px; font-weight:bold; }
 	ul.dt-sc-fancy-list { float:left; width:100%; }
-	ul.dt-sc-fancy-list li { display:block; font-size:13px; color:#fff; line-height:24px; position:relative; padding-left:0px; padding-bottom:0; }
+	ul.dt-sc-fancy-list li { display:block; font-size:13px; color:#fff; line-height:24px;text-align: left; position:relative; padding-left:0px; padding-bottom:0; }
    	ul.dt-sc-fancy-list.arrow li:before { content:"\f105"; 
 	font-family:fontawesome; font-weight:normal; font-weight:normal; position:absolute; left:0; top:0; color:#000; }
 	ul.dt-sc-fancy-list.tick li:before { content:"\f00c"; font-family:fontawesome; font-weight:normal; font-weight:normal; position:absolute; left:0; top:0; color:#2c3e50; }
