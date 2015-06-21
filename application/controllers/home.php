@@ -15,6 +15,7 @@ class Home extends MY_Controller {
         $langDetails=array('language_id'=>$userLangID);
         $menus=$this->adminmenus_model->get_menus($this->config->item('cache_menu'),$langDetails);  
         $data['home_pages_sections'] = $this->adminhomepage_model->get_home_page_sections($this->config->item('cache_page'),$langDetails);
+        $data['banner_slider'] = $this->adminhomepage_model->get_home_page_sections_banner($this->config->item('cache_page'),$langDetails);
         $data['news'] = $this->adminhomepage_model->getnews('',' LIMIT 5 ',FALSE,TRUE);
         $sidebar_news_count=$this->config->item('sidebar_news_count');
         $sidebar_promotions_count=$this->config->item('sidebar_promotions_count');

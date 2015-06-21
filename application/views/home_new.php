@@ -267,45 +267,43 @@ Investment * </p>
                 <div class="container">
                     <h2 class="border-title type2"><span>Packages</span></h2>
                     <div class="events-carousel-wrapper type2">
-                    	<div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: relative; top: auto; right: auto; bottom: auto; left: auto; z-index: auto; width: 1168px; height: 562px; margin: 0px; overflow: hidden;"><div class="events-carousel" style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 4088px; height: 562px; z-index: auto;"><div class="column dt-sc-one-fourth" style="width: 100%;">
+                    	<div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: relative; top: auto; right: auto; bottom: auto; left: auto; z-index: auto; width: 1168px; height: 562px; margin: 0px; overflow: hidden;">
+                            <div class="events-carousel" style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 4088px; height: 562px; z-index: auto;">
+                               <?php  //print_r($banner_slider);
+                               foreach($banner_slider as $kb=>$vb){ 
+                                  // print_r($vb);
+                                   ?>
+                                <div class="column dt-sc-one-fourth" style="width: 100%;">
                                 <!-- **events - Starts** -->
                                 <div class="events">
                                     <!-- **event-thumb - Starts** -->
                                     <div class="event-thumb">
-                                         <img src="<?= base_url() ?>public/images/btm_bg.jpg" class="intro-bg"/>
-                                            
+                                        <?php if(!empty($vb->image)) {?>
+                                         <img src="<?= base_url().$vb->image ;?>" class="intro-bg"/>
+                                            <?php }else{ ?>
+                                            <img src="<?= base_url() ?>public/images/btm_bg.jpg" class="intro-bg"/>
+                                            <?php } ?>
                                     </div> <!-- **event-thumb - Ends** -->
                                     <!-- **event-detail - Starts** -->
                                     <div class="event-detail"> 
-                                     <?php if(!empty($home_pages_sections[3]->content)){ echo html_entity_decode($home_pages_sections[3]->content); } ?>      </div> <!-- **event-detail - Ends** -->
-                                </div> <!-- **events - Ends** -->
-                            </div><div class="column dt-sc-one-fourth" style="width: 100%;">
-                                <!-- **events - Starts** -->
-                                <div class="events">
-                                    <!-- **event-thumb - Starts** -->
-                                    <div class="event-thumb">
-                                         <img src="<?= base_url() ?>public/images/btm_bg.jpg" class="intro-bg"/>
-                                    </div> <!-- **event-thumb - Ends** -->
-                                    <!-- **event-detail - Starts** -->
-                                    <div class="event-detail"> 
-                                        <?php if(!empty($home_pages_sections[3]->content)){ echo html_entity_decode($home_pages_sections[3]->content); } ?> 
-                                    </div> <!-- **event-detail - Ends** -->
-                                </div> <!-- **events - Ends** -->
+                                     <?php  echo html_entity_decode($vb->content);  ?>      </div> <!-- **event-detail - Ends** -->
+                                </div>
+                                <!-- **events - Ends** -->
                             </div>
-                            <!-- **column - Starts** -->
-                             <!-- **column - Ends** -->
-                            
-                            <!-- **column - Starts** -->
-                             <!-- **column - Ends** -->
-                            
-                            <!-- **column - Starts** -->
-                             <!-- **column - Ends** -->
-                            
-                            <!-- **column - Starts** -->
-                             <!-- **column - Ends** -->
-                            
-                            <!-- **column - Starts** -->
-                             <!-- **column - Ends** -->
+                                <?php } ?>
+<!--                                    <div class="column dt-sc-one-fourth" style="width: 100%;">
+                                     **events - Starts** 
+                                    <div class="events">
+                                         **event-thumb - Starts** 
+                                        <div class="event-thumb">
+                                             <img src="<?= base_url() ?>public/images/btm_bg.jpg" class="intro-bg"/>
+                                        </div>  **event-thumb - Ends** 
+                                         **event-detail - Starts** 
+                                        <div class="event-detail"> 
+                                            <?php //if(!empty($home_pages_sections[3]->content)){ echo html_entity_decode($home_pages_sections[3]->content); } ?> 
+                                        </div>  **event-detail - Ends** 
+                                    </div>  **events - Ends** 
+                                </div>-->
                             
                         </div></div>
                         

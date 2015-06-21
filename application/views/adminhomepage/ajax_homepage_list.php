@@ -155,7 +155,7 @@
                     $('#as-selections-page_id<?php echo $k; ?>').removeClass('no_border');
                 },
                 selectionAdded:function(elem){
-                   // $('#add_menu<?php echo $k; ?> [name="page_id"]').hide();
+                   $('#add_menu<?php echo $k; ?> [name="page_id"]').hide();
                    // $('#add_menu4[name="page_id"]').show();
                     $('#as-selections-page_id<?php echo $k; ?>').addClass('no_border');
                     $('#as-selections-page_id<?php echo $k; ?> label.error').hide();
