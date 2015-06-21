@@ -263,47 +263,47 @@ Investment * </p>
                     </div>
                 </div>
                 
-                        <div class="full-width-section">
-                <div class="container">
-                    <h2 class="border-title type2"><span>Packages</span></h2>
-                    <div class="events-carousel-wrapper type2">
-                    	<div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: relative; top: auto; right: auto; bottom: auto; left: auto; z-index: auto; width: 1168px; height: 562px; margin: 0px; overflow: hidden;">
-                            <div class="events-carousel" style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 4088px; height: 562px; z-index: auto;">
-                               <?php  //print_r($banner_slider);
-                               foreach($banner_slider as $kb=>$vb){ 
-                                  // print_r($vb);
-                                   ?>
-                                <div class="column dt-sc-one-fourth" style="width: 100%;">
+                
+<!-- **********************************************************************************************************-->               
+                   <div class="events-carousel-wrapper type2" style="background:#ff554e;">
+                    	<div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: relative; top: auto; right: auto; bottom: auto; left: auto; z-index: auto; width: 100%; min-height: 430px; margin: 0px; overflow: hidden;">
+                            <div class="events-carousel" style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 4088px; min-height: 460px; z-index: auto;">
+                           
+                                <div class="column dt-sc-one-fourth">
                                 <!-- **events - Starts** -->
                                 <div class="events">
                                     <!-- **event-thumb - Starts** -->
                                     <div class="event-thumb">
-                                        <?php if(!empty($vb->image)) {?>
-                                         <img src="<?= base_url().$vb->image ;?>" class="intro-bg"/>
-                                            <?php }else{ ?>
-                                            <img src="<?= base_url() ?>public/images/btm_bg.jpg" class="intro-bg"/>
-                                            <?php } ?>
-                                    </div> <!-- **event-thumb - Ends** -->
+                                            <img src="public/images/img_slidde-1.jpg" class="intro-bg"/>
+                                           </div> <!-- **event-thumb - Ends** -->
                                     <!-- **event-detail - Starts** -->
                                     <div class="event-detail"> 
-                                     <?php  echo html_entity_decode($vb->content);  ?>      </div> <!-- **event-detail - Ends** -->
+<h5>BONUS Funds Available Plan -<br /> Convert YOUR TRADING BONUS INTO Funds!</h5>
+                                    Ever wanted you could receive real cash instead of a online bonus? Forexray Company right now provides you a special opportunity! Trade with us and receive up to $2 for each traded lot!</div> <!-- **event-detail - Ends** -->
                                 </div>
                                 <!-- **events - Ends** -->
                             </div>
-                                <?php } ?>
-<!--                                    <div class="column dt-sc-one-fourth" style="width: 100%;">
-                                     **events - Starts** 
-                                    <div class="events">
-                                         **event-thumb - Starts** 
-                                        <div class="event-thumb">
-                                             <img src="<?= base_url() ?>public/images/btm_bg.jpg" class="intro-bg"/>
-                                        </div>  **event-thumb - Ends** 
-                                         **event-detail - Starts** 
-                                        <div class="event-detail"> 
-                                            <?php //if(!empty($home_pages_sections[3]->content)){ echo html_entity_decode($home_pages_sections[3]->content); } ?> 
-                                        </div>  **event-detail - Ends** 
-                                    </div>  **events - Ends** 
-                                </div>-->
+                            
+                            <div class="column dt-sc-one-fourth" style="width: 100%;">
+                                <!-- **events - Starts** -->
+                                <div class="events">
+                                    <!-- **event-thumb - Starts** -->
+                                    <div class="event-thumb">
+                                            <img src="public/images/img_slidde-2.jpg" class="intro-bg"/>
+                                           </div> <!-- **event-thumb - Ends** -->
+                                    <!-- **event-detail - Starts** -->
+                                    <div class="event-detail">
+                                    <h5>EUR/USD maintains levels near 1.1370</h5> 
+                                    The provided currency remains in the upper bound of  the latest range, choosing EUR/USD to the 1.1370 area.
+
+EUR/USD eyes 1.1400 post-FOMC
+
+The pair handled to gather further traction after the FOMC statement on Wednesday confirmed the Fed’s ‘data-dependent’ stance stays unchanged, opening the door for two rate hikes this year. The Board has also lowered its economic growth forecasts and also the rate projections, although this has already been expected by current market consensus.
+
+Ahead in the day, there are no planned events in Euroland, while inflation figures monitored by the CPI will take center stage over the pond.</div> <!-- **event-detail - Ends** -->
+                                </div>
+                                <!-- **events - Ends** -->
+                            </div>
                             
                         </div></div>
                         
@@ -312,12 +312,80 @@ Investment * </p>
                             <a class="event-prev" href="#" style="display: block;"><span class="fa fa-angle-left"></span> </a>
                             <a class="event-next" href="#" style="display: block;"><span class="fa fa-angle-right"></span> </a>
                         </div> <!-- **product-carousel - Ends** -->
-                	</div>
-                </div> <!-- **container - Ends** -->
-            </div>
+                	</div>     
+
+	
                         
-                <section id="primary" class="content-full-width intro-text type1">
-				 <?php if(!empty($home_pages_sections[6]->content)){ echo html_entity_decode($home_pages_sections[6]->content); } ?>
+  <!--  ***********************************************************************************************-->      
+  
+  
+  
+  <div class="parallax full-width-section fullwidth-testimonial" style="background-position: 50% 56px;">
+                    <div class="container">
+                        <div class="dt-sc-testimonial-wrapper type2">
+                            <div class="caroufredsel_wrapper" style="display: block; text-align: center; float: none; position: relative; top: auto; right: auto; bottom: auto; left: auto; z-index: auto; width: 1170px; height: 217px; margin: 0px 0px 20px; overflow: hidden;"><ul class="dt-sc-testimonial-carousel" style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 8190px; height: 217px; z-index: auto;">
+                                
+                            <li style="width: 1150px;"> <div class="dt-sc-testimonial">
+                                    <h5>" Deposit added bonus regarding Skrill<br>FX bonus offers from Forexray each time you deposit your currency trading account!"</h5>
+                                    <span> Sean Bean </span>
+                                    <div class="dt-sc-margin30"></div>
+                                    <div class="author">
+                                        <img src="public/images/author3.jpg" alt="image">
+                                    </div>
+                                </div> </li><li style="width: 1150px;"> <div class="dt-sc-testimonial">
+                                    <h5>" This template is composed of colors. A great deal if you want a colorful &amp; vibrant website for your business or portfolio.<br>I highly recommend it. Website for your business."</h5>
+                                    <span> Mathew Braveheart </span>
+                                    <div class="dt-sc-margin30"></div>
+                                    <div class="author">
+                                        <img src="public/images/author2.jpg" alt="image">
+                                    </div>
+                                </div> </li><li style="width: 1150px;"> <div class="dt-sc-testimonial">
+                                    <h5>" This template is composed of colors. A great deal if you want a colorful &amp; vibrant website for your business or portfolio.<br>I highly recommend it."</h5>
+                                    <span>Sarah Mitchell</span>
+                                    <div class="dt-sc-margin30"></div>
+                                    <div class="author">
+                                        <img src="public/images/author.jpg" alt="image">
+                                    </div>
+                                </div> </li></ul></div>
+                            <div class="slider-controls">
+                                <div class="pager" style="display: inline-block;">
+                                    
+                                    
+                                    
+                                <a href="#" class=""><span>1</span></a><a href="#" class="selected"><span>2</span></a><a href="#" class=""><span>3</span></a></div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!--  ***********************************************************************************************-->      
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+                
+                        
+             <section id="primary" class="content-full-width intro-text type1">
+			 <?php if(!empty($home_pages_sections[6]->content)){ echo html_entity_decode($home_pages_sections[6]->content); } ?>
                 <!--<div class="full-width-section">
                     <div class="container">                        
                         <div class="dt-sc-margin30"></div>
