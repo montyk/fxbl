@@ -262,71 +262,62 @@ Investment * </p>
                         
                     </div>
                 </div>
-
-
-<div class="intro-text type5">
-<div class="column dt-sc-one-half first">
-    <img src="<?= base_url() ?>public/images/btm_bg.jpg" class="intro-bg"/>
-</div>
-<div class="column dt-sc-one-half">
-                        
-                        <!-- **dt-sc-team-carousel-wrapper - Starts** -->
-                        <div class="dt-sc-team-carousel-wrapper type2">
-                            <div class="caroufredsel_wrapper" style="display: block; text-align: start; float: left; position: relative; top: auto; right: auto; bottom: auto; left: auto; z-index: auto; width: 572px; height: 300px; margin: 0px; overflow: hidden;"><div class="dt-sc-team-carousel" style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 5148px; height: 223px;">
-                                <div class="column dt-sc-one-column" style="width: 572px;">
-                                    <!-- **dt-sc-team - Starts** -->
-                                    <div class="dt-sc-team type5">
-                                       
-                                        <!-- **team-details - Starts** -->
-                                        <div class="team-details">
-                                            <?php if(!empty($home_pages_sections[3]->content)){ echo html_entity_decode($home_pages_sections[3]->content); } ?>
-
-                                        </div> <!-- **team-details - Ends** -->
-                                    </div><!-- **dt-sc-team - Ends** -->
-                                </div>
-                                <div class="column dt-sc-one-column" style="width: 572px;">
-                                    <!-- **dt-sc-team - Starts** -->
-                                    <div class="dt-sc-team type5">
-                                       
-                                        <!-- **team-details - Starts** -->
-                                        <div class="team-details">
-                                            <?php if(!empty($home_pages_sections[3]->content)){ echo html_entity_decode($home_pages_sections[3]->content); } ?>
+                
+                        <div class="full-width-section">
+                <div class="container">
+                    <h2 class="border-title type2"><span>Packages</span></h2>
+                    <div class="events-carousel-wrapper type2">
+                    	<div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: relative; top: auto; right: auto; bottom: auto; left: auto; z-index: auto; width: 1168px; height: 562px; margin: 0px; overflow: hidden;"><div class="events-carousel" style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 4088px; height: 562px; z-index: auto;"><div class="column dt-sc-one-fourth" style="width: 100%;">
+                                <!-- **events - Starts** -->
+                                <div class="events">
+                                    <!-- **event-thumb - Starts** -->
+                                    <div class="event-thumb">
+                                         <img src="<?= base_url() ?>public/images/btm_bg.jpg" class="intro-bg"/>
                                             
-                                        </div> <!-- **team-details - Ends** -->
-                                    </div><!-- **dt-sc-team - Ends** -->
-                                </div>
-                                
-                            </div></div>
-                                    
-                            <div class="carousel-arrows">
-                                <div class="pager" style="display: block;">
-                                    
-                                    
-                                    
-                                <a href="#" class="selected"><span>1</span></a><a href="#"><span>2</span></a><a href="#"><span>3</span></a><a href="#"><span>4</span></a></div>
+                                    </div> <!-- **event-thumb - Ends** -->
+                                    <!-- **event-detail - Starts** -->
+                                    <div class="event-detail"> 
+                                     <?php if(!empty($home_pages_sections[3]->content)){ echo html_entity_decode($home_pages_sections[3]->content); } ?>      </div> <!-- **event-detail - Ends** -->
+                                </div> <!-- **events - Ends** -->
+                            </div><div class="column dt-sc-one-fourth" style="width: 100%;">
+                                <!-- **events - Starts** -->
+                                <div class="events">
+                                    <!-- **event-thumb - Starts** -->
+                                    <div class="event-thumb">
+                                         <img src="<?= base_url() ?>public/images/btm_bg.jpg" class="intro-bg"/>
+                                    </div> <!-- **event-thumb - Ends** -->
+                                    <!-- **event-detail - Starts** -->
+                                    <div class="event-detail"> 
+                                        <?php if(!empty($home_pages_sections[3]->content)){ echo html_entity_decode($home_pages_sections[3]->content); } ?> 
+                                    </div> <!-- **event-detail - Ends** -->
+                                </div> <!-- **events - Ends** -->
                             </div>
+                            <!-- **column - Starts** -->
+                             <!-- **column - Ends** -->
+                            
+                            <!-- **column - Starts** -->
+                             <!-- **column - Ends** -->
+                            
+                            <!-- **column - Starts** -->
+                             <!-- **column - Ends** -->
+                            
+                            <!-- **column - Starts** -->
+                             <!-- **column - Ends** -->
+                            
+                            <!-- **column - Starts** -->
+                             <!-- **column - Ends** -->
+                            
+                        </div></div>
                         
-                        </div><!-- **dt-sc-team-carousel-wrapper - Ends** -->
-                    </div>
-
-            
-                            <!-- <div class="intro-text-content">
-                                <h2> Why ForexBull?</h2>
-                                <h6> Absolutely no trading restrictions:</h6>
-                            <ul class="dt-sc-fancy-list tick">
-                            <li>We execute only through ECN/STP</li>
-                            <li>Hedging possibility</li>
-                            <li>Ultra-fast execution</li>
-                            <li>EU registration</li>
-                            <li>Leverage up to 1:400</li>
-                            <li>Spreads from 0 pips</li>
-                            <li>Expert advisor are welcome</li>
-                            <li>News trading is allowed</li>
-                            <li>Commissions from USD 1 (for 1 lot)</li>
-                        </ul>
-                                <a href="#" class="dt-sc-button medium"> WHY FOREXBULL? <span class="fa fa-angle-right"></span></a>
-                            </div> -->
-                        </div>
+                        <!-- **product-carousel - Starts** --> 
+                        <div class="product-carousel">
+                            <a class="event-prev" href="#" style="display: block;"><span class="fa fa-angle-left"></span> </a>
+                            <a class="event-next" href="#" style="display: block;"><span class="fa fa-angle-right"></span> </a>
+                        </div> <!-- **product-carousel - Ends** -->
+                	</div>
+                </div> <!-- **container - Ends** -->
+            </div>
+                        
                 <section id="primary" class="content-full-width intro-text type1">
 				 <?php if(!empty($home_pages_sections[6]->content)){ echo html_entity_decode($home_pages_sections[6]->content); } ?>
                 <!--<div class="full-width-section">
