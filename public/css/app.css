@@ -64,15 +64,19 @@
 .app .contentarea{ top: 51px; overflow:hidden;}
 .app .leftNav{ 
 	width:100%;
-    background-color: #444;
-	box-shadow: -1px 0px 0px #5C5C5F inset;
+    background-color: #FE544D;
+	box-shadow: -1px 0px 0px #FE544D inset;
 	top: 51px; 
 	/*bottom: 0;*/ 
 	left: 0;
 	overflow: auto;
-	border-right: 1px solid #323232;
+	border-right: 1px solid #FE544D;
 	/*padding-bottom: 40px*/
 }
+.leftNav#main-menu > ul > li > a.active{
+	color:#000;
+}
+.app .rightNav_head,#liveadmin{display: none;}
 .app .lft_sub_menu li a{
 	float: none!important;
 }

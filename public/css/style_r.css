@@ -632,7 +632,7 @@
 	#main-menu > ul > li { display:inline-block; padding:0; position:relative; }
 	#main-menu > ul > li > a { font-size:14px; text-transform:uppercase; display:block; padding:30px 12px 30px; color:#fff; position:relative; }
 	#main-menu > ul > li.current_page_item > a { color:#fff;}
-	#main-menu > ul > li.current_page_item > a:hover { color:#FF554E;}
+	#main-menu > ul > li.current_page_item > a:hover,#main-menu > ul > li.current_page_item > a.active { color:#FF554E;}
 
 	#main-menu > ul > li.current_page_item:before { content:""; 
 	                                                position:absolute; 
@@ -644,7 +644,7 @@
 	#main-menu ul li.menu-item-simple-parent ul { background-color:#ffffff; border-top: 3px solid #FF554E; box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25); float: left; left: 0; padding: 10px 0; position: absolute; top: 81px; width: 180px; z-index: 1; text-align:left; } 
 	#main-menu ul li.menu-item-simple-parent ul li { display:inline; padding:10px 0px; position:relative; width:100%; border-bottom: 1px dashed #ededed; float:left; }
 	#main-menu ul li.menu-item-simple-parent ul li:last-child { border-bottom:none; }
-	#main-menu ul li.menu-item-simple-parent ul li a { display: block; font-size: 12px; padding: 0px 15px; position: relative; color:#1e1e1e; text-transform:uppercase; font-weight:normal; }
+	#main-menu ul li.menu-item-simple-parent ul li a { display: block; font-size: 12px; padding: 0px 15px!important; position: relative; color:#1e1e1e; text-transform:uppercase; font-weight:normal; }
 	#main-menu ul li.menu-item-simple-parent ul li a:hover{ color:#FF554E;} 
 	
 	#main-menu ul li.menu-item-simple-parent ul > li > ul > li:hover > ul { display:block; -webkit-animation: 0.1s ease-in fadeIn; -moz-animation: 0.1s ease-in fadeIn; animation: 0.1s ease-in fadeIn; }
@@ -1332,7 +1332,14 @@
 	.domain-search .selection-box:after { display:none; }
 	.domain-search .selection-box:before { border-top-color:#a7a7a7; }
 	.domain-search .button { width:100%; margin-top:10px; border-radius:0; }
-	
+	#main-menu > ul > li.menu-item-simple-parent:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  /* border-bottom: 3px solid #fff; */
+  width: 100%;
+}
 	.dom-pack { float:left; width:100%; position:relative; text-align:center; margin-bottom:20px; }
 	.dom-pack .dom-range { float:left; width:100%; margin-bottom:10px; }
 	.dom-pack .dom-range span { width:120px; height:120px; display:inline-block; color:#fff; border-radius:50%; text-align:center; font-size:24px; font-weight:bold; line-height:115px; }
