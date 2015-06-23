@@ -3,14 +3,15 @@
 /*.app { background: url(../images/whttex.jpg) repeat;}*/
 .app .header{
 	height: 50px;
-	background: #FF554E;
-	border-bottom: 1px solid #FF554E;
+	background: rgba(10, 9, 9, 0.85);
+	border-bottom: 1px solid #000000;
 	position: fixed;
 	left: 0;
 	right: 0;
 	color: #fff;
     z-index: 100;
 }
+
 .app .logo_inner{ 
 	left: 10px; 
 	top: 6px; 
