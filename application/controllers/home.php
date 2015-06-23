@@ -16,6 +16,7 @@ class Home extends MY_Controller {
         $menus=$this->adminmenus_model->get_menus($this->config->item('cache_menu'),$langDetails);  
         $data['home_pages_sections'] = $this->adminhomepage_model->get_home_page_sections($this->config->item('cache_page'),$langDetails);
         $data['banner_slider'] = $this->adminhomepage_model->get_home_page_sections_banner($this->config->item('cache_page'),$langDetails);
+         $data['banner2_slider'] = $this->adminhomepage_model->get_home_page_sections_banner2($this->config->item('cache_page'),$langDetails);
         $data['news'] = $this->adminhomepage_model->getnews('',' LIMIT 5 ',FALSE,TRUE);
         $sidebar_news_count=$this->config->item('sidebar_news_count');
         $sidebar_promotions_count=$this->config->item('sidebar_promotions_count');
@@ -26,6 +27,7 @@ class Home extends MY_Controller {
         $page[0]->meta_description='ForexBull aim to provide you with the same professional service, execution, and trading functionality demanded by interbank traders';
         $data['pages'] = $page;
         $data['menus'] = $menus;
+       // print_r( $data['home_pages_sections']);
         $this->load->view("home_new", $data);
     }
 

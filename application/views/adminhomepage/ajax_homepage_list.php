@@ -6,7 +6,7 @@
     <?php if(!empty($menus)){ foreach($menus as $k=>$v){  ?>
 
     <div class="add_menu_form_wrap">
-        <p><div class="h_2">Home Page Section <?php echo $k+1; ?></div></p>
+        <p><div class="h_2">Home Page Section (<?php if($v->banner == 'Y'){ echo 'Banner1';}else{echo $v->name; } ?>)</div></p>
         <form name="add_menu" id="add_menu<?php echo $k; ?>" action="<?php echo site_url('adminhomepage/add_menu')  ?>" method="post" class="add_home_page_form">
             <input type='hidden' name='id' id='id<?php echo $k; ?>' value='<?php echo $v->id; ?>'/> 
             <input type='hidden' name='language_id' id='language_id<?php echo $k; ?>' value='<?php echo $v->language_id; ?>'/> 
@@ -129,34 +129,30 @@
         
         <?php foreach($menus as $k=>$v){  ?>
             
-            
         $("#page_id<?php echo $k; ?>").autoSuggest(
             "<?php echo site_url('adminhomepage/get_pages');  ?>", 
             {
                 asHtmlID:'page_id<?php echo $k; ?>',
-                selectionLimit:5,
+                selectionLimit:1,
                 startText:'Search Page Name',
                 selectedItemProp: "name",
                 searchObjProps: "name",
                 queryParam:'search_term',
-                disableTabPress:false,
+                disableTabPress:true,
                 resultClick: function(data){
                     $('#name<?php echo $k; ?>').val(data.attributes.name);
                     $('#selected_page_link<?php echo $k; ?>').html('Check Page Link: '+data.attributes.page_link);
-                   // $('#add_menu4[name="page_id"]').show();
                 },
                 selectionRemoved: function(elem){ 
                     $('#add_menu<?php echo $k; ?> [name="page_id"]').val('');
                     $('#name<?php echo $k; ?>').val('');
                     $('#selected_page_link<?php echo $k; ?>').html('');
-                   // $('#add_menu4[name="page_id"]').show();
                     elem.remove();
                     $('#add_menu<?php echo $k; ?> [name="page_id"]').show();
                     $('#as-selections-page_id<?php echo $k; ?>').removeClass('no_border');
                 },
                 selectionAdded:function(elem){
-                   $('#add_menu<?php echo $k; ?> [name="page_id"]').hide();
-                   // $('#add_menu4[name="page_id"]').show();
+                    $('#add_menu<?php echo $k; ?> [name="page_id"]').hide();
                     $('#as-selections-page_id<?php echo $k; ?>').addClass('no_border');
                     $('#as-selections-page_id<?php echo $k; ?> label.error').hide();
                 },

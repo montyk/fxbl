@@ -11,27 +11,35 @@ class Adminhomepage_model extends MY_Model {
         if(!empty($post['language_id'])){
             $sqlWhere=' AND h.language_id='.$post['language_id'].' ';
         }
-        $sql = '
+            $sql = '
                 SELECT h.*, p.title, p.url_key, p.meta_keywords, p.content, p.name AS page_name, lang.abbr
                     FROM home_page AS h
                     LEFT JOIN pages AS p ON p.id=h.page_id
                     LEFT JOIN languages AS lang ON lang.id=p.language_id
                     WHERE 1 AND h.status=1 '.$sqlWhere.' 
-                    ORDER BY parent_id, order_num ASC
+                    ORDER BY ID ASC
             ';
         
         /*
          * CACHE PROCESS
          */
-        $this->load->driver('cache');
-        
-        $cacheData = $this->cache->file->get('home_page_cache_data');
-//        echo '<pre>'; print_r($menuCacheData); echo '</pre>';
-//        echo '<pre>'; var_dump($this->cache->cache_info()); echo '</pre>';
-        if ($useCache){
-        $result = $this->getDBResult($sql, 'object');
+          if ($useCache){
+            if(empty($cacheData)) {
+                $result = $this->getDBResult($sql);
+                if(!empty($result))
+                foreach($result as $k=>$v){
+                    $result[$k]->href=((!empty($v->url_key))?site_url($v->abbr.'/'.$v->url_key):((!empty($v->custom_url))?$v->custom_url:''));
+                }
+                $this->cache->file->save('home_page_cache_data',$result , 300);
+            }else{
+                $result = $cacheData;
+            }
         }else{
-        $result = $this->getDBResult($sql, 'object');
+            $result = $this->getDBResult($sql);
+            if(!empty($result))
+            foreach($result as $k=>$v){
+                $result[$k]->href=((!empty($v->url_key))?site_url($v->abbr.'/'.$v->url_key):((!empty($v->custom_url))?$v->custom_url:''));
+            }
         }
         
         return $result;
@@ -48,7 +56,51 @@ class Adminhomepage_model extends MY_Model {
                     LEFT JOIN languages AS lang ON lang.id=p.language_id
                     LEFT JOIN pages_attachnments AS pa ON pa.pages_id=p.id
                     WHERE 1 AND h.status=1 and h.banner="y" '.$sqlWhere.' 
-                    ORDER BY parent_id, order_num ASC
+                    ORDER BY ID ASC
+            ';
+        
+        /*
+         * CACHE PROCESS
+         */
+        $this->load->driver('cache');
+        
+        $cacheData = $this->cache->file->get('home_page_cache_data');
+//        echo '<pre>'; print_r($menuCacheData); echo '</pre>';
+//        echo '<pre>'; var_dump($this->cache->cache_info()); echo '</pre>';
+        if ($useCache){
+            if(empty($cacheData)) {
+                $result = $this->getDBResult($sql);
+                if(!empty($result))
+                foreach($result as $k=>$v){
+                    $result[$k]->href=((!empty($v->url_key))?site_url($v->abbr.'/'.$v->url_key):((!empty($v->custom_url))?$v->custom_url:''));
+                }
+                $this->cache->file->save('home_page_cache_data',$result , 300);
+            }else{
+                $result = $cacheData;
+            }
+        }else{
+            $result = $this->getDBResult($sql);
+            if(!empty($result))
+            foreach($result as $k=>$v){
+                $result[$k]->href=((!empty($v->url_key))?site_url($v->abbr.'/'.$v->url_key):((!empty($v->custom_url))?$v->custom_url:''));
+            }
+        }
+        
+        return $result;
+    }
+    function get_home_page_sections_banner2($useCache=TRUE,$post=array()) {
+        $sqlWhere='';
+        if(!empty($post['language_id'])){
+            $sqlWhere=' AND h.language_id='.$post['language_id'].' ';
+        }
+        $sql = '
+                SELECT h.*, p.title, p.url_key, p.meta_keywords, p.content, p.name AS page_name, lang.abbr, pa.url as image
+                    FROM home_page AS h
+                    LEFT JOIN pages AS p ON p.id=h.page_id
+                    LEFT JOIN languages AS lang ON lang.id=p.language_id
+                    LEFT JOIN pages_attachnments AS pa ON pa.pages_id=p.id
+                    WHERE 1 AND h.status=1 and h.banner="B" '.$sqlWhere.' 
+                    ORDER BY ID ASC
             ';
         
         /*

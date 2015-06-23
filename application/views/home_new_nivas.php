@@ -97,6 +97,16 @@ Investment * </p>
          
             <div class="intro-text type1">
         <?php if(!empty($home_pages_sections[10]->content)){ echo html_entity_decode($home_pages_sections[10]->content); } ?>	
+                <!--<div class="container">
+                    <div class="column dt-sc-one-half first pull-left">
+                        <h4>Start trading with forexbull now</h4>
+                    </div>
+                    <div class="column dt-sc-one-half btn_pad">
+                        <a class="dt-sc-button1 ico-button" href="#">OPEN A FREE DEMO ACCOUNT</a> 
+                        <a class="dt-sc-button2" href="#">OPEN A REAL ACCOUNT</a> 
+                        
+                    </div>
+                </div>-->
             </div>
 			<!-- **full-width-section - Ends** -->
             <div class="dt-sc-margin20"></div>
@@ -253,16 +263,17 @@ Investment * </p>
                     </div>
                 </div>
                 
-                
-<!-- **********************************************************************************************************-->               
-                   <div class="events-carousel-wrapper type2" style="background:#ff554e;">
-                    	<div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: relative; top: auto; right: auto; bottom: auto; left: auto; z-index: auto; width: 100%; min-height: 430px; margin: 0px; overflow: hidden;">
-                            <div class="events-carousel" style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 4088px; min-height: 460px; z-index: auto;">
-                          
-                             <?php 
+                        <div class="full-width-section">
+                <div class="container">
+                    <h2 class="border-title type2"><span>Packages</span></h2>
+                    <div class="events-carousel-wrapper type2">
+                    	<div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: relative; top: auto; right: auto; bottom: auto; left: auto; z-index: auto; width: 1168px; height: 562px; margin: 0px; overflow: hidden;">
+                            <div class="events-carousel" style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 4088px; height: 562px; z-index: auto;">
+                               <?php  //print_r($banner_slider);
                                foreach($banner_slider as $kb=>$vb){ 
+                                  // print_r($vb);
                                    ?>
-                            <div class="column dt-sc-one-fourth" style="width: 100%;">
+                                <div class="column dt-sc-one-fourth" style="width: 100%;">
                                 <!-- **events - Starts** -->
                                 <div class="events">
                                     <!-- **event-thumb - Starts** -->
@@ -270,18 +281,30 @@ Investment * </p>
                                         <?php if(!empty($vb->image)) {?>
                                          <img src="<?= base_url().$vb->image ;?>" class="intro-bg"/>
                                             <?php }else{ ?>
-                                             <img src="public/images/img_slidde-2.jpg" class="intro-bg"/>
+                                            <img src="<?= base_url() ?>public/images/btm_bg.jpg" class="intro-bg"/>
                                             <?php } ?>
-                                           </div> <!-- **event-thumb - Ends** -->
+                                    </div> <!-- **event-thumb - Ends** -->
                                     <!-- **event-detail - Starts** -->
-                                    <div class="event-detail">
-<!--                                    <h5>EUR/USD maintains levels near 1.1370</h5> -->
-                                    <?php  echo html_entity_decode($vb->content);  ?>  
-                                   </div> <!-- **event-detail - Ends** -->
+                                    <div class="event-detail"> 
+                                     <?php  echo html_entity_decode($vb->content);  ?>      </div> <!-- **event-detail - Ends** -->
                                 </div>
                                 <!-- **events - Ends** -->
                             </div>
-                               <?php } ?>
+                                <?php } ?>
+<!--                                    <div class="column dt-sc-one-fourth" style="width: 100%;">
+                                     **events - Starts** 
+                                    <div class="events">
+                                         **event-thumb - Starts** 
+                                        <div class="event-thumb">
+                                             <img src="<?= base_url() ?>public/images/btm_bg.jpg" class="intro-bg"/>
+                                        </div>  **event-thumb - Ends** 
+                                         **event-detail - Starts** 
+                                        <div class="event-detail"> 
+                                            <?php //if(!empty($home_pages_sections[3]->content)){ echo html_entity_decode($home_pages_sections[3]->content); } ?> 
+                                        </div>  **event-detail - Ends** 
+                                    </div>  **events - Ends** 
+                                </div>-->
+                            
                         </div></div>
                         
                         <!-- **product-carousel - Starts** --> 
@@ -289,95 +312,12 @@ Investment * </p>
                             <a class="event-prev" href="#" style="display: block;"><span class="fa fa-angle-left"></span> </a>
                             <a class="event-next" href="#" style="display: block;"><span class="fa fa-angle-right"></span> </a>
                         </div> <!-- **product-carousel - Ends** -->
-                	</div>     
-
-	
+                	</div>
+                </div> <!-- **container - Ends** -->
+            </div>
                         
-  <!--  ***********************************************************************************************-->      
-  
-  
-  
-  <div class="parallax full-width-section fullwidth-testimonial" style="background-position: 50% 56px;">
-                    <div class="container">
-                        <div class="dt-sc-testimonial-wrapper type2">
-                            <div class="caroufredsel_wrapper" style="display: block; text-align: center; float: none; position: relative; top: auto; right: auto; bottom: auto; left: auto; z-index: auto; width: 1170px; height: 217px; margin: 0px 0px 20px; overflow: hidden;"><ul class="dt-sc-testimonial-carousel" style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 8190px; height: 217px; z-index: auto;">
-                                 <?php 
-                               foreach($banner2_slider as $kb=>$vb){ 
-                                   ?>
-                            <li style="width: 1150px;"> <div class="dt-sc-testimonial">
-                                     <?php  echo html_entity_decode($vb->content);  ?> 
-                                    <div class="dt-sc-margin30"></div>
-                                    <div class="author">
-                                          <?php if(!empty($vb->image)) {?>
-                                         <img src="<?= base_url().$vb->image ;?>"/>
-                                            <?php }else{ ?>
-                                              <img src="public/images/author3.jpg" alt="image">
-                                            <?php } ?>
-                                       
-                                    </div>
-                                </div> </li>
-                                
-                               <?php } ?>
-                                
-<!--                                <li style="width: 1150px;"> <div class="dt-sc-testimonial">
-                                    <h5>" This template is composed of colors. A great deal if you want a colorful &amp; vibrant website for your business or portfolio.<br>I highly recommend it. Website for your business."</h5>
-                                    <span> Mathew Braveheart </span>
-                                    <div class="dt-sc-margin30"></div>
-                                    <div class="author">
-                                        <img src="public/images/author2.jpg" alt="image">
-                                    </div>
-                                </div> </li>
-                                <li style="width: 1150px;"> <div class="dt-sc-testimonial">
-                                    <h5>" This template is composed of colors. A great deal if you want a colorful &amp; vibrant website for your business or portfolio.<br>I highly recommend it."</h5>
-                                    <span>Sarah Mitchell</span>
-                                    <div class="dt-sc-margin30"></div>
-                                    <div class="author">
-                                        <img src="public/images/author.jpg" alt="image">
-                                    </div>
-                                </div> </li>-->
-                                
-                                
-                                
-                                </ul></div>
-                            <div class="slider-controls">
-                                <div class="pager" style="display: inline-block;">
-                                    
-                                    
-                                    
-                                <a href="#" class=""><span>1</span></a><a href="#" class="selected"><span>2</span></a><a href="#" class=""><span>3</span></a></div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <!--  ***********************************************************************************************-->      
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-                
-                        
-             <section id="primary" class="content-full-width intro-text type1">
-			 <?php if(!empty($home_pages_sections[6]->content)){ echo html_entity_decode($home_pages_sections[6]->content); } ?>
+                <section id="primary" class="content-full-width intro-text type1">
+				 <?php if(!empty($home_pages_sections[6]->content)){ echo html_entity_decode($home_pages_sections[6]->content); } ?>
                 <!--<div class="full-width-section">
                     <div class="container">                        
                         <div class="dt-sc-margin30"></div>

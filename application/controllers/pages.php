@@ -13,6 +13,7 @@ class Pages extends MY_Controller {
             $data=$this->adminwidget_model->get_widgets_template();
             
             $pageDetails = $this->pages_model->getpagedet_atta(trim($url_key),$language_id);
+             //print_r($pageDetails);
 
             if(!empty($pageDetails) && stripos($pageDetails[0]->content, '{EMBEDPAGE')>0){
                 $matches = array();
