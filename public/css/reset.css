@@ -313,7 +313,7 @@ a {
   border:1px solid #999;
   outline:0 none;
 }
-.app input.ip { height: 16px; }
+.app input.ip { height: 36px; }
 .app textarea.t_ar:focus,.app input.ip:focus,.app select.sl_bx:focus,
 .app input.ip:hover:focus,.app select.sl_bx:hover:focus,
 .app textarea.t_ar:hover:focus{

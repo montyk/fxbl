@@ -223,11 +223,11 @@
 }
 .app label.error{ 
     clear: both;
-    color:#bf1c12; 
+    color:#D21E17; 
     font-size: 13px !important;
     margin: 2px 0 0;
-    text-shadow:0 0 2px #F16181
-}
+/*    text-shadow:0 0 2px #F16181
+*/}
 
 /*End@@ Forms css*/
 
