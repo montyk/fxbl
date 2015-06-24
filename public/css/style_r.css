@@ -1093,6 +1093,9 @@
 		.row-wrapper p { font-size:20px; color:#2c3e50; }
 		.row-wrapper p span { font-weight:300; }
 		.row-wrapper.type2 { padding:10px 0; border-bottom:1px solid #fff; background-color:#dee2e5; }
+	
+  .box_placeholder .button{padding: 10px 15px !important; min-height: 20px !important;   border: 1px solid #c1913d !important;}
+  .rightNav_cnt .button{padding: 10px 15px !important; min-height: 20px !important;   /*border: 1px solid #6fb1c7 !important;*/}
 		
 	/*----*****---- << 2.4.4. Recent Gallery >> ----*****----*/
 	.recent-gallery-container { float:left; width:100%; }

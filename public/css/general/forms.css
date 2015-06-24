@@ -20,6 +20,7 @@
 	font-family: "Roboto", sans-serif !important;
 	margin-right: 10px;
 }
+.app .d_fds .left_fld label{	margin-top: 0px !important;}
 .app .forgt .left_fld.lft_fldsmall {  width: auto !important;
   margin-left: 25px;}
 .app .d_fds.vm .left_fld label{ margin-top:0;}

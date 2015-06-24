@@ -120,7 +120,7 @@
 }
 .app .rightNav .rightNav_cnt { padding: 20px 20px 0 20px}
 .app #footer{ 
-	background: url(../images/transparent.png)  repeat;
+	background: #FE544D;/* url(../images/transparent.png)  repeat;*/
 	bottom: 0;
 	top: auto;
 	left: 0;
@@ -346,7 +346,7 @@
 .app .moneygram{background: url(../images/moneygram.png) #fff no-repeat 100% 8px;}
 .app .wstun{background: url(../images/westernunion.png) #fff no-repeat 100% 6px;}
 .app .exchanger{background: url(../images/exchanger.png) #fff no-repeat 100% 6px;}
-.app .help_text{ color: #CACACA}
+.app .help_text{ color: #323232;}
 
 .app .fund_date ul li {
 	float: left;
@@ -436,13 +436,13 @@
 .app.mywallet_update .flt_panel .left_fld, .app.getmanager_update .flt_panel .left_fld{ width: 70px; text-align: right;}
 .app.mywallet_update .flt_panel .right_fld, .app.getmanager_update .flt_panel .right_fld{ margin-left: 80px}
 .app.mywallet_update.new_mywallet_update .flt_panel .left_fld{ width: 120px}
-.app.mywallet_update.new_mywallet_update .flt_panel .right_fld{ margin-left: 130px}
+.app.mywallet_update.new_mywallet_update .flt_panel .right_fld{ margin-left: 160px;}
 .app.mywallet_update a.nblu_btn.japply_filter, .app.getmanager_update a.nblu_btn.japply_filter {margin-left: 41px;margin-top: 0;}
 
 .app.pamm_man_update .lft_stflbl, .app.pamm_man_update .rgt_stflbl{ float: left; font-size: 13px;}
 .app.pamm_man_update .lft_stflbl{ width: 200px; margin:4px 10px 0 0;  }
 .app .star{ color: #D80C3D;font-weight: bold; margin-right: 2px}
-.app.getmanager_update .col_white, .app.mywallet_update .col_white{ color: #fff}
+.app.getmanager_update .col_white, .app.mywallet_update .col_white{ color: #000}
 .app .up_alert_error{ margin-left: 0; margin-right: 0; width: 100%}
 
 .app.getmanager_update .get_updatemanger .second .left_fld{ width: 140px}
