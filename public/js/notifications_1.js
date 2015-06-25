@@ -24,7 +24,7 @@ function refreshNot(){
                             jQuery.each(curren_key, function (index, value) {
                             jQuery.each(value, function (index1, value1) {
                             CUR.push(index1 + ' - ' + value1);
-                           CUR_Table2.push('<tr><td>'+index1 + '</td><td>' + value1+'</td></tr>');
+                           CUR_Table2.push('<tr><td><img width="16" height="11" src="'+site_url+'public/images/logos/'+index1 +'.png" alt="symbol">'+index1 + '</td><td>' + value1+'</td></tr>');
                                 });
                             });
                             jQuery('#currency_scroller').html(CUR);

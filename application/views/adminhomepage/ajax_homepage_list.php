@@ -6,7 +6,7 @@
     <?php if(!empty($menus)){ foreach($menus as $k=>$v){  ?>
 
     <div class="add_menu_form_wrap">
-        <p><div class="h_2">Home Page Section (<?php if($v->banner == 'Y'){ echo 'Banner1';}else{echo $v->name; } ?>)</div></p>
+        <p><div class="h_2">Home Page Section (<?php if ($v->banner == 'Y'){ echo 'Banner1'; } elseif($v->banner == 'B'){ echo "Banner2"; }else{ echo $v->name; } ?>)</div></p>
         <form name="add_menu" id="add_menu<?php echo $k; ?>" action="<?php echo site_url('adminhomepage/add_menu')  ?>" method="post" class="add_home_page_form">
             <input type='hidden' name='id' id='id<?php echo $k; ?>' value='<?php echo $v->id; ?>'/> 
             <input type='hidden' name='language_id' id='language_id<?php echo $k; ?>' value='<?php echo $v->language_id; ?>'/> 

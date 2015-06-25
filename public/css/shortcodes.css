@@ -734,7 +734,7 @@
 	.dt-sc-location-detail { 
 	                          float: left; 
 	                          position: relative; 
-							  width:93%; 
+							  width:100%; 
 							  clear:both;
 							  text-align:left; 
 							  padding:10px; 
@@ -756,7 +756,7 @@
 	margin: 0;
 }
 .live_data .dt-sc-location-detail{
-	padding: 0px;
+	padding:0px;
 }
 .list_view,.list_view1{
 	float: left;
