@@ -31,7 +31,7 @@
             <?php $this->load->view('common/userpages/header_new'); ?>
             
             <div class="contentarea p_r">
-                <div class="leftNav p_f tf_animation animation_setting fadeInLeft">
+                <div id="main-menu"  class="leftNav p_f tf_animation animation_setting fadeInLeft">
                     <?php $this->load->view('common/userpages/leftnav_new'); ?>
                 </div>
                 <div class="rightNav">
@@ -159,7 +159,7 @@
                         <table id="table-to-grid" class="data m_t_10" cellspacing="1" cellpadding="3" border="0" width="100%" style="font-size:12px; font-family:Tahoma, Arial, Helvetica, sans-serif;">
                             <thead>
                             <tr align="right" style="background-color: #a0a0a0;">
-                                <th align="left"><b>Order</b></th>
+                                <th align="left" width="50px"><b>Order</b></th>
                                 <th><b>Time</b></th>
                                 <th><b>Type</b></th>
                                 <th><b>Lots</b></th>

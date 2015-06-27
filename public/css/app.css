@@ -53,7 +53,10 @@
 	background: url(../images/bgic.png) no-repeat;
 	display: inline-block;
 }
-.app #main-menu.leftNav{overflow:initial;}
+.app #main-menu{
+	margin-bottom:20px !important;
+}
+.app #main-menu.leftNav{overflow:initial; z-index: 1;}
 .leftNav#main-menu ul li.menu-item-simple-parent ul{top:54px;}
 .app .usr_ico{
 	width: 16px;
@@ -67,12 +70,10 @@
     background-color: #FE544D;
 	box-shadow: -1px 0px 0px #FE544D inset;
 	top: 51px; 
-	/*bottom: 0;*/ 
-	left: 0;
 	overflow: auto;
-	border-right: 1px solid #FE544D;
-	/*padding-bottom: 40px*/
 }
+.app .leftNav#main-menu > ul > li{ padding:14px !important;}
+.app .leftNav#main-menu > ul > li a{padding:0px !important;}
 .leftNav#main-menu > ul > li > a.active{
 	color:#000;
 }
@@ -104,7 +105,7 @@
 .app .nav_emt{ /*padding: 20px 0 0 20px*/}
 .app .lft_sub_menu{ /*margin-left: 20px*/}
 .app .lft_sub_menu ul li{border-bottom: 1px solid #555; margin-bottom:0px !important;}
-.app .rightNav{ /*margin-left: 240px;*/ color: #fff; margin-top: 52px;/*padding-bottom: 40px*/}
+.app .rightNav{ /*margin-left: 240px;*/ color: #fff; margin-top: 70px;/*padding-bottom: 40px*/ margin-bottom:100px;}
 .app .rightNav .rightNav_head{
 	background: #434344;
 	height: 40px;
@@ -263,7 +264,7 @@
 	color: #2f2f2f;
 	vertical-align: middle;
 	text-align: left;
-	padding: 7px;
+	padding: 7px 0px;
 	line-height: 1.55;
 	height: auto;
 	border-color: #b2b2b2;
