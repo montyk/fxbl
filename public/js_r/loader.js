@@ -4,7 +4,7 @@ jQuery(document).ready(function($){
 	var cHeight=128;
 	var cTotalFrames=20;
 	var cFrameWidth=128;
-	var cImageSrc='images/sprites.gif';
+	var cImageSrc='public/images/sprites.gif';
 	
 	var cImageTimeout=false;
 	var cIndex=0;

@@ -29,6 +29,7 @@ else echo $this->config->item('project_name'); ?></title>
         <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>misc/widgets/css/bootstrap-for-pages.css" />
         <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>misc/widgets/css/bootstrap-responsive-for-pages.css" />
         <link rel="stylesheet" type="text/css" href="<?= base_url() ?>/misc/css/pages.css" /> 
+        <link rel="stylesheet" type="text/css" href="<?= base_url() ?>public/css/style_r.css" />
         <link rel="stylesheet" href="<?= base_url() ?>misc/css/marquee.css">
             <link rel="stylesheet" href="<?= base_url() ?>misc/css/new_design.css">
                 <link rel="stylesheet" type="text/css" href="<?= base_url() ?>/misc/css/base.css" />  
@@ -49,7 +50,7 @@ else echo $this->config->item('project_name'); ?></title>
                     <link rel="stylesheet" href="<?= base_url() ?>public/css/font-awesome.min.css" type="text/css" />
                     <link rel="stylesheet" type="text/css" href="<?= base_url() ?>public/css/responsive.css" />
                     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>public/css/shortcodes.css" />
-                    <link rel="stylesheet" type="text/css" href="<?= base_url() ?>public/css/style_r.css" />
+                   
                     <link href='http://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>  
                     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 

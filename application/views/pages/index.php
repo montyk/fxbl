@@ -7,7 +7,7 @@
     $url_3 = $this->uri->segment(3); 
 ?>
 
-<?php $this->load->view('common/header', $data);?>
+<?php $this->load->view('common/header_new', $data);?>
 
 <div class="app outside">
 <!--	PAGE content -->

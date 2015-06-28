@@ -243,9 +243,7 @@ Investment * </p>
 							</tbody>
 							</table>
                             </div>
-                          <!--  <div class="mt10 ml10 stocks_list">
-   <img src="<?= base_url() ?>public/images/chart.png" /></div>-->
-   
+                
                             <div class="clearfix"></div>
                             
                         </div>

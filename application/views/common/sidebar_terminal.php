@@ -9,8 +9,9 @@ $server_domain_name=$protocol.$this->config->item('project_name').".com";
 
     <!-- <iframe src="http://forexray.com/plugins/raju/terminal.php" height="487px"></iframe>-->
     <!-- Local -->
-    
-    <div class="dt-sc-location-detail">
+       <div class="dt-sc-ico-content type4 live_data">
+                                                         
+                            <div class="dt-sc-location-detail">
                                 <h6>LIVE RATES</h6>
                                 
 							<table class="table">
@@ -48,6 +49,11 @@ $server_domain_name=$protocol.$this->config->item('project_name').".com";
 							</tbody>
 							</table>
                             </div>
+                
+                            <div class="clearfix"></div>
+                            
+                        </div>                        
+                        </div>
     
 
     <div class="tabs" style="display:none">
