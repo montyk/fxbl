@@ -9,8 +9,48 @@ $server_domain_name=$protocol.$this->config->item('project_name').".com";
 
     <!-- <iframe src="http://forexray.com/plugins/raju/terminal.php" height="487px"></iframe>-->
     <!-- Local -->
+    
+    <div class="dt-sc-location-detail">
+                                <h6>LIVE RATES</h6>
+                                
+							<table class="table">
+								<thead>
+									<tr>
+										<th>Symbol</th>
+										<th>Bid</th>
+									</tr>
+								</thead>
+							<tbody>
+									<tr>
+										<td>EURUSD</td>
+										<td>1.12375</td>
+									</tr>
+									<tr>
+										<td>EURUSD</td>
+										<td>1.12375</td>
+									</tr>
+									<tr>
+										<td>EURUSD</td>
+										<td>1.12375</td>
+									</tr>
+									<tr>
+										<td>EURUSD</td>
+										<td>1.12375</td>
+									</tr>
+									<tr>
+										<td>EURUSD</td>
+										<td>1.12375</td>
+									</tr>
+									<tr>
+										<td>EURUSD</td>
+										<td>1.12375</td>
+									</tr>
+							</tbody>
+							</table>
+                            </div>
+    
 
-    <div class="tabs" style="display:block">
+    <div class="tabs" style="display:none">
         <ul class="navlist">
             <li class="bdr_none first"><a href="#first"><span>Forex</span></a></li>
             <li><a href="#second" class="second"><span>Commodities</span></a></li>
@@ -47,7 +87,7 @@ $server_domain_name=$protocol.$this->config->item('project_name').".com";
 
 </div>
 
-<div class="box_central rad_four">
+<div style="display:none;"class="box_central rad_four">
 
     <div class="box_central_header">Central Banks Rates</div>
      <div class="box_central_content">

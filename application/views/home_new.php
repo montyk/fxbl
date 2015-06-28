@@ -29,9 +29,9 @@
                         <div class="ls-l" style="top:300px;left:50%;margin-left:-150px;font-weight:700; z-index:3; letter-spacing:2.5px;font-family:'Roboto';font-size:42px;line-height:26px;color:#ffffff; text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5); white-space: nowrap;"  data-ls="offsetxin:0;offsetyin:100;durationin:1500;delayin:2000;">
 						<?php echo substr(filterStringDecode($v->meta_description), 0, 100) ; ?></div>
                                                
-                        <p class="ls-l" style="top:370px;left:320px;white-space: nowrap; line-height:30px;" data-ls="offsetxin:0;offsetyin:100;delayin:4000;"> <a href="#" class="dt-sc-button1 ico-button"> OPEN A REAL ACCOUNT</a></p>
+                        <p class="ls-l" style="top:370px;left:320px;white-space: nowrap; line-height:30px;" data-ls="offsetxin:0;offsetyin:100;delayin:4000;"> <a href="<?php echo site_url('registration');?>" class="dt-sc-button1 ico-button"> OPEN A REAL ACCOUNT</a></p>
                         
-                        <p class="ls-l" style="top:370px;left:530px;white-space: nowrap;" data-ls="offsetxin:-150;delayin:4000;"> <a href="#" class="dt-sc-button2">OPEN A FREE DEMO ACCOUNT</a></p>
+                        <p class="ls-l" style="top:370px;left:530px;white-space: nowrap;" data-ls="offsetxin:-150;delayin:4000;"> <a href="<?php echo site_url('registration/open_demo_acc'); ?>" class="dt-sc-button2">OPEN A FREE DEMO ACCOUNT</a></p>
                     <p style="color:#f00; font-size:24px"> Read More</p>
                     </div>
                   <?php }?>  
@@ -194,11 +194,11 @@ Investment * </p>
                             </div>
                             <div class="clearfix"></div>
 							-->
-							 <?php if(!empty($home_pages_sections[1]->content)){ echo html_entity_decode($home_pages_sections[1]->content); } ?>	
-							<?php if(!empty($home_pages_sections[1]->read_more_link)){  ?>	
-							<div class="overlay"><a style="color: white;" href="<?php echo $home_pages_sections[1]->read_more_link; ?>">Read More</a></div>
-							<?php } ?>
-                            
+         <?php if(!empty($home_pages_sections[1]->content)){ echo html_entity_decode($home_pages_sections[1]->content); } ?>	
+        <?php if(!empty($home_pages_sections[1]->read_more_link)){  ?>	
+        <div class="overlay"><a style="color: white;" href="<?php echo $home_pages_sections[1]->read_more_link; ?>">Read More</a></div>
+        <?php } ?>
+
                         </div>
                     </div>
                     <div class="column dt-sc-one-fourth fadeInRight" data-animation="fadeInRight" data-delay="100">

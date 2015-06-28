@@ -51,7 +51,7 @@ else echo $this->config->item('project_name'); ?></title>
                     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>public/css/shortcodes.css" />
                     <link rel="stylesheet" type="text/css" href="<?= base_url() ?>public/css/style_r.css" />
                     <link href='http://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>  
-                        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+                    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
                             <!-- CSS - stylesheets NR-->
 
@@ -71,9 +71,13 @@ else echo $this->config->item('project_name'); ?></title>
                             <link rel="stylesheet" href="<?= base_url() ?>misc/css/marquee.css">
                                 <link rel="stylesheet" href="<?= base_url() ?>misc/css/new_design.css">
                                     <!--include javascript files -->
-
+                                     <script type="text/javascript">
+                                                 //jQuery = $.noConflict();
+                                    var site_url ='<?php echo base_url();?>';
+                                       </script>
                                     <!--include javascript files -->
                                     <script type="text/javascript" src="<?= base_url() ?>misc/js/jquery.1.8.3.min.js"></script>
+                                    <script src="<?= base_url() ?>public/js/notifications_1.js" type="text/javascript"></script> 
                                     <script type="text/javascript" src="<?php echo base_url(); ?>misc/widgets/js/bootstrap.js"></script>
                                     <script type="text/javascript" src="<?= base_url() ?>misc/js/jquery.validate.js"></script>  
                                     <script type="text/javascript" src="<?= base_url() ?>misc/js/ie6.js"></script>  
